@@ -1,6 +1,6 @@
 # vue3-beautiful-chat
 
-Forked from [vue-tour](https://github.com/mattmezza/vue-beautiful-chat)
+Forked from [vue-beautiful-chat](https://github.com/mattmezza/vue-beautiful-chat)
 
 `vue3-beautiful-chat` provides an intercom-like chat window that can be included easily in any project for free. It provides no messaging facilities, only the view component.
 
