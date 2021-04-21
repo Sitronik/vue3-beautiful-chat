@@ -318,7 +318,7 @@ When sending a message, you can provide a set of sentences that will be displaye
 <p>
 
 ```
-git clone git@github.com:mattmezza/vue-beautiful-chat.git
+git clone git@github.com:sitronik/vue3-beautiful-chat.git
 cd vue-beautiful-chat
 yarn install  # this installs the package dependencies
 yarn watch  # this watches files to continuously compile them
