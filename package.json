@@ -11,7 +11,7 @@
     "build:prod": "vue-cli-service build --target lib --name vue3-beautiful-chat --formats umd-min src/index.js",
     "lint": "vue-cli-service lint",
     "build:dev": "npm run build -- --mode development --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build:prod"
   },
   "files": [
     "dist/*"

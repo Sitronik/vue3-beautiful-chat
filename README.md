@@ -38,8 +38,13 @@ $ yarn add vue3-beautiful-chat
 
 ## Example
 ```javascript
+import * as Vue from 'vue'
+import App from './App.vue'
 import Chat from 'vue3-beautiful-chat'
-Vue.use(Chat)
+
+const app = Vue.createApp(App)
+
+app.use(Chat)
 ```
 
 ```vue
