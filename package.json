@@ -1,20 +1,21 @@
 {
   "name": "vue3-beautiful-chat",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A simple and beautiful Vue 3 chat component backend agnostic.",
-  "main": "dist/vue3-beautiful-chat.umd.min.js",
+  "main": "index.js",
   "repository": "https://github.com/Sitronik/vue3-beautiful-chat.git",
   "author": "Sitronik <sitronik92@mail.ru>",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve ./demo/src/main.js",
-    "build:prod": "vue-cli-service build --target lib --name vue3-beautiful-chat --formats umd-min src/index.js",
+    "build:prod": "vite build",
     "lint": "vue-cli-service lint",
     "build:dev": "npm run build -- --mode development --watch",
     "prepublishOnly": "npm run build:prod"
   },
   "files": [
-    "dist/*"
+    "dist/*",
+    "index.js"
   ],
   "dependencies": {
     "autolinker": "^1.8.3",
@@ -28,6 +29,8 @@
     "v-tooltip": "^4.0.0-alpha.1"
   },
   "devDependencies": {
+    "@rollup/plugin-dynamic-import-vars": "^1.1.1",
+    "@vitejs/plugin-vue": "^1.2.2",
     "@vue/cli-plugin-babel": "~4.2.3",
     "@vue/cli-plugin-eslint": "~4.2.3",
     "@vue/cli-service": "^4.5.12",
@@ -46,7 +49,9 @@
     "node-forge": "^0.10.0",
     "node-sass": "^4.13.1",
     "prettier": "^2.0.2",
+    "sass": "^1.32.12",
     "sass-loader": "^8.0.2",
+    "vite": "^2.2.4",
     "vue": "^3.0.11"
   },
   "keywords": [

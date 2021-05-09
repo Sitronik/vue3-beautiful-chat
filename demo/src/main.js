@@ -1,6 +1,6 @@
 import * as Vue from 'vue'
 import App from './App.vue'
-import Chat from '../../dist/vue3-beautiful-chat.umd.min.js'
+import Chat from '../../index.js'
 
 const app = Vue.createApp(App)
 
