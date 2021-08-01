@@ -37,6 +37,7 @@
         @focus="setInputActive(true)"
         @blur="setInputActive(false)"
         @keydown="handleKey"
+        @input="handleInput"
         @focusUserInput="focusUserInput()"
       ></div>
       <div class="sc-user-input--buttons">
@@ -215,8 +216,9 @@ export default {
         this._editFinish()
         event.preventDefault()
       }
-
-      this.$emit('onType')
+    },
+    handleInput(event) {
+      this.$emit('onType', event.target.textContent)
     },
     focusUserInput() {
       this.$nextTick(() => {

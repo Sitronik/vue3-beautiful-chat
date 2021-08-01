@@ -194,8 +194,8 @@ export default {
     messageStylingToggled(e) {
       this.messageStyling = e.target.checked
     },
-    handleOnType() {
-      this.$event.$emit('onType')
+    handleOnType(e) {
+      this.$event.$emit('onType', e)
       this.userIsTyping = true
     },
     editMessage(message) {

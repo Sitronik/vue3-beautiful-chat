@@ -55,7 +55,7 @@
       :show-file="showFile"
       :placeholder="placeholder"
       :colors="colors"
-      @onType="$emit('onType')"
+      @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
     />
   </div>
