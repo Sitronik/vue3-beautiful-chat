@@ -32,7 +32,7 @@
       :message-styling="messageStyling"
       @close="close"
       @scrollToTop="$emit('scrollToTop')"
-      @onType="$emit('onType')"
+      @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
       @remove="$emit('remove', $event)"
     >
