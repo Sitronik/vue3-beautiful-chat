@@ -94,6 +94,10 @@ export default {
       type: Boolean,
       default: false
     },
+    ionicIosAutoFocus: {
+      type: Boolean,
+      default: true
+    },
     showEmojiInText: {
       type: Boolean,
       default: false
@@ -257,7 +261,9 @@ export default {
   methods: {
     openAndFocus() {
       this.open()
-      this.$event.$emit('focusUserInput')
+      if (this.ionicIosAutoFocus) {
+        this.$event.$emit('focusUserInput')
+      }
     }
   }
 }
