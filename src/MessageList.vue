@@ -130,8 +130,12 @@ export default {
     },
     watchScrollList() {
       const observer = new ResizeObserver(() => {
-        if (this.initialScrollTop === this.$refs.scrollList.scrollTop || this.$refs.scrollList.scrollTop > this.initialScrollTop &&
-                (this.$refs.scrollList.scrollHeight - this.$refs.scrollList.scrollTop) > this.$refs.scrollList.offsetHeight) {
+        const value = this.$refs.scrollList.scrollHeight - this.$refs.scrollList.scrollTop
+        if (
+          this.initialScrollTop === this.$refs.scrollList.scrollTop ||
+          (this.$refs.scrollList.scrollTop > this.initialScrollTop &&
+            value > this.$refs.scrollList.offsetHeight)
+        ) {
           this._scrollDown()
         }
       })
