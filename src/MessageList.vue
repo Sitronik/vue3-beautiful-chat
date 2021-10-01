@@ -111,6 +111,7 @@ export default {
   methods: {
     _scrollDown() {
       this.$refs.scrollList.scrollTop = this.$refs.scrollList.scrollHeight
+      !this.initialScrollTop ? this.initialScrollTop = this.$refs.scrollList.scrollTop : '';
     },
     handleScroll(e) {
       if (e.target.scrollTop === 0) {
