@@ -91,12 +91,18 @@ export default {
       required: true
     }
   },
+  data() {
+    return {
+      initialScrollTop: null
+    }
+  },
   computed: {
     defaultChatIcon() {
       return chatIcon
     }
   },
   mounted() {
+    this.watchScrollList()
     this.$nextTick(this._scrollDown())
   },
   updated() {
@@ -121,6 +127,16 @@ export default {
 
       // A profile may not be found for system messages or messages by 'me'
       return profile || {imageUrl: '', name: ''}
+    },
+    watchScrollList() {
+      const observer = new ResizeObserver(() => {
+        if (this.initialScrollTop === this.$refs.scrollList.scrollTop || this.$refs.scrollList.scrollTop > this.initialScrollTop &&
+                (this.$refs.scrollList.scrollHeight - this.$refs.scrollList.scrollTop) > this.$refs.scrollList.offsetHeight) {
+          this._scrollDown()
+        }
+      })
+
+      observer.observe(this.$refs.scrollList)
     }
   }
 }
