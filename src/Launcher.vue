@@ -94,7 +94,7 @@ export default {
       type: Boolean,
       default: false
     },
-    ionicIosAutoFocus: {
+    autoFocus: {
       type: Boolean,
       default: true
     },
@@ -261,7 +261,7 @@ export default {
   methods: {
     openAndFocus() {
       this.open()
-      if (this.ionicIosAutoFocus) {
+      if (this.autoFocus) {
         this.$event.$emit('focusUserInput')
       }
     }
