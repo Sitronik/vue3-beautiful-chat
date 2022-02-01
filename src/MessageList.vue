@@ -53,6 +53,8 @@
 import Message from './Message.vue'
 import chatIcon from './assets/chat-icon.svg'
 
+let resizeObserver
+
 export default {
   components: {
     Message
@@ -105,6 +107,9 @@ export default {
     this.watchScrollList()
     this.$nextTick(this._scrollDown())
   },
+  beforeUnmount() {
+    resizeObserver.unobserve(this.$refs.scrollList)
+  },
   updated() {
     if (this.shouldScrollToBottom()) this.$nextTick(this._scrollDown())
   },
@@ -130,7 +135,7 @@ export default {
       return profile || {imageUrl: '', name: ''}
     },
     watchScrollList() {
-      const observer = new ResizeObserver(() => {
+      resizeObserver = new ResizeObserver(() => {
         const value = this.$refs.scrollList.scrollHeight - this.$refs.scrollList.scrollTop
         if (
           this.initialScrollTop === this.$refs.scrollList.scrollTop ||
@@ -141,7 +146,7 @@ export default {
         }
       })
 
-      observer.observe(this.$refs.scrollList)
+      resizeObserver.observe(this.$refs.scrollList)
     }
   }
 }
