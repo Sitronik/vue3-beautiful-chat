@@ -5,7 +5,9 @@ const path = require('path')
 
 module.exports = {
   outDir: 'dist',
-  plugins: [vue()],
+  plugins: [
+    vue()
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
@@ -18,6 +20,12 @@ module.exports = {
         {
           assetFileNames: 'vue-beatiful-chat.css',
           format: 'umd',
+          globals: {
+            vue: 'Vue'
+          }
+        },
+        {
+          format: 'esm',
           globals: {
             vue: 'Vue'
           }

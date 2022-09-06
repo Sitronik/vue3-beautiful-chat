@@ -1,6 +1,6 @@
 {
   "name": "vue3-beautiful-chat",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "A simple and beautiful Vue 3 chat component backend agnostic.",
   "main": "index.js",
   "repository": "https://github.com/Sitronik/vue3-beautiful-chat.git",
@@ -15,7 +15,8 @@
   },
   "files": [
     "dist/*",
-    "index.js"
+    "index.js",
+    "esm.js"
   ],
   "dependencies": {
     "autolinker": "^1.8.3",
@@ -46,10 +47,10 @@
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^10.4.2",
     "node-forge": "^0.10.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.1",
     "prettier": "^2.0.2",
-    "sass": "^1.32.12",
-    "sass-loader": "^8.0.2",
+    "sass": "^1.54.8",
+    "sass-loader": "^12.4.0",
     "vite": "^2.2.4",
     "vue": "^3.0.11"
   },

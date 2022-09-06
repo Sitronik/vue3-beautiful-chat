@@ -12,7 +12,7 @@ const VueBeatifulChat = {
     /**
      * Makes sure that plugin can be installed only once
      */
-    if (this.installed) {
+    if (this.installed || app.prototype && app.prototype.$isServer) {
       return
     }
 

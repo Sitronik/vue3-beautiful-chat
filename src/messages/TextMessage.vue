@@ -49,7 +49,7 @@ import escapeGoat from 'escape-goat'
 import Autolinker from 'autolinker'
 import store from '../store/'
 
-const fmt = require('msgdown')
+import fmt from 'msgdown'
 
 export default {
   components: {
