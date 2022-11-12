@@ -2,9 +2,15 @@
   <div class="sc-header" :style="{background: colors.header.bg, color: colors.header.text}">
     <img v-if="titleImageUrl" class="sc-header--img" :src="titleImageUrl" alt="" />
     <div v-if="!disableUserListToggle" class="sc-header--title enabled" @click="toggleUserList">
-      {{ title }}
+      <slot>
+        {{ title }}
+      </slot>
     </div>
-    <div v-else class="sc-header--title">{{ title }}</div>
+    <div v-else class="sc-header--title">
+      <slot>
+        {{ title }}
+      </slot>
+    </div>
 
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
       <img :src="icons.close.img" :alt="icons.close.name" />
