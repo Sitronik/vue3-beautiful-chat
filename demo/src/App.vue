@@ -27,6 +27,9 @@
       @edit="editMessage"
       @remove="removeMessage"
     >
+      <template v-slot:header>
+        Chat between {{ participants.map((m) => m.name).join(' & ') }}
+      </template>
       <template v-slot:text-message-toolbox="scopedProps">
         <button
           v-if="!scopedProps.me && scopedProps.message.type === 'text'"
