@@ -163,6 +163,7 @@ export default {
 
 <style scoped>
 .sc-chat-window {
+  z-index: 1;
   width: 370px;
   height: calc(100% - 120px);
   max-height: 590px;
