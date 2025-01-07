@@ -7,13 +7,14 @@
   >
     <Message
       v-for="(message, idx) in messages"
-      :key="idx"
+      :key="message.id ? message.id : idx"
       :message="message"
       :user="profile(message.author)"
       :colors="colors"
       :message-styling="messageStyling"
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
+      :messageMargin="messageMargin"
       @remove="$emit('remove', message)"
     >
       <template v-slot:user-avatar="scopedProps">
@@ -91,6 +92,10 @@ export default {
     confirmationDeletionMessage: {
       type: String,
       required: true
+    },
+    messageMargin: {
+      type: Object,
+      required: false
     }
   },
   data() {

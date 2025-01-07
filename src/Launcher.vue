@@ -30,6 +30,7 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
+      :messageMargin="messageMargin"
       @close="close"
       @scrollToTop="$emit('scrollToTop')"
       @onType="$emit('onType', $event)"
@@ -177,6 +178,10 @@ export default {
     showTypingIndicator: {
       type: String,
       default: () => ''
+    },
+    messageMargin: {
+      type: Object,
+      required: false
     },
     colors: {
       type: Object,

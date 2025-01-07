@@ -1,5 +1,10 @@
 <template>
-  <div :id="message.id" class="sc-message">
+  <div
+      :id="message.id" class="sc-message"
+      :style="{
+        margin: marginStyle
+      }"
+  >
     <div
       class="sc-message--content"
       :class="{
@@ -102,6 +107,10 @@ export default {
     confirmationDeletionMessage: {
       type: String,
       required: true
+    },
+    messageMargin: {
+      type: Object,
+      required: false
     }
   },
   computed: {
@@ -125,6 +134,17 @@ export default {
         color: this.colors.sentMessage.text,
         backgroundColor: this.colors.sentMessage.bg
       }
+    },
+    marginStyle() {
+      if (!this.messageMargin)
+        return 'auto';
+      if (this.message.author === 'me' && this.messageMargin.sender)
+        return this.messageMargin.sender;
+      if (this.message.type === 'system' && this.messageMargin.system)
+        return this.messageMargin.system;
+      if (this.messageMargin.recipient)
+        return this.messageMargin.recipient;
+      return 'auto';
     }
   }
 }

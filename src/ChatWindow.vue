@@ -20,6 +20,7 @@
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
       :message-styling="messageStyling"
+      :messageMargin="messageMargin"
       @scrollToTop="$emit('scrollToTop')"
       @remove="$emit('remove', $event)"
     >
@@ -136,6 +137,10 @@ export default {
     confirmationDeletionMessage: {
       type: String,
       required: true
+    },
+    messageMargin: {
+      type: Object,
+      required: false
     }
   },
   data() {

@@ -72,6 +72,7 @@ app.use(Chat)
       :alwaysScrollToBottom="alwaysScrollToBottom"
       :disableUserListToggle="false"
       :messageStyling="messageStyling"
+      :messageMargin="messageMargin"
       @onType="handleOnType"
       @edit="editMessage" />
   </div>
@@ -127,7 +128,8 @@ export default {
         }
       }, // specifies the color scheme for the component
       alwaysScrollToBottom: false, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
-      messageStyling: true // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
+      messageStyling: true, // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
+      messageMargin: { system: '25px auto' } // sets the margin for the system messages
     }
   },
   methods: {
@@ -197,6 +199,7 @@ For more detailed examples see the demo folder.
 | colors | Object | An object containing the specs of the colors used to paint the component. [See here](#faq)
 | messageStyling | Boolean | A bool indicating whether or not to enable `msgdown` support for message formatting in chat. [See here](#faq)
 | autoFocus | Boolean | A bool indicating whether or not to disable auto focus
+| messageMargin | MessageMargin | An object that contains the margin configuration for the sender, recipient and system messages. [See here](#message-margin-object)
 
 #### Events
 
@@ -295,7 +298,6 @@ Message objects are rendered differently depending on their type. Currently, onl
 }
 ```
 
-
 #### Quick replies
 
 When sending a message, you can provide a set of sentences that will be displayed in the user chat as quick replies. Adding in the message object a `suggestions` field with the value an array of strings will trigger this functionality
@@ -310,6 +312,26 @@ When sending a message, you can provide a set of sentences that will be displaye
     meta: '06-16-2019 12:43'
   },
   suggestions: ['some quick reply', ..., 'another one']
+}
+```
+
+### Message Margin Object
+
+When set it's possible to specify the margin for the sender, recipient and system messages.
+The object should have the following structure:
+```javascript
+{
+  sender: 'auto',
+  recipient: 'auto',
+  system: '25px auto'
+}
+```
+
+The object takes the css margin configuration. If you wish to only change one of the settings, you can omit from the object, for example
+```javascript
+// Keeps the default margin for the sender and recipient but sets a top and bottom margin of 25px for the system messages
+{
+  system: '25px auto'
 }
 ```
 
