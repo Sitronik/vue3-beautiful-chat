@@ -125,6 +125,10 @@ export default {
         userInput: {
           bg: '#f4f7f9',
           text: '#565867'
+        },
+        emojiPicker: {
+            bg: 'white',
+            text: '#b8c3ca'
         }
       }, // specifies the color scheme for the component
       alwaysScrollToBottom: false, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)

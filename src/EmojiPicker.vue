@@ -1,8 +1,11 @@
 <template>
-  <div ref="domNode" tabIndex="0" class="sc-emoji-picker" @blur="onBlur">
+  <div ref="domNode" tabIndex="0" class="sc-emoji-picker" :style="{ background: colors.emojiPicker.bg ?? 'white'  }" @blur="onBlur">
     <div class="sc-emoji-picker--content">
       <div v-for="category in emojiData" :key="category.name" class="sc-emoji-picker--category">
-        <div class="sc-emoji-picker--category-title">{{ category.name }}</div>
+        <div
+            class="sc-emoji-picker--category-title"
+            :style="{ color: colors.emojiPicker.text ?? '#b8c3ca' }"
+        >{{ category.name }}</div>
         <span
           v-for="emoji in category.emojis"
           :key="emoji"
@@ -29,6 +32,10 @@ export default {
     onEmojiPicked: {
       type: Function,
       required: true
+    },
+    colors: {
+      type: Object,
+      required: true
     }
   },
   data() {
@@ -44,7 +51,16 @@ export default {
       elem.style.transition = 'opacity 350ms'
       elem.style.opacity = 1
     })
-    this.$refs.domNode.focus()
+    this.$refs.domNode.focus();
+
+    const style = document.createElement('style')
+    style.innerHTML = `
+      .sc-emoji-picker:after {
+        background: ${this.colors.emojiPicker.bg ?? 'white'};
+      }
+    `
+    document.head.appendChild(style)
+
     this.emojiConvertor.init_env()
   },
   methods: {
@@ -64,7 +80,6 @@ export default {
   width: 330px;
   max-height: 215px;
   box-shadow: 0px 7px 40px 2px rgba(148, 149, 150, 0.3);
-  background: white;
   border-radius: 10px;
   outline: none;
 }
@@ -73,7 +88,6 @@ export default {
   content: '';
   width: 14px;
   height: 14px;
-  background: white;
   position: absolute;
   bottom: -6px;
   right: 55px;
@@ -98,7 +112,6 @@ export default {
 
 .sc-emoji-picker--category-title {
   min-width: 100%;
-  color: #b8c3ca;
   font-weight: 200;
   font-size: 13px;
   margin: 5px;
@@ -114,6 +127,7 @@ export default {
   vertical-align: middle;
   font-size: 28px;
   transition: transform 60ms ease-out;
+  z-index: 1;
 }
 
 .sc-emoji-picker--emoji:hover {

@@ -1,6 +1,6 @@
 <template>
   <div class="sc-user-input--picker-wrapper">
-    <EmojiPicker v-if="isActive" :on-emoji-picked="onEmojiPicked" :on-blur="_handlePickerBlur" />
+    <EmojiPicker v-if="isActive" :on-emoji-picked="onEmojiPicked" :on-blur="_handlePickerBlur" :colors="colors" />
     <button
         class="sc-user-input--emoji-icon-wrapper"
         @click.prevent="_openPicker"
@@ -60,6 +60,10 @@ export default {
     },
     color: {
       type: String,
+      required: true
+    },
+    colors: {
+      type: Object,
       required: true
     }
   },

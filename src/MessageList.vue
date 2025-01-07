@@ -164,4 +164,16 @@ export default {
   background-size: 100%;
   padding: 40px 0px;
 }
+
+.v-enter-from {
+  opacity: 0;
+}
+
+.v-enter-to {
+  opacity: 1;
+}
+
+.v-enter-active {
+  transition: all 0.2s;
+}
 </style>

@@ -1,4 +1,4 @@
-import { reactive as A1, openBlock as b, createElementBlock as m, normalizeStyle as L, createCommentVNode as R, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as N, withCtx as $, resolveDirective as y1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as Ru, renderList as Qu, vShow as w1, withModifiers as Gu, pushScopeId as k1, popScopeId as x1, nextTick as S1, withScopeId as T1, withKeys as O1, mergeProps as qf, createApp as $1, h as j1 } from "vue";
+import { reactive as A1, openBlock as b, createElementBlock as m, normalizeStyle as q, createCommentVNode as R, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as N, withCtx as j, resolveDirective as y1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as Ru, renderList as Qu, vShow as w1, withModifiers as Gu, pushScopeId as k1, popScopeId as x1, nextTick as S1, withScopeId as T1, withKeys as O1, mergeProps as qf, createApp as j1, h as $1 } from "vue";
 const Du = {
   state: A1({
     editMessage: null
@@ -62,7 +62,7 @@ const P1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
 function q1(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-header",
-    style: L({ background: f.colors.header.bg, color: f.colors.header.text })
+    style: q({ background: f.colors.header.bg, color: f.colors.header.text })
   }, [
     D.titleImageUrl ? (b(), m("img", {
       key: 0,
@@ -177,7 +177,7 @@ function wu(D, u) {
 function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, $D = /['"]/, F0 = /[\x00-\x1F\x7F]/, n0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, a0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, d0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, r0 = n0 + a0 + d0, i0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = r0 + i0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
+var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, F0 = /[\x00-\x1F\x7F]/, n0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, a0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, d0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, r0 = n0 + a0 + d0, i0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = r0 + i0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
   /** @class */
   function() {
     function D(u) {
@@ -387,7 +387,7 @@ function rf(D) {
 function _u(D) {
   return Su.test(D);
 }
-function jD(D) {
+function $D(D) {
   return D === "_" || _u(D);
 }
 function of(D) {
@@ -446,17 +446,17 @@ var x0 = /^(https?:\/\/)?(www\.)?/i, S0 = /^\/\//, T0 = (
       return f.replace(/&amp;/g, "&");
     }, u.prototype.getAnchorText = function() {
       var f = this.getMatchedText();
-      return this.protocolRelativeMatch && (f = j0(f)), this.stripPrefix.scheme && (f = O0(f)), this.stripPrefix.www && (f = $0(f)), this.stripTrailingSlash && (f = P0(f)), this.decodePercentEncoding && (f = I0(f)), f;
+      return this.protocolRelativeMatch && (f = $0(f)), this.stripPrefix.scheme && (f = O0(f)), this.stripPrefix.www && (f = j0(f)), this.stripTrailingSlash && (f = P0(f)), this.decodePercentEncoding && (f = I0(f)), f;
     }, u;
   }(eD)
 );
 function O0(D) {
   return D.replace(p0, "");
 }
-function $0(D) {
+function j0(D) {
   return D.replace(x0, "$1");
 }
-function j0(D) {
+function $0(D) {
   return D.replace(S0, "");
 }
 function P0(D) {
@@ -756,7 +756,7 @@ function t3(D, u) {
             TD(E, o);
             break;
           case 33:
-            $u(E, o);
+            ju(E, o);
             break;
           case 34:
             oD(E, o);
@@ -798,7 +798,7 @@ function t3(D, u) {
   }
   for (var h = d.length - 1; h >= 0; h--)
     d.forEach(function(i) {
-      return q(i);
+      return L(i);
     });
   return r;
   function w(i) {
@@ -874,7 +874,7 @@ function t3(D, u) {
     ))) : P(d, i);
   }
   function g(i, s) {
-    s === "/" ? i.state = 4 : of(s) ? (i.state = 10, i.acceptStateReached = !0) : q(i);
+    s === "/" ? i.state = 4 : of(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
   }
   function k(i, s) {
     s === "/" ? i.state = 10 : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : P(d, i);
@@ -886,28 +886,28 @@ function t3(D, u) {
     _u(s) ? i.state = 5 : P(d, i);
   }
   function H(i, s) {
-    s === "." ? i.state = 7 : s === "-" ? i.state = 6 : s === ":" ? i.state = 8 : PD(s) ? i.state = 10 : jD(s) || q(i);
+    s === "." ? i.state = 7 : s === "-" ? i.state = 6 : s === ":" ? i.state = 8 : PD(s) ? i.state = 10 : $D(s) || L(i);
   }
   function I(i, s) {
-    s === "-" || (s === "." ? q(i) : _u(s) ? i.state = 5 : q(i));
+    s === "-" || (s === "." ? L(i) : _u(s) ? i.state = 5 : L(i));
   }
   function U(i, s) {
-    s === "." ? q(i) : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : q(i);
+    s === "." ? L(i) : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : L(i);
   }
   function uu(i, s) {
-    s === "." ? i.state = 14 : s === ":" ? i.state = 8 : Z.test(s) || (PD(s) ? i.state = 10 : Su.test(s) ? P(d, i) : q(i));
+    s === "." ? i.state = 14 : s === ":" ? i.state = 8 : Z.test(s) || (PD(s) ? i.state = 10 : Su.test(s) ? P(d, i) : L(i));
   }
   function G(i, s) {
-    Z.test(s) ? (i.octetsEncountered++, i.octetsEncountered === 4 && (i.acceptStateReached = !0), i.state = 13) : q(i);
+    Z.test(s) ? (i.octetsEncountered++, i.octetsEncountered === 4 && (i.acceptStateReached = !0), i.state = 13) : L(i);
   }
   function nu(i, s) {
-    Z.test(s) ? i.state = 9 : q(i);
+    Z.test(s) ? i.state = 9 : L(i);
   }
   function gu(i, s) {
-    Z.test(s) || (PD(s) ? i.state = 10 : q(i));
+    Z.test(s) || (PD(s) ? i.state = 10 : L(i));
   }
   function Eu(i, s) {
-    of(s) || q(i);
+    of(s) || L(i);
   }
   function au(i, s) {
     s.toLowerCase() === "a" ? i.state = 16 : Q(i, s);
@@ -940,25 +940,25 @@ function t3(D, u) {
     _u(s) ? i.state = 25 : P(d, i);
   }
   function Mu(i, s) {
-    s === "." ? i.state = 27 : s === "-" ? i.state = 26 : jD(s) || q(i);
+    s === "." ? i.state = 27 : s === "-" ? i.state = 26 : $D(s) || L(i);
   }
   function mu(i, s) {
-    s === "-" || s === "." ? q(i) : jD(s) ? i.state = 25 : q(i);
+    s === "-" || s === "." ? L(i) : $D(s) ? i.state = 25 : L(i);
   }
   function Hu(i, s) {
-    s === "." || s === "-" ? q(i) : _u(s) ? (i.state = 25, i.acceptStateReached = !0) : q(i);
+    s === "." || s === "-" ? L(i) : _u(s) ? (i.state = 25, i.acceptStateReached = !0) : L(i);
   }
   function aD(i, s) {
     sf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
   }
   function dD(i, s) {
-    sf(s) || q(i);
+    sf(s) || L(i);
   }
   function rD(i, s) {
     Cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
   }
   function iD(i, s) {
-    Cf(s) || (Su.test(s) ? P(d, i) : q(i));
+    Cf(s) || (Su.test(s) ? P(d, i) : L(i));
   }
   function SD(i, s) {
     Z.test(s) ? i.state = 38 : (P(d, i), w(s));
@@ -966,7 +966,7 @@ function t3(D, u) {
   function TD(i, s) {
     Z.test(s) ? i.state = 33 : P(d, i), w(s);
   }
-  function $u(i, s) {
+  function ju(i, s) {
     Z.test(s) ? i.state = 34 : P(d, i);
   }
   function oD(i, s) {
@@ -979,48 +979,48 @@ function t3(D, u) {
     Z.test(s) ? i.state = 38 : cf(s) ? i.state = 39 : P(d, i);
   }
   function p1(i, s) {
-    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : cf(s) ? i.state = 39 : (q(i), Vu(s) && d.push(cD(
+    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : cf(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
       c,
       0
       /* State.SchemeChar */
     ))));
   }
   function g1(i, s) {
-    Z.test(s) ? i.state = 38 : s === "(" ? i.state = 32 : (q(i), w(s));
+    Z.test(s) ? i.state = 38 : s === "(" ? i.state = 32 : (L(i), w(s));
   }
   function m1(i, s) {
-    zD(s) || (s === "#" ? i.state = 41 : Z.test(s) ? i.state = 38 : q(i));
+    zD(s) || (s === "#" ? i.state = 41 : Z.test(s) ? i.state = 38 : L(i));
   }
   function h1(i, s) {
-    zD(s) ? i.state = 40 : Z.test(s) ? P(d, i) : q(i);
+    zD(s) ? i.state = 40 : Z.test(s) ? P(d, i) : L(i);
   }
-  function q(i) {
+  function L(i) {
     if (P(d, i), !!i.acceptStateReached) {
-      var s = i.startIdx, j = D.slice(i.startIdx, c);
-      if (j = n3(j), i.type === "url") {
+      var s = i.startIdx, $ = D.slice(i.startIdx, c);
+      if ($ = n3($), i.type === "url") {
         var _1 = D.charAt(i.startIdx - 1);
         if (_1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
-          var OD = Gf.exec(j);
-          if (OD && (s = s + OD.index, j = j.slice(OD.index)), !v0(j))
+          var OD = Gf.exec($);
+          if (OD && (s = s + OD.index, $ = $.slice(OD.index)), !v0($))
             return;
         } else if (Uu === "tld") {
-          if (!A0(j))
+          if (!A0($))
             return;
         } else if (Uu === "ipV4") {
-          if (!k0(j))
+          if (!k0($))
             return;
         } else
           Iu(Uu);
         r.push(new T0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
           urlMatchType: Uu,
-          url: j,
-          protocolRelativeMatch: j.slice(0, 2) === "//",
+          url: $,
+          protocolRelativeMatch: $.slice(0, 2) === "//",
           // TODO: Do these settings need to be passed to the match,
           // or should we handle them here in UrlMatcher?
           stripPrefix: e,
@@ -1028,38 +1028,38 @@ function t3(D, u) {
           decodePercentEncoding: t
         }));
       } else if (i.type === "email")
-        q0(j) && r.push(new L0({
+        q0($) && r.push(new L0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
-          email: j.replace(z0, "")
+          email: $.replace(z0, "")
         }));
       else if (i.type === "hashtag")
-        M0(j) && r.push(new U0({
+        M0($) && r.push(new U0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
           serviceName: n,
-          hashtag: j.slice(1)
+          hashtag: $.slice(1)
         }));
       else if (i.type === "mention")
-        G0(j, a) && r.push(new Y0({
+        G0($, a) && r.push(new Y0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
           serviceName: a,
-          mention: j.slice(1)
+          mention: $.slice(1)
           // strip off the '@' character at the beginning
         }));
       else if (i.type === "phone") {
-        if (j = j.replace(/ +$/g, ""), f3(j)) {
-          var v1 = j.replace(/[^0-9,;#]/g, "");
+        if ($ = $.replace(/ +$/g, ""), f3($)) {
+          var v1 = $.replace(/[^0-9,;#]/g, "");
           r.push(new e3({
             tagBuilder: f,
-            matchedText: j,
+            matchedText: $,
             offset: s,
             number: v1,
-            plusSign: j.charAt(0) === "+"
+            plusSign: $.charAt(0) === "+"
           }));
         }
       } else
@@ -1244,13 +1244,13 @@ function s3(D, u) {
     l === ">" ? W() : zu.test(l) ? d = 3 : W();
   }
   function _(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || $D.test(l) || F0.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || jD.test(l) || F0.test(l) ? W() : d = 5);
   }
   function v(l) {
-    du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : $D.test(l) && W();
+    du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) && W();
   }
   function p(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : $D.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) ? W() : d = 5);
   }
   function g(l) {
     du.test(l) || (l === '"' ? d = 8 : l === "'" ? d = 9 : /[>=`]/.test(l) ? W() : l === "<" ? Y() : d = 10);
@@ -1585,11 +1585,11 @@ function y3(D, u, f, e, F, t) {
   const n = T("IconEdit"), a = T("IconBase"), r = T("IconCross");
   return b(), m("div", {
     class: "sc-message--text",
-    style: L(f.messageColors)
+    style: q(f.messageColors)
   }, [
     y("div", {
       class: "sc-message--toolbox",
-      style: L({ background: f.messageColors.backgroundColor })
+      style: q({ background: f.messageColors.backgroundColor })
     }, [
       D.showEdition && t.me && f.message.id ? (b(), m("button", {
         key: 0,
@@ -1601,7 +1601,7 @@ function y3(D, u, f, e, F, t) {
           width: "10",
           "icon-name": "edit"
         }, {
-          default: $(() => [
+          default: j(() => [
             N(n)
           ]),
           _: 1
@@ -1621,7 +1621,7 @@ function y3(D, u, f, e, F, t) {
             width: "10",
             "icon-name": "remove"
           }, {
-            default: $(() => [
+            default: j(() => [
               N(r)
             ]),
             _: 1
@@ -1646,14 +1646,14 @@ function y3(D, u, f, e, F, t) {
       f.message.data.meta ? (b(), m("p", {
         key: 0,
         class: "sc-message--meta",
-        style: L({ color: f.messageColors.color })
+        style: q({ color: f.messageColors.color })
       }, K(f.message.data.meta), 5)) : R("", !0),
       f.message.isEdited ? (b(), m("p", A3, [
         N(a, {
           width: "10",
           "icon-name": "edited"
         }, {
-          default: $(() => [
+          default: j(() => [
             N(n)
           ]),
           _: 1
@@ -1678,7 +1678,7 @@ const w3 = /* @__PURE__ */ M(m3, [["render", y3], ["__scopeId", "data-v-329dc07b
 function O3(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-message--file",
-    style: L(f.messageColors)
+    style: q(f.messageColors)
   }, [
     y("div", x3, [
       y("img", {
@@ -1688,7 +1688,7 @@ function O3(D, u, f, e, F, t) {
     ]),
     y("div", {
       class: "sc-message--file-name",
-      style: L(f.messageColors)
+      style: q(f.messageColors)
     }, [
       y("a", {
         href: f.data.file.url ? f.data.file.url : "#",
@@ -1697,18 +1697,18 @@ function O3(D, u, f, e, F, t) {
     ], 4),
     y("div", {
       class: "sc-message--file-text",
-      style: L(f.messageColors)
+      style: q(f.messageColors)
     }, [
       Nu(K(f.data.text) + " ", 1),
       f.data.meta ? (b(), m("p", {
         key: 0,
         class: "sc-message--meta",
-        style: L(f.messageColors)
+        style: q(f.messageColors)
       }, K(f.data.meta), 5)) : R("", !0)
     ], 4)
   ], 4);
 }
-const $3 = /* @__PURE__ */ M(k3, [["render", O3], ["__scopeId", "data-v-a59a1bf3"]]), j3 = {
+const j3 = /* @__PURE__ */ M(k3, [["render", O3], ["__scopeId", "data-v-a59a1bf3"]]), $3 = {
   props: {
     data: {
       type: Object,
@@ -1719,7 +1719,7 @@ const $3 = /* @__PURE__ */ M(k3, [["render", O3], ["__scopeId", "data-v-a59a1bf3
 function I3(D, u, f, e, F, t) {
   return b(), m("div", P3, K(f.data.emoji), 1);
 }
-const z3 = /* @__PURE__ */ M(j3, [["render", I3], ["__scopeId", "data-v-ae11d5de"]]), N3 = {
+const z3 = /* @__PURE__ */ M($3, [["render", I3], ["__scopeId", "data-v-ae11d5de"]]), N3 = {
   props: {
     messageColors: {
       type: Object,
@@ -1730,7 +1730,7 @@ const z3 = /* @__PURE__ */ M(j3, [["render", I3], ["__scopeId", "data-v-ae11d5de
 function R3(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-typing-indicator",
-    style: L(f.messageColors)
+    style: q(f.messageColors)
   }, u[0] || (u[0] = [
     y("span", null, null, -1),
     y("span", null, null, -1),
@@ -1752,14 +1752,14 @@ const q3 = /* @__PURE__ */ M(N3, [["render", R3], ["__scopeId", "data-v-3df57161
 function M3(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-message--system",
-    style: L(f.messageColors)
+    style: q(f.messageColors)
   }, [
     O(D.$slots, "default", { message: f.data }, () => [
       Nu(K(f.data.text) + " ", 1),
       f.data.meta ? (b(), m("p", {
         key: 0,
         class: "sc-message--meta",
-        style: L({ color: f.messageColors.color })
+        style: q({ color: f.messageColors.color })
       }, K(f.data.meta), 5)) : R("", !0)
     ], !0)
   ], 4);
@@ -1767,7 +1767,7 @@ function M3(D, u, f, e, F, t) {
 const H3 = /* @__PURE__ */ M(L3, [["render", M3], ["__scopeId", "data-v-c0484e01"]]), Yf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", U3 = {
   components: {
     TextMessage: w3,
-    FileMessage: $3,
+    FileMessage: j3,
     EmojiMessage: z3,
     TypingMessage: q3,
     SystemMessage: H3
@@ -1834,7 +1834,7 @@ function G3(D, u, f, e, F, t) {
   return b(), m("div", {
     id: f.message.id,
     class: "sc-message",
-    style: L({
+    style: q({
       margin: t.marginStyle
     })
   }, [
@@ -1853,7 +1853,7 @@ function G3(D, u, f, e, F, t) {
           key: 0,
           title: t.authorName,
           class: "sc-message--avatar",
-          style: L({
+          style: q({
             backgroundImage: `url(${t.chatImageUrl})`
           })
         }, null, 12, W3)), [
@@ -1869,7 +1869,7 @@ function G3(D, u, f, e, F, t) {
         "confirmation-deletion-message": f.confirmationDeletionMessage,
         onRemove: u[0] || (u[0] = (o) => D.$emit("remove"))
       }, {
-        default: $((o) => [
+        default: j((o) => [
           O(D.$slots, "text-message-body", {
             message: o.message,
             messageText: o.messageText,
@@ -1877,7 +1877,7 @@ function G3(D, u, f, e, F, t) {
             me: o.me
           })
         ]),
-        "text-message-toolbox": $((o) => [
+        "text-message-toolbox": j((o) => [
           O(D.$slots, "text-message-toolbox", {
             message: o.message,
             me: o.me
@@ -1899,7 +1899,7 @@ function G3(D, u, f, e, F, t) {
         data: f.message.data,
         "message-colors": t.messageColors
       }, {
-        default: $(() => [
+        default: j(() => [
           O(D.$slots, "system-message-body", {
             message: f.message.data
           })
@@ -1999,7 +1999,7 @@ function Q3(D, u, f, e, F, t) {
   return b(), m("div", {
     ref: "scrollList",
     class: "sc-message-list",
-    style: L({ backgroundColor: f.colors.messageList.bg }),
+    style: q({ backgroundColor: f.colors.messageList.bg }),
     onScroll: u[0] || (u[0] = (...a) => t.handleScroll && t.handleScroll(...a))
   }, [
     (b(!0), m(Ru, null, Qu(f.messages, (a, r) => (b(), V(n, {
@@ -2013,13 +2013,13 @@ function Q3(D, u, f, e, F, t) {
       messageMargin: f.messageMargin,
       onRemove: (C) => D.$emit("remove", a)
     }, {
-      "user-avatar": $((C) => [
+      "user-avatar": j((C) => [
         O(D.$slots, "user-avatar", {
           user: C.user,
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-body": $((C) => [
+      "text-message-body": j((C) => [
         O(D.$slots, "text-message-body", {
           message: C.message,
           messageText: C.messageText,
@@ -2027,12 +2027,12 @@ function Q3(D, u, f, e, F, t) {
           me: C.me
         }, void 0, !0)
       ]),
-      "system-message-body": $((C) => [
+      "system-message-body": j((C) => [
         O(D.$slots, "system-message-body", {
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": $((C) => [
+      "text-message-toolbox": j((C) => [
         O(D.$slots, "text-message-toolbox", {
           message: C.message,
           me: C.me
@@ -2052,7 +2052,7 @@ function Q3(D, u, f, e, F, t) {
     ])
   ], 36);
 }
-const K3 = /* @__PURE__ */ M(Y3, [["render", Q3], ["__scopeId", "data-v-ddf5ee4a"]]);
+const K3 = /* @__PURE__ */ M(Y3, [["render", Q3], ["__scopeId", "data-v-505f0c8f"]]);
 var ED = { exports: {} }, bf;
 function J3() {
   return bf || (bf = 1, function(D, u) {
@@ -5309,6 +5309,10 @@ const ue = /* @__PURE__ */ uf(Z3), De = [
     onEmojiPicked: {
       type: Function,
       required: !0
+    },
+    colors: {
+      type: Object,
+      required: !0
     }
   },
   data() {
@@ -5321,19 +5325,26 @@ const ue = /* @__PURE__ */ uf(Z3), De = [
     const D = this.$refs.domNode;
     D.style.opacity = 0, window.requestAnimationFrame(() => {
       D.style.transition = "opacity 350ms", D.style.opacity = 1;
-    }), this.$refs.domNode.focus(), this.emojiConvertor.init_env();
+    }), this.$refs.domNode.focus();
+    const u = document.createElement("style");
+    u.innerHTML = `
+      .sc-emoji-picker:after {
+        background: ${this.colors.emojiPicker.bg ?? "white"};
+      }
+    `, document.head.appendChild(u), this.emojiConvertor.init_env();
   },
   methods: {
     emojiClicked(D) {
       this.onEmojiPicked(D), this.$refs.domNode.blur();
     }
   }
-}, ee = { class: "sc-emoji-picker--content" }, te = { class: "sc-emoji-picker--category-title" }, Fe = ["onClick"];
-function ne(D, u, f, e, F, t) {
+}, ee = { class: "sc-emoji-picker--content" }, te = ["onClick"];
+function Fe(D, u, f, e, F, t) {
   return b(), m("div", {
     ref: "domNode",
     tabIndex: "0",
     class: "sc-emoji-picker",
+    style: q({ background: f.colors.emojiPicker.bg ?? "white" }),
     onBlur: u[0] || (u[0] = (...n) => f.onBlur && f.onBlur(...n))
   }, [
     y("div", ee, [
@@ -5341,19 +5352,22 @@ function ne(D, u, f, e, F, t) {
         key: n.name,
         class: "sc-emoji-picker--category"
       }, [
-        y("div", te, K(n.name), 1),
+        y("div", {
+          class: "sc-emoji-picker--category-title",
+          style: q({ color: f.colors.emojiPicker.text ?? "#b8c3ca" })
+        }, K(n.name), 5),
         (b(!0), m(Ru, null, Qu(n.emojis, (a) => (b(), m("span", {
           key: a,
           class: "sc-emoji-picker--emoji",
           onClick: (r) => t.emojiClicked(a)
-        }, K(a), 9, Fe))), 128))
+        }, K(a), 9, te))), 128))
       ]))), 128))
     ])
-  ], 544);
+  ], 36);
 }
-const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-237f8c4c"]]), de = {
+const ne = /* @__PURE__ */ M(fe, [["render", Fe], ["__scopeId", "data-v-88c66c15"]]), ae = {
   components: {
-    EmojiPicker: ae
+    EmojiPicker: ne
   },
   props: {
     onEmojiPicked: {
@@ -5362,6 +5376,10 @@ const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-237f8c4c
     },
     color: {
       type: String,
+      required: !0
+    },
+    colors: {
+      type: Object,
       required: !0
     }
   },
@@ -5378,15 +5396,16 @@ const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-237f8c4c
       this.isActive = !1;
     }
   }
-}, re = { class: "sc-user-input--picker-wrapper" }, ie = ["color"];
-function oe(D, u, f, e, F, t) {
+}, de = { class: "sc-user-input--picker-wrapper" }, re = ["color"];
+function ie(D, u, f, e, F, t) {
   const n = T("EmojiPicker");
-  return b(), m("div", re, [
+  return b(), m("div", de, [
     F.isActive ? (b(), V(n, {
       key: 0,
       "on-emoji-picked": f.onEmojiPicked,
-      "on-blur": t._handlePickerBlur
-    }, null, 8, ["on-emoji-picked", "on-blur"])) : R("", !0),
+      "on-blur": t._handlePickerBlur,
+      colors: f.colors
+    }, null, 8, ["on-emoji-picked", "on-blur", "colors"])) : R("", !0),
     y("button", {
       class: "sc-user-input--emoji-icon-wrapper",
       onClick: u[0] || (u[0] = Gu((...a) => t._openPicker && t._openPicker(...a), ["prevent"])),
@@ -5430,11 +5449,11 @@ function oe(D, u, f, e, F, t) {
               c0.471-0.286,1.084-0.136,1.372,0.335c0.094,0.151,2.161,3.396,6.74,3.396c4.713,0,7.518-3.462,7.545-3.497
               c0.343-0.432,0.973-0.504,1.405-0.161c0.433,0.344,0.505,0.973,0.161,1.405C27.009,23.374,23.703,27.453,18.035,27.453z` })
         ], -1)
-      ]), 10, ie))
+      ]), 10, re))
     ])
   ]);
 }
-const se = /* @__PURE__ */ M(de, [["render", oe], ["__scopeId", "data-v-67e6e85b"]]), Ce = {
+const oe = /* @__PURE__ */ M(ae, [["render", ie], ["__scopeId", "data-v-967f979e"]]), se = {
   props: {
     onChange: {
       type: Function,
@@ -5453,9 +5472,9 @@ const se = /* @__PURE__ */ M(de, [["render", oe], ["__scopeId", "data-v-67e6e85b
       this.onChange(D.target.files[0]);
     }
   }
-}, ce = { style: { position: "relative" } }, Ee = ["color"];
-function le(D, u, f, e, F, t) {
-  return b(), m("div", ce, [
+}, Ce = { style: { position: "relative" } }, ce = ["color"];
+function Ee(D, u, f, e, F, t) {
+  return b(), m("div", Ce, [
     y("button", {
       class: "sc-user-input--file-icon-wrapper",
       type: "button",
@@ -5476,7 +5495,7 @@ function le(D, u, f, e, F, t) {
         fill: "currentColor"
       }, u[2] || (u[2] = [
         y("path", { d: "M20.807 10.22l-2.030-2.029-10.15 10.148c-1.682 1.681-1.682 4.408 0 6.089s4.408 1.681 6.090 0l12.18-12.178c2.804-2.802 2.804-7.346 0-10.148-2.802-2.803-7.347-2.803-10.149 0l-12.788 12.787c-0.009 0.009-0.019 0.018-0.027 0.026-3.909 3.909-3.909 10.245 0 14.153 3.908 3.908 10.246 3.908 14.156 0 0.009-0.009 0.016-0.018 0.026-0.027l0.001 0.001 8.729-8.728-2.031-2.029-8.729 8.727c-0.009 0.008-0.018 0.018-0.026 0.026-2.784 2.783-7.312 2.783-10.096 0-2.783-2.783-2.783-7.31 0-10.093 0.010-0.009 0.019-0.018 0.028-0.026l-0.001-0.002 12.79-12.786c1.678-1.679 4.411-1.679 6.090 0s1.678 4.411 0 6.089l-12.18 12.178c-0.56 0.56-1.47 0.56-2.030 0-0.559-0.559-0.559-1.47 0-2.029l10.15-10.149z" }, null, -1)
-      ]), 8, Ee)),
+      ]), 8, ce)),
       y("input", {
         ref: "inputRef",
         id: "file-input",
@@ -5486,7 +5505,7 @@ function le(D, u, f, e, F, t) {
     ])
   ]);
 }
-const Be = /* @__PURE__ */ M(Ce, [["render", le], ["__scopeId", "data-v-d48a3251"]]), be = {
+const le = /* @__PURE__ */ M(se, [["render", Ee], ["__scopeId", "data-v-d48a3251"]]), Be = {
   components: {
     IconBase: Mf
   },
@@ -5500,24 +5519,24 @@ const Be = /* @__PURE__ */ M(Ce, [["render", le], ["__scopeId", "data-v-d48a3251
       default: ""
     }
   }
-}, pe = { class: "sc-user-input--button-icon-wrapper" };
-function ge(D, u, f, e, F, t) {
+}, be = { class: "sc-user-input--button-icon-wrapper" };
+function pe(D, u, f, e, F, t) {
   const n = T("IconBase");
-  return b(), m("button", pe, [
+  return b(), m("button", be, [
     N(n, {
       color: f.color,
       width: "20",
       height: "20",
       "icon-name": f.tooltip
     }, {
-      default: $(() => [
+      default: j(() => [
         O(D.$slots, "default", {}, void 0, !0)
       ]),
       _: 3
     }, 8, ["color", "icon-name"])
   ]);
 }
-const me = /* @__PURE__ */ M(be, [["render", ge], ["__scopeId", "data-v-3ee3b811"]]), he = {
+const ge = /* @__PURE__ */ M(Be, [["render", pe], ["__scopeId", "data-v-3ee3b811"]]), me = {
   props: {
     suggestions: {
       type: Array,
@@ -5531,40 +5550,40 @@ const me = /* @__PURE__ */ M(be, [["render", ge], ["__scopeId", "data-v-3ee3b811
   data() {
     return {};
   }
-}, _e = ["onClick"];
-function ve(D, u, f, e, F, t) {
+}, he = ["onClick"];
+function _e(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-suggestions-row",
-    style: L({ background: f.colors.messageList.bg })
+    style: q({ background: f.colors.messageList.bg })
   }, [
     (b(!0), m(Ru, null, Qu(f.suggestions, (n, a) => (b(), m("button", {
       key: a,
       class: "sc-suggestions-element",
-      style: L({
+      style: q({
         borderColor: f.colors.sentMessage.bg,
         color: f.colors.sentMessage.bg
       }),
       onClick: (r) => D.$emit("sendSuggestion", n)
-    }, K(n), 13, _e))), 128))
+    }, K(n), 13, he))), 128))
   ], 4);
 }
-const Ae = /* @__PURE__ */ M(he, [["render", ve]]), ye = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", we = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", ke = {}, xe = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
-function Se(D, u) {
-  return b(), m("path", xe);
+const ve = /* @__PURE__ */ M(me, [["render", _e]]), Ae = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", ye = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", we = {}, ke = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
+function xe(D, u) {
+  return b(), m("path", ke);
 }
-const Te = /* @__PURE__ */ M(ke, [["render", Se]]), Oe = {}, $e = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
+const Se = /* @__PURE__ */ M(we, [["render", xe]]), Te = {}, Oe = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
 function je(D, u) {
-  return b(), m("path", $e);
+  return b(), m("path", Oe);
 }
-const Pe = /* @__PURE__ */ M(Oe, [["render", je]]), Ie = {
+const $e = /* @__PURE__ */ M(Te, [["render", je]]), Pe = {
   components: {
-    EmojiIcon: se,
-    FileIcons: Be,
-    UserInputButton: me,
-    Suggestions: Ae,
+    EmojiIcon: oe,
+    FileIcons: le,
+    UserInputButton: ge,
+    Suggestions: ve,
     IconCross: Hf,
-    IconOk: Te,
-    IconSend: Pe
+    IconOk: Se,
+    IconSend: $e
   },
   props: {
     icons: {
@@ -5572,11 +5591,11 @@ const Pe = /* @__PURE__ */ M(Oe, [["render", je]]), Ie = {
       default: function() {
         return {
           file: {
-            img: ye,
+            img: Ae,
             name: "default"
           },
           closeSvg: {
-            img: we,
+            img: ye,
             name: "default"
           }
         };
@@ -5728,17 +5747,17 @@ const Pe = /* @__PURE__ */ M(Oe, [["render", je]]), Ie = {
       Du.setState("editMessage", null);
     }
   }
-}, ze = { class: "icon-file-message" }, Ne = ["src", "alt"], Re = ["src", "alt"], qe = ["placeholder"], Le = { class: "sc-user-input--buttons" }, Me = {
+}, Ie = { class: "icon-file-message" }, ze = ["src", "alt"], Ne = ["src", "alt"], Re = ["placeholder"], qe = { class: "sc-user-input--buttons" }, Le = {
   key: 0,
   class: "sc-user-input--button"
-}, He = {
+}, Me = {
   key: 1,
   class: "sc-user-input--button"
-}, Ue = {
+}, He = {
   key: 2,
   class: "sc-user-input--button"
-}, Ve = { class: "sc-user-input--button" };
-function We(D, u, f, e, F, t) {
+}, Ue = { class: "sc-user-input--button" };
+function Ve(D, u, f, e, F, t) {
   const n = T("Suggestions"), a = T("EmojiIcon"), r = T("FileIcons"), C = T("IconCross"), d = T("UserInputButton"), c = T("IconOk"), o = T("IconSend");
   return b(), m("div", null, [
     N(n, {
@@ -5749,17 +5768,17 @@ function We(D, u, f, e, F, t) {
     F.file ? (b(), m("div", {
       key: 0,
       class: "file-container",
-      style: L({
+      style: q({
         backgroundColor: f.colors.userInput.text,
         color: f.colors.userInput.bg
       })
     }, [
-      y("span", ze, [
+      y("span", Ie, [
         y("img", {
           src: f.icons.file.img,
           alt: f.icons.file.name,
           height: "15"
-        }, null, 8, Ne)
+        }, null, 8, ze)
       ]),
       Nu(" " + K(F.file.name) + " ", 1),
       y("span", {
@@ -5771,12 +5790,12 @@ function We(D, u, f, e, F, t) {
           alt: f.icons.closeSvg.name,
           height: "10",
           title: "Remove the file"
-        }, null, 8, Re)
+        }, null, 8, Ne)
       ])
     ], 4)) : R("", !0),
     y("form", {
       class: DD(["sc-user-input", { active: F.inputActive }]),
-      style: L({ background: f.colors.userInput.bg })
+      style: q({ background: f.colors.userInput.bg })
     }, [
       y("div", {
         ref: "userInput",
@@ -5785,47 +5804,48 @@ function We(D, u, f, e, F, t) {
         contentEditable: "true",
         placeholder: f.placeholder,
         class: "sc-user-input--text",
-        style: L({ color: f.colors.userInput.text }),
+        style: q({ color: f.colors.userInput.text }),
         onFocus: u[1] || (u[1] = (B) => t.setInputActive(!0)),
         onBlur: u[2] || (u[2] = (B) => t.setInputActive(!1)),
         onKeydown: u[3] || (u[3] = (...B) => t.handleKey && t.handleKey(...B)),
         onInput: u[4] || (u[4] = (...B) => t.handleInput && t.handleInput(...B)),
         "on:focusUserInput": u[5] || (u[5] = (B) => t.focusUserInput())
-      }, null, 44, qe),
-      y("div", Le, [
+      }, null, 44, Re),
+      y("div", qe, [
         u[6] || (u[6] = y("div", { class: "sc-user-input--button" }, null, -1)),
-        f.showEmoji && !t.isEditing ? (b(), m("div", Me, [
+        f.showEmoji && !t.isEditing ? (b(), m("div", Le, [
           N(a, {
             "on-emoji-picked": t._handleEmojiPicked,
-            color: f.colors.userInput.text
-          }, null, 8, ["on-emoji-picked", "color"])
+            color: f.colors.userInput.text,
+            colors: f.colors
+          }, null, 8, ["on-emoji-picked", "color", "colors"])
         ])) : R("", !0),
-        f.showFile && !t.isEditing ? (b(), m("div", He, [
+        f.showFile && !t.isEditing ? (b(), m("div", Me, [
           N(r, {
             "on-change": t._handleFileSubmit,
             color: f.colors.userInput.text
           }, null, 8, ["on-change", "color"])
         ])) : R("", !0),
-        t.isEditing ? (b(), m("div", Ue, [
+        t.isEditing ? (b(), m("div", He, [
           N(d, {
             color: f.colors.userInput.text,
             tooltip: "cancel",
             onClick: Gu(t._editFinish, ["prevent"])
           }, {
-            default: $(() => [
+            default: j(() => [
               N(C)
             ]),
             _: 1
           }, 8, ["color", "onClick"])
         ])) : R("", !0),
-        y("div", Ve, [
+        y("div", Ue, [
           t.isEditing ? (b(), V(d, {
             key: 0,
             color: f.colors.userInput.text,
             tooltip: "Edit",
             onClick: Gu(t._editText, ["prevent"])
           }, {
-            default: $(() => [
+            default: j(() => [
               N(c)
             ]),
             _: 1
@@ -5835,7 +5855,7 @@ function We(D, u, f, e, F, t) {
             tooltip: "Send",
             onClick: Gu(t._submitText, ["prevent"])
           }, {
-            default: $(() => [
+            default: j(() => [
               N(o)
             ]),
             _: 1
@@ -5845,7 +5865,7 @@ function We(D, u, f, e, F, t) {
     ], 6)
   ]);
 }
-const Ge = /* @__PURE__ */ M(Ie, [["render", We]]), Xe = {
+const We = /* @__PURE__ */ M(Pe, [["render", Ve]]), Ge = {
   props: {
     participants: {
       type: Array,
@@ -5866,38 +5886,38 @@ const Ge = /* @__PURE__ */ M(Ie, [["render", We]]), Xe = {
       }, this.colors);
     }
   }
-}, Ye = { style: { "padding-top": "5px" } }, Qe = { style: { "text-align": "center" } }, Ke = ["src"];
-function Je(D, u, f, e, F, t) {
+}, Xe = { style: { "padding-top": "5px" } }, Ye = { style: { "text-align": "center" } }, Qe = ["src"];
+function Ke(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "user-list",
-    style: L({ background: t.userListColor.userList.bg })
+    style: q({ background: t.userListColor.userList.bg })
   }, [
-    y("table", Ye, [
+    y("table", Xe, [
       y("tbody", null, [
         (b(!0), m(Ru, null, Qu(f.participants, (n) => (b(), m("tr", {
           key: n.id
         }, [
-          y("td", Qe, [
+          y("td", Ye, [
             y("img", {
               src: n.imageUrl,
               class: "img-msg"
-            }, null, 8, Ke)
+            }, null, 8, Qe)
           ]),
           y("td", {
             class: "user-element",
-            style: L({ color: t.userListColor.userList.text })
+            style: q({ color: t.userListColor.userList.text })
           }, K(n.name), 5)
         ]))), 128))
       ])
     ])
   ], 4);
 }
-const Ze = /* @__PURE__ */ M(Xe, [["render", Je], ["__scopeId", "data-v-4899c8d9"]]), u2 = {
+const Je = /* @__PURE__ */ M(Ge, [["render", Ke], ["__scopeId", "data-v-4899c8d9"]]), Ze = {
   components: {
     Header: L1,
     MessageList: K3,
-    UserInput: Ge,
-    UserList: Ze
+    UserInput: We,
+    UserList: Je
   },
   props: {
     showEmoji: {
@@ -5988,7 +6008,7 @@ const Ze = /* @__PURE__ */ M(Xe, [["render", Je], ["__scopeId", "data-v-4899c8d9
     }
   }
 };
-function D2(D, u, f, e, F, t) {
+function u2(D, u, f, e, F, t) {
   const n = T("Header"), a = T("UserList"), r = T("MessageList"), C = T("UserInput");
   return b(), m("div", {
     class: DD(["sc-chat-window", { opened: f.isOpen, closed: !f.isOpen }])
@@ -6000,7 +6020,7 @@ function D2(D, u, f, e, F, t) {
       onClose: u[0] || (u[0] = (d) => D.$emit("close")),
       onUserList: t.handleUserListToggle
     }, {
-      default: $(() => [
+      default: j(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
       _: 3
@@ -6024,13 +6044,13 @@ function D2(D, u, f, e, F, t) {
       onScrollToTop: u[1] || (u[1] = (d) => D.$emit("scrollToTop")),
       onRemove: u[2] || (u[2] = (d) => D.$emit("remove", d))
     }, {
-      "user-avatar": $((d) => [
+      "user-avatar": j((d) => [
         O(D.$slots, "user-avatar", {
           user: d.user,
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-body": $((d) => [
+      "text-message-body": j((d) => [
         O(D.$slots, "text-message-body", {
           message: d.message,
           messageText: d.messageText,
@@ -6038,12 +6058,12 @@ function D2(D, u, f, e, F, t) {
           me: d.me
         }, void 0, !0)
       ]),
-      "system-message-body": $((d) => [
+      "system-message-body": j((d) => [
         O(D.$slots, "system-message-body", {
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": $((d) => [
+      "text-message-toolbox": j((d) => [
         O(D.$slots, "text-message-toolbox", {
           message: d.message,
           me: d.me
@@ -6065,9 +6085,9 @@ function D2(D, u, f, e, F, t) {
     }, null, 8, ["show-emoji", "show-emoji-in-text", "on-submit", "suggestions", "show-file", "placeholder", "colors"]))
   ], 2);
 }
-const f2 = /* @__PURE__ */ M(u2, [["render", D2], ["__scopeId", "data-v-25f30819"]]), e2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", t2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", F2 = {
+const D2 = /* @__PURE__ */ M(Ze, [["render", u2], ["__scopeId", "data-v-25f30819"]]), f2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", e2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", t2 = {
   components: {
-    ChatWindow: f2
+    ChatWindow: D2
   },
   props: {
     icons: {
@@ -6075,11 +6095,11 @@ const f2 = /* @__PURE__ */ M(u2, [["render", D2], ["__scopeId", "data-v-25f30819
       default: function() {
         return {
           open: {
-            img: t2,
+            img: e2,
             name: "default"
           },
           close: {
-            img: e2,
+            img: f2,
             name: "default"
           }
         };
@@ -6240,31 +6260,31 @@ const f2 = /* @__PURE__ */ M(u2, [["render", D2], ["__scopeId", "data-v-25f30819
       this.open(), this.autoFocus && this.$event.$emit("focusUserInput");
     }
   }
-}, n2 = {
+}, F2 = {
   key: 0,
   class: "sc-new-messsages-count"
-}, a2 = ["src", "alt"], d2 = ["src", "alt"];
-function r2(D, u, f, e, F, t) {
+}, n2 = ["src", "alt"], a2 = ["src", "alt"];
+function d2(D, u, f, e, F, t) {
   const n = T("ChatWindow");
   return b(), m("div", null, [
     f.showLauncher ? (b(), m("div", {
       key: 0,
       class: DD(["sc-launcher", { opened: f.isOpen }]),
-      style: L({ backgroundColor: f.colors.launcher.bg }),
+      style: q({ backgroundColor: f.colors.launcher.bg }),
       onClick: u[0] || (u[0] = Gu((a) => f.isOpen ? f.close() : t.openAndFocus(), ["prevent"]))
     }, [
-      f.newMessagesCount > 0 && !f.isOpen ? (b(), m("div", n2, K(f.newMessagesCount), 1)) : R("", !0),
+      f.newMessagesCount > 0 && !f.isOpen ? (b(), m("div", F2, K(f.newMessagesCount), 1)) : R("", !0),
       f.isOpen ? (b(), m("img", {
         key: 1,
         class: "sc-closed-icon",
         src: f.icons.close.img,
         alt: f.icons.close.name
-      }, null, 8, a2)) : (b(), m("img", {
+      }, null, 8, n2)) : (b(), m("img", {
         key: 2,
         class: "sc-open-icon",
         src: f.icons.open.img,
         alt: f.icons.open.name
-      }, null, 8, d2))
+      }, null, 8, a2))
     ], 6)) : R("", !0),
     N(n, {
       "message-list": f.messageList,
@@ -6290,16 +6310,16 @@ function r2(D, u, f, e, F, t) {
       onEdit: u[3] || (u[3] = (a) => D.$emit("edit", a)),
       onRemove: u[4] || (u[4] = (a) => D.$emit("remove", a))
     }, {
-      header: $(() => [
+      header: j(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
-      "user-avatar": $((a) => [
+      "user-avatar": j((a) => [
         O(D.$slots, "user-avatar", {
           user: a.user,
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-body": $((a) => [
+      "text-message-body": j((a) => [
         O(D.$slots, "text-message-body", {
           message: a.message,
           messageText: a.messageText,
@@ -6307,12 +6327,12 @@ function r2(D, u, f, e, F, t) {
           me: a.me
         }, void 0, !0)
       ]),
-      "system-message-body": $((a) => [
+      "system-message-body": j((a) => [
         O(D.$slots, "system-message-body", {
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": $((a) => [
+      "text-message-toolbox": j((a) => [
         O(D.$slots, "text-message-toolbox", {
           message: a.message,
           me: a.me
@@ -6322,12 +6342,12 @@ function r2(D, u, f, e, F, t) {
     }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "onClose"])
   ]);
 }
-const i2 = /* @__PURE__ */ M(F2, [["render", r2], ["__scopeId", "data-v-67e1ae28"]]);
-var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], qu = "start", Df = "end", o2 = "clippingParents", Qf = "viewport", Wu = "popper", s2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
+const r2 = /* @__PURE__ */ M(t2, [["render", d2], ["__scopeId", "data-v-67e1ae28"]]);
+var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], qu = "start", Df = "end", i2 = "clippingParents", Qf = "viewport", Wu = "popper", o2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + qu, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
   return D.concat([u, u + "-" + qu, u + "-" + Df]);
-}, []), C2 = "beforeRead", c2 = "read", E2 = "afterRead", l2 = "beforeMain", B2 = "main", b2 = "afterMain", p2 = "beforeWrite", g2 = "write", m2 = "afterWrite", UD = [C2, c2, E2, l2, B2, b2, p2, g2, m2];
+}, []), s2 = "beforeRead", C2 = "read", c2 = "afterRead", E2 = "beforeMain", l2 = "main", B2 = "afterMain", b2 = "beforeWrite", p2 = "write", g2 = "afterWrite", UD = [s2, C2, c2, E2, l2, B2, b2, p2, g2];
 function pu(D) {
   return D ? (D.nodeName || "").toLowerCase() : null;
 }
@@ -6354,7 +6374,7 @@ function Kf(D) {
   var u = cu(D).ShadowRoot;
   return D instanceof u || D instanceof ShadowRoot;
 }
-function h2(D) {
+function m2(D) {
   var u = D.state;
   Object.keys(u.elements).forEach(function(f) {
     var e = u.styles[f] || {}, F = u.attributes[f] || {}, t = u.elements[f];
@@ -6364,7 +6384,7 @@ function h2(D) {
     }));
   });
 }
-function _2(D) {
+function h2(D) {
   var u = D.state, f = {
     popper: {
       position: u.options.strategy,
@@ -6388,12 +6408,12 @@ function _2(D) {
     });
   };
 }
-const v2 = {
+const _2 = {
   name: "applyStyles",
   enabled: !0,
   phase: "write",
-  fn: h2,
-  effect: _2,
+  fn: m2,
+  effect: h2,
   requires: ["computeStyles"]
 };
 function ru(D) {
@@ -6438,7 +6458,7 @@ function Jf(D, u) {
 function Cu(D) {
   return cu(D).getComputedStyle(D);
 }
-function A2(D) {
+function v2(D) {
   return ["table", "td", "th"].indexOf(pu(D)) >= 0;
 }
 function Au(D) {
@@ -6463,7 +6483,7 @@ function gf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
-function y2(D) {
+function A2(D) {
   var u = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1, f = navigator.userAgent.indexOf("Trident") !== -1;
   if (f && Fu(D)) {
     var e = Cu(D);
@@ -6479,9 +6499,9 @@ function y2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = gf(D); f && A2(f) && Cu(f).position === "static"; )
+  for (var u = cu(D), f = gf(D); f && v2(f) && Cu(f).position === "static"; )
     f = gf(f);
-  return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || y2(D) || u;
+  return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || A2(D) || u;
 }
 function ef(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
@@ -6506,19 +6526,19 @@ function D1(D, u) {
     return f[e] = D, f;
   }, {});
 }
-var w2 = function(u, f) {
+var y2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
   })) : u, u1(typeof u != "number" ? u : D1(u, tD));
 };
-function k2(D) {
+function w2(D) {
   var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, n = f.modifiersData.popperOffsets, a = ru(f.placement), r = ef(a), C = [tu, su].indexOf(a) >= 0, d = C ? "height" : "width";
   if (!(!t || !n)) {
-    var c = w2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, A = f.rects.reference[d] + f.rects.reference[r] - n[r] - f.rects.popper[d], h = n[r] - f.rects.reference[r], w = FD(t), _ = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, v = A / 2 - h / 2, p = c[B], g = _ - o[d] - c[E], k = _ / 2 - o[d] / 2 + v, x = mD(p, k, g), S = r;
+    var c = y2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, A = f.rects.reference[d] + f.rects.reference[r] - n[r] - f.rects.popper[d], h = n[r] - f.rects.reference[r], w = FD(t), _ = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, v = A / 2 - h / 2, p = c[B], g = _ - o[d] - c[E], k = _ / 2 - o[d] / 2 + v, x = mD(p, k, g), S = r;
     f.modifiersData[e] = (u = {}, u[S] = x, u.centerOffset = x - k, u);
   }
 }
-function x2(D) {
+function k2(D) {
   var u = D.state, f = D.options, e = f.element, F = e === void 0 ? "[data-popper-arrow]" : e;
   if (F != null && !(typeof F == "string" && (F = u.elements.popper.querySelector(F), !F))) {
     if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Jf(u.elements.popper, F)) {
@@ -6528,22 +6548,22 @@ function x2(D) {
     u.elements.arrow = F;
   }
 }
-const S2 = {
+const x2 = {
   name: "arrow",
   enabled: !0,
   phase: "main",
-  fn: k2,
-  effect: x2,
+  fn: w2,
+  effect: k2,
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]
 };
-var T2 = {
+var S2 = {
   top: "auto",
   right: "auto",
   bottom: "auto",
   left: "auto"
 };
-function O2(D) {
+function T2(D) {
   var u = D.x, f = D.y, e = window, F = e.devicePixelRatio || 1;
   return {
     x: lD(lD(u * F) / F) || 0,
@@ -6551,21 +6571,21 @@ function O2(D) {
   };
 }
 function mf(D) {
-  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? O2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
+  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? T2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
   if (r) {
     var p = FD(f), g = "clientHeight", k = "clientWidth";
     p === cu(f) && (p = Au(f), Cu(p).position !== "static" && (g = "scrollHeight", k = "scrollWidth")), p = p, F === eu && (_ = ou, E -= p[g] - e.height, E *= a ? 1 : -1), F === tu && (w = su, o -= p[k] - e.width, o *= a ? 1 : -1);
   }
   var x = Object.assign({
     position: n
-  }, r && T2);
+  }, r && S2);
   if (a) {
     var S;
     return Object.assign({}, x, (S = {}, S[_] = h ? "0" : "", S[w] = A ? "0" : "", S.transform = (v.devicePixelRatio || 1) < 2 ? "translate(" + o + "px, " + E + "px)" : "translate3d(" + o + "px, " + E + "px, 0)", S));
   }
   return Object.assign({}, x, (u = {}, u[_] = h ? E + "px" : "", u[w] = A ? o + "px" : "", u.transform = "", u));
 }
-function $2(D) {
+function O2(D) {
   var u = D.state, f = D.options, e = f.gpuAcceleration, F = e === void 0 ? !0 : e, t = f.adaptive, n = t === void 0 ? !0 : t, a = f.roundOffsets, r = a === void 0 ? !0 : a;
   if (process.env.NODE_ENV !== "production") {
     var C = Cu(u.elements.popper).transitionProperty || "";
@@ -6601,13 +6621,13 @@ const j2 = {
   name: "computeStyles",
   enabled: !0,
   phase: "beforeWrite",
-  fn: $2,
+  fn: O2,
   data: {}
 };
 var BD = {
   passive: !0
 };
-function P2(D) {
+function $2(D) {
   var u = D.state, f = D.instance, e = D.options, F = e.scroll, t = F === void 0 ? !0 : F, n = e.resize, a = n === void 0 ? !0 : n, r = cu(u.elements.popper), C = [].concat(u.scrollParents.reference, u.scrollParents.popper);
   return t && C.forEach(function(d) {
     d.addEventListener("scroll", f.update, BD);
@@ -6617,16 +6637,16 @@ function P2(D) {
     }), a && r.removeEventListener("resize", f.update, BD);
   };
 }
-const I2 = {
+const P2 = {
   name: "eventListeners",
   enabled: !0,
   phase: "write",
   fn: function() {
   },
-  effect: P2,
+  effect: $2,
   data: {}
 };
-var z2 = {
+var I2 = {
   left: "right",
   right: "left",
   bottom: "top",
@@ -6634,16 +6654,16 @@ var z2 = {
 };
 function hD(D) {
   return D.replace(/left|right|bottom|top/g, function(u) {
-    return z2[u];
+    return I2[u];
   });
 }
-var N2 = {
+var z2 = {
   start: "end",
   end: "start"
 };
 function hf(D) {
   return D.replace(/start|end/g, function(u) {
-    return N2[u];
+    return z2[u];
   });
 }
 function tf(D) {
@@ -6656,7 +6676,7 @@ function tf(D) {
 function Ff(D) {
   return Lu(Au(D)).left + tf(D).scrollLeft;
 }
-function R2(D) {
+function N2(D) {
   var u = cu(D), f = Au(D), e = u.visualViewport, F = f.clientWidth, t = f.clientHeight, n = 0, a = 0;
   return e && (F = e.width, t = e.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (n = e.offsetLeft, a = e.offsetTop)), {
     width: F,
@@ -6665,7 +6685,7 @@ function R2(D) {
     y: a
   };
 }
-function q2(D) {
+function R2(D) {
   var u, f = Au(D), e = tf(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), n = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), a = -e.scrollLeft + Ff(D), r = -e.scrollTop;
   return Cu(F || f).direction === "rtl" && (a += vu(f.clientWidth, F ? F.clientWidth : 0) - t), {
     width: t,
@@ -6698,21 +6718,21 @@ function VD(D) {
     bottom: D.y + D.height
   });
 }
-function L2(D) {
+function q2(D) {
   var u = Lu(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
 function _f(D, u) {
-  return u === Qf ? VD(R2(D)) : Fu(u) ? L2(u) : VD(q2(Au(D)));
+  return u === Qf ? VD(N2(D)) : Fu(u) ? q2(u) : VD(R2(Au(D)));
 }
-function M2(D) {
+function L2(D) {
   var u = Xu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
   return Ku(e) ? u.filter(function(F) {
     return Ku(F) && Jf(F, e) && pu(F) !== "body";
   }) : [];
 }
-function H2(D, u, f) {
-  var e = u === "clippingParents" ? M2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
+function M2(D, u, f) {
+  var e = u === "clippingParents" ? L2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
     var C = _f(D, r);
     return a.top = vu(C.top, a.top), a.right = Ju(C.right, a.right), a.bottom = Ju(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
   }, _f(D, t));
@@ -6770,7 +6790,7 @@ function e1(D) {
 }
 function uD(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, n = t === void 0 ? o2 : t, a = f.rootBoundary, r = a === void 0 ? Qf : a, C = f.elementContext, d = C === void 0 ? Wu : C, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, A = u1(typeof E != "number" ? E : D1(E, tD)), h = d === Wu ? s2 : Wu, w = D.elements.reference, _ = D.rects.popper, v = D.elements[o ? h : d], p = H2(Ku(v) ? v : v.contextElement || Au(D.elements.popper), n, r), g = Lu(w), k = e1({
+  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, n = t === void 0 ? i2 : t, a = f.rootBoundary, r = a === void 0 ? Qf : a, C = f.elementContext, d = C === void 0 ? Wu : C, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, A = u1(typeof E != "number" ? E : D1(E, tD)), h = d === Wu ? o2 : Wu, w = D.elements.reference, _ = D.rects.popper, v = D.elements[o ? h : d], p = M2(Ku(v) ? v : v.contextElement || Au(D.elements.popper), n, r), g = Lu(w), k = e1({
     reference: g,
     element: _,
     strategy: "absolute",
@@ -6790,7 +6810,7 @@ function uD(D, u) {
   }
   return H;
 }
-function U2(D, u) {
+function H2(D, u) {
   u === void 0 && (u = {});
   var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? pf : pf.filter(function(E) {
     return Zu(E) === d;
@@ -6810,17 +6830,17 @@ function U2(D, u) {
     return B[E] - B[A];
   });
 }
-function V2(D) {
+function U2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
   return [hf(D), u, hf(u)];
 }
-function W2(D) {
+function V2(D) {
   var u = D.state, f = D.options, e = D.name;
   if (!u.modifiersData[e]._skip) {
-    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !0 : n, r = f.fallbackPlacements, C = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, A = f.allowedAutoPlacements, h = u.options.placement, w = ru(h), _ = w === h, v = r || (_ || !E ? [hD(h)] : V2(h)), p = [h].concat(v).reduce(function(Q, l) {
-      return Q.concat(ru(l) === AD ? U2(u, {
+    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !0 : n, r = f.fallbackPlacements, C = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, A = f.allowedAutoPlacements, h = u.options.placement, w = ru(h), _ = w === h, v = r || (_ || !E ? [hD(h)] : U2(h)), p = [h].concat(v).reduce(function(Q, l) {
+      return Q.concat(ru(l) === AD ? H2(u, {
         placement: l,
         boundary: d,
         rootBoundary: c,
@@ -6864,11 +6884,11 @@ function W2(D) {
     u.placement !== H && (u.modifiersData[e]._skip = !0, u.placement = H, u.reset = !0);
   }
 }
-const G2 = {
+const W2 = {
   name: "flip",
   enabled: !0,
   phase: "main",
-  fn: W2,
+  fn: V2,
   requiresIfExists: ["offset"],
   data: {
     _skip: !1
@@ -6890,7 +6910,7 @@ function Af(D) {
     return D[u] >= 0;
   });
 }
-function X2(D) {
+function G2(D) {
   var u = D.state, f = D.name, e = u.rects.reference, F = u.rects.popper, t = u.modifiersData.preventOverflow, n = uD(u, {
     elementContext: "reference"
   }), a = uD(u, {
@@ -6906,14 +6926,14 @@ function X2(D) {
     "data-popper-escaped": c
   });
 }
-const Y2 = {
+const X2 = {
   name: "hide",
   enabled: !0,
   phase: "main",
   requiresIfExists: ["preventOverflow"],
-  fn: X2
+  fn: G2
 };
-function Q2(D, u, f) {
+function Y2(D, u, f) {
   var e = ru(D), F = [tu, eu].indexOf(e) >= 0 ? -1 : 1, t = typeof f == "function" ? f(Object.assign({}, u, {
     placement: D
   })) : f, n = t[0], a = t[1];
@@ -6925,20 +6945,20 @@ function Q2(D, u, f) {
     y: a
   };
 }
-function K2(D) {
+function Q2(D) {
   var u = D.state, f = D.options, e = D.name, F = f.offset, t = F === void 0 ? [0, 0] : F, n = yD.reduce(function(d, c) {
-    return d[c] = Q2(c, u.rects, t), d;
+    return d[c] = Y2(c, u.rects, t), d;
   }, {}), a = n[u.placement], r = a.x, C = a.y;
   u.modifiersData.popperOffsets != null && (u.modifiersData.popperOffsets.x += r, u.modifiersData.popperOffsets.y += C), u.modifiersData[e] = n;
 }
-const J2 = {
+const K2 = {
   name: "offset",
   enabled: !0,
   phase: "main",
   requires: ["popperOffsets"],
-  fn: K2
+  fn: Q2
 };
-function Z2(D) {
+function J2(D) {
   var u = D.state, f = D.name;
   u.modifiersData[f] = e1({
     reference: u.rects.reference,
@@ -6947,23 +6967,23 @@ function Z2(D) {
     placement: u.placement
   });
 }
-const u8 = {
+const Z2 = {
   name: "popperOffsets",
   enabled: !0,
   phase: "read",
-  fn: Z2,
+  fn: J2,
   data: {}
 };
-function D8(D) {
+function u8(D) {
   return D === "x" ? "y" : "x";
 }
-function f8(D) {
+function D8(D) {
   var u = D.state, f = D.options, e = D.name, F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !1 : n, r = f.boundary, C = f.rootBoundary, d = f.altBoundary, c = f.padding, o = f.tether, B = o === void 0 ? !0 : o, E = f.tetherOffset, A = E === void 0 ? 0 : E, h = uD(u, {
     boundary: r,
     rootBoundary: C,
     padding: c,
     altBoundary: d
-  }), w = ru(u.placement), _ = Zu(u.placement), v = !_, p = ef(w), g = D8(p), k = u.modifiersData.popperOffsets, x = u.rects.reference, S = u.rects.popper, H = typeof A == "function" ? A(Object.assign({}, u.rects, {
+  }), w = ru(u.placement), _ = Zu(u.placement), v = !_, p = ef(w), g = u8(p), k = u.modifiersData.popperOffsets, x = u.rects.reference, S = u.rects.popper, H = typeof A == "function" ? A(Object.assign({}, u.rects, {
     placement: u.placement
   })) : A, I = {
     x: 0,
@@ -6980,30 +7000,30 @@ function f8(D) {
         k[p] = iD, I[p] = iD - nu;
       }
       if (a) {
-        var SD = p === "x" ? eu : tu, TD = p === "x" ? ou : su, $u = k[g], oD = $u + h[SD], sD = $u - h[TD], CD = mD(B ? Ju(oD, dD) : oD, $u, B ? vu(sD, rD) : sD);
-        k[g] = CD, I[g] = CD - $u;
+        var SD = p === "x" ? eu : tu, TD = p === "x" ? ou : su, ju = k[g], oD = ju + h[SD], sD = ju - h[TD], CD = mD(B ? Ju(oD, dD) : oD, ju, B ? vu(sD, rD) : sD);
+        k[g] = CD, I[g] = CD - ju;
       }
     }
     u.modifiersData[e] = I;
   }
 }
-const e8 = {
+const f8 = {
   name: "preventOverflow",
   enabled: !0,
   phase: "main",
-  fn: f8,
+  fn: D8,
   requiresIfExists: ["offset"]
 };
-function t8(D) {
+function e8(D) {
   return {
     scrollLeft: D.scrollLeft,
     scrollTop: D.scrollTop
   };
 }
-function F8(D) {
-  return D === cu(D) || !Fu(D) ? tf(D) : t8(D);
+function t8(D) {
+  return D === cu(D) || !Fu(D) ? tf(D) : e8(D);
 }
-function n8(D, u, f) {
+function F8(D, u, f) {
   f === void 0 && (f = !1);
   var e = Au(u), F = Lu(D), t = Fu(u), n = {
     scrollLeft: 0,
@@ -7013,14 +7033,14 @@ function n8(D, u, f) {
     y: 0
   };
   return (t || !t && !f) && ((pu(u) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
-  nf(e)) && (n = F8(u)), Fu(u) ? (a = Lu(u), a.x += u.clientLeft, a.y += u.clientTop) : e && (a.x = Ff(e))), {
+  nf(e)) && (n = t8(u)), Fu(u) ? (a = Lu(u), a.x += u.clientLeft, a.y += u.clientTop) : e && (a.x = Ff(e))), {
     x: F.left + n.scrollLeft - a.x,
     y: F.top + n.scrollTop - a.y,
     width: F.width,
     height: F.height
   };
 }
-function a8(D) {
+function n8(D) {
   var u = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Set(), e = [];
   D.forEach(function(t) {
     u.set(t.name, t);
@@ -7039,15 +7059,15 @@ function a8(D) {
     f.has(t.name) || F(t);
   }), e;
 }
-function d8(D) {
-  var u = a8(D);
+function a8(D) {
+  var u = n8(D);
   return UD.reduce(function(f, e) {
     return f.concat(u.filter(function(F) {
       return F.phase === e;
     }));
   }, []);
 }
-function r8(D) {
+function d8(D) {
   var u;
   return function() {
     return u || (u = new Promise(function(f) {
@@ -7064,8 +7084,8 @@ function hu(D) {
     return F.replace(/%s/, t);
   }, D);
 }
-var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', i8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', o8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
-function s8(D) {
+var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', r8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', i8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
+function o8(D) {
   D.forEach(function(u) {
     Object.keys(u).forEach(function(f) {
       switch (f) {
@@ -7093,19 +7113,19 @@ function s8(D) {
         case "data":
           break;
         default:
-          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + o8.map(function(e) {
+          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + i8.map(function(e) {
             return '"' + e + '"';
           }).join(", ") + '; but "' + f + '" was provided.');
       }
       u.requires && u.requires.forEach(function(e) {
         D.find(function(F) {
           return F.name === e;
-        }) == null && console.error(hu(i8, String(u.name), e, e));
+        }) == null && console.error(hu(r8, String(u.name), e, e));
       });
     });
   });
 }
-function C8(D, u) {
+function s8(D, u) {
   var f = /* @__PURE__ */ new Set();
   return D.filter(function(e) {
     var F = u(e);
@@ -7113,7 +7133,7 @@ function C8(D, u) {
       return f.add(F), !0;
   });
 }
-function c8(D) {
+function C8(D) {
   var u = D.reduce(function(f, e) {
     var F = f[e.name];
     return f[e.name] = F ? Object.assign({}, F, e, {
@@ -7125,7 +7145,7 @@ function c8(D) {
     return u[f];
   });
 }
-var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", E8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
+var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", c8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
@@ -7137,7 +7157,7 @@ function kf() {
     return !(e && typeof e.getBoundingClientRect == "function");
   });
 }
-function l8(D) {
+function E8(D) {
   D === void 0 && (D = {});
   var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
   return function(a, r, C) {
@@ -7160,15 +7180,15 @@ function l8(D) {
           reference: Ku(a) ? Xu(a) : a.contextElement ? Xu(a.contextElement) : [],
           popper: Xu(r)
         };
-        var _ = d8(c8([].concat(e, d.options.modifiers)));
+        var _ = a8(C8([].concat(e, d.options.modifiers)));
         if (d.orderedModifiers = _.filter(function(I) {
           return I.enabled;
         }), process.env.NODE_ENV !== "production") {
-          var v = C8([].concat(_, d.options.modifiers), function(I) {
+          var v = s8([].concat(_, d.options.modifiers), function(I) {
             var U = I.name;
             return U;
           });
-          if (s8(v), ru(d.options.placement) === AD) {
+          if (o8(v), ru(d.options.placement) === AD) {
             var p = d.orderedModifiers.find(function(I) {
               var U = I.name;
               return U === "flip";
@@ -7195,14 +7215,14 @@ function l8(D) {
             return;
           }
           d.rects = {
-            reference: n8(_, FD(v), d.options.strategy === "fixed"),
+            reference: F8(_, FD(v), d.options.strategy === "fixed"),
             popper: ff(v)
           }, d.reset = !1, d.placement = d.options.placement, d.orderedModifiers.forEach(function(U) {
             return d.modifiersData[U.name] = Object.assign({}, U.data);
           });
           for (var p = 0, g = 0; g < d.orderedModifiers.length; g++) {
             if (process.env.NODE_ENV !== "production" && (p += 1, p > 100)) {
-              console.error(E8);
+              console.error(c8);
               break;
             }
             if (d.reset === !0) {
@@ -7221,7 +7241,7 @@ function l8(D) {
       },
       // Async and optimistically optimized update – it will not be executed if
       // not necessary (debounced to run at most once-per-tick)
-      update: r8(function() {
+      update: d8(function() {
         return new Promise(function(h) {
           B.forceUpdate(), h(d);
         });
@@ -7258,10 +7278,10 @@ function l8(D) {
     return B;
   };
 }
-var B8 = [I2, u8, j2, v2, J2, G2, e8, S2, Y2], b8 = /* @__PURE__ */ l8({
-  defaultModifiers: B8
+var l8 = [P2, Z2, j2, _2, K2, W2, f8, x2, X2], B8 = /* @__PURE__ */ E8({
+  defaultModifiers: l8
 });
-function p8() {
+function b8() {
   var D = window.navigator.userAgent, u = D.indexOf("MSIE ");
   if (u > 0)
     return parseInt(D.substring(u + 5, D.indexOf(".", u)), 10);
@@ -7275,7 +7295,7 @@ function p8() {
 }
 let _D;
 function WD() {
-  WD.init || (WD.init = !0, _D = p8() !== -1);
+  WD.init || (WD.init = !0, _D = b8() !== -1);
 }
 var kD = {
   name: "ResizeObserver",
@@ -7324,15 +7344,15 @@ var kD = {
     }
   }
 };
-const g8 = /* @__PURE__ */ T1("data-v-b329ee4c");
+const p8 = /* @__PURE__ */ T1("data-v-b329ee4c");
 k1("data-v-b329ee4c");
-const m8 = {
+const g8 = {
   class: "resize-observer",
   tabindex: "-1"
 };
 x1();
-const h8 = /* @__PURE__ */ g8((D, u, f, e, F, t) => (b(), V("div", m8)));
-kD.render = h8;
+const m8 = /* @__PURE__ */ p8((D, u, f, e, F, t) => (b(), V("div", g8)));
+kD.render = m8;
 kD.__scopeId = "data-v-b329ee4c";
 kD.__file = "src/components/ResizeObserver.vue";
 function Yu(D) {
@@ -7367,7 +7387,7 @@ function xu(D) {
     });
   };
 }
-function _8(D, u, f) {
+function h8(D, u, f) {
   return u in D ? Object.defineProperty(D, u, {
     value: f,
     enumerable: !0,
@@ -7389,7 +7409,7 @@ function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
     u % 2 ? Sf(Object(f), !0).forEach(function(e) {
-      _8(D, e, f[e]);
+      h8(D, e, f[e]);
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
@@ -7397,12 +7417,12 @@ function iu(D) {
   return D;
 }
 function t1(D) {
-  return v8(D) || A8(D) || F1(D) || y8();
+  return _8(D) || v8(D) || F1(D) || A8();
 }
-function v8(D) {
+function _8(D) {
   if (Array.isArray(D)) return GD(D);
 }
-function A8(D) {
+function v8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
 function F1(D, u) {
@@ -7418,7 +7438,7 @@ function GD(D, u) {
   for (var f = 0, e = new Array(u); f < u; f++) e[f] = D[f];
   return e;
 }
-function y8() {
+function A8() {
   throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
@@ -7547,7 +7567,7 @@ function z(D, u) {
   while (f);
   return e;
 }
-function w8(D) {
+function y8(D) {
   var u = [D], f = Tu.themes[D] || {};
   do
     f.$extend && !f.$resetCss ? (u.push(f.$extend), f = Tu.themes[f.$extend] || {}) : f = null;
@@ -7560,12 +7580,12 @@ var vD = !1;
 if (typeof window < "u") {
   vD = !1;
   try {
-    var k8 = Object.defineProperty({}, "passive", {
+    var w8 = Object.defineProperty({}, "passive", {
       get: function() {
         vD = !0;
       }
     });
-    window.addEventListener("test", null, k8);
+    window.addEventListener("test", null, w8);
   } catch {
   }
 }
@@ -7591,11 +7611,11 @@ var Tf = {
   click: "click",
   touch: "touchend"
 };
-function x8(D, u) {
+function k8(D, u) {
   var f = D.indexOf(u);
   f !== -1 && D.splice(f, 1);
 }
-var Pu = [], ju = null, YD = function() {
+var Pu = [], $u = null, YD = function() {
 };
 typeof window < "u" && (YD = window.Element);
 var d1 = function() {
@@ -7891,15 +7911,15 @@ var d1 = function() {
       },
       $_scheduleShow: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), ju && this.instantMove && ju.instantMove) {
-          ju.$_applyHide(!0), this.$_applyShow(!0);
+        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), $u && this.instantMove && $u.instantMove) {
+          $u.$_applyHide(!0), this.$_applyShow(!0);
           return;
         }
         u ? this.$_applyShow() : this.$_scheduleTimer = setTimeout(this.$_applyShow.bind(this), this.$_computeDelay("show"));
       },
       $_scheduleHide: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && (ju = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
+        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && ($u = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
       },
       $_computeDelay: function(u) {
         var f = this.delay;
@@ -7909,7 +7929,7 @@ var d1 = function() {
         var u = arguments, f = this;
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
-          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = b8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
+          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = B8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
         })();
       },
       $_applyShowEffect: function() {
@@ -7924,7 +7944,7 @@ var d1 = function() {
             if (f)
               for (var e, F = 0; F < Pu.length; F++)
                 e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield $f(), u.classes.showFrom = !1, u.classes.showTo = !0;
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield jf(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -7933,14 +7953,14 @@ var d1 = function() {
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
           if (clearTimeout(f.$_scheduleTimer), !!f.isShown) {
-            f.skipTransition = e, x8(Pu, f), ju === f && (ju = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
+            f.skipTransition = e, k8(Pu, f), $u === f && ($u = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
               "aria-describedby": void 0,
               "data-popper-shown": void 0
             }), clearTimeout(f.$_disposeTimer);
             var F = z(f.theme, "disposeTimeout");
             F !== null && (f.$_disposeTimer = setTimeout(function() {
               f.$_popperNode && (f.$_detachPopperNode(), f.isMounted = !1);
-            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield $f(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
+            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield jf(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
           }
         })();
       },
@@ -8033,14 +8053,14 @@ var d1 = function() {
     }
   };
 };
-typeof document < "u" && typeof window < "u" && (a1 ? document.addEventListener("touchend", T8, vD ? {
+typeof document < "u" && typeof window < "u" && (a1 ? document.addEventListener("touchend", S8, vD ? {
   passive: !0,
   capture: !0
-} : !0) : window.addEventListener("click", S8, !0));
-function S8(D) {
+} : !0) : window.addEventListener("click", x8, !0));
+function x8(D) {
   r1(D);
 }
-function T8(D) {
+function S8(D) {
   r1(D, !0);
 }
 function r1(D) {
@@ -8052,7 +8072,7 @@ function r1(D) {
   }, e = 0; e < Pu.length; e++)
     f(e);
 }
-function $f() {
+function jf() {
   return new Promise(function(D) {
     return requestAnimationFrame(D);
   });
@@ -8060,7 +8080,7 @@ function $f() {
 var i1 = {
   computed: {
     themeClass: function() {
-      return w8(this.theme);
+      return y8(this.theme);
     }
   }
 }, xD = {
@@ -8080,15 +8100,15 @@ var i1 = {
     classes: Object
   },
   emits: ["hide", "resize"]
-}, O8 = {
+}, T8 = {
   class: "v-popper__wrapper"
-}, $8 = {
+}, O8 = {
   ref: "inner",
   class: "v-popper__inner"
 }, j8 = {
   ref: "arrow",
   class: "v-popper__arrow-container"
-}, P8 = /* @__PURE__ */ N(
+}, $8 = /* @__PURE__ */ N(
   "div",
   {
     class: "v-popper__arrow"
@@ -8097,7 +8117,7 @@ var i1 = {
   -1
   /* HOISTED */
 );
-function I8(D, u, f, e, F, t) {
+function P8(D, u, f, e, F, t) {
   var n = T("ResizeObserver");
   return b(), V(
     "div",
@@ -8119,9 +8139,9 @@ function I8(D, u, f, e, F, t) {
         return f.autoHide && D.$emit("hide");
       }, ["esc"]))
     },
-    [N("div", O8, [N(
+    [N("div", T8, [N(
       "div",
-      $8,
+      O8,
       [f.mounted ? (b(), V(
         Ru,
         {
@@ -8141,7 +8161,7 @@ function I8(D, u, f, e, F, t) {
     ), N(
       "div",
       j8,
-      [P8],
+      [$8],
       512
       /* NEED_PATCH */
     )])],
@@ -8149,7 +8169,7 @@ function I8(D, u, f, e, F, t) {
     ["id", "aria-hidden", "tabindex"]
   );
 }
-xD.render = I8;
+xD.render = P8;
 xD.__file = "src/components/PopperContent.vue";
 var o1 = {
   methods: {
@@ -8197,7 +8217,7 @@ var o1 = {
     }
   }
 };
-function z8(D, u, f, e, F, t) {
+function I8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return b(), V(
     a,
@@ -8217,7 +8237,7 @@ function z8(D, u, f, e, F, t) {
       }
     }),
     {
-      default: $(function(r) {
+      default: j(function(r) {
         var C = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, A = r.handleResize, h = r.onResize, w = r.classes;
         return [N(
           "div",
@@ -8243,7 +8263,7 @@ function z8(D, u, f, e, F, t) {
               onResize: h
             },
             {
-              default: $(function() {
+              default: j(function() {
                 return [O(D.$slots, "popper", {
                   shown: d
                 })];
@@ -8265,7 +8285,7 @@ function z8(D, u, f, e, F, t) {
     ["theme", "target-nodes", "reference-node", "popper-node", "arrow-node"]
   );
 }
-nD.render = z8;
+nD.render = I8;
 nD.__file = "src/components/PopperWrapper.vue";
 var QD = iu(iu({}, nD), {}, {
   name: "VDropdown",
@@ -8367,7 +8387,7 @@ var af = {
     }
   }
 };
-function N8(D, u, f, e, F, t) {
+function z8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return b(), V(
     a,
@@ -8385,7 +8405,7 @@ function N8(D, u, f, e, F, t) {
       onApplyHide: t.onHide
     }),
     {
-      default: $(function(r) {
+      default: j(function(r) {
         var C = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, A = r.handleResize, h = r.onResize, w = r.classes;
         return [N(
           n,
@@ -8406,7 +8426,7 @@ function N8(D, u, f, e, F, t) {
             onResize: h
           },
           {
-            default: $(function() {
+            default: j(function() {
               return [f.html ? (b(), V(
                 "div",
                 {
@@ -8441,10 +8461,10 @@ function N8(D, u, f, e, F, t) {
     ["theme", "popper-node", "arrow-node", "onApplyShow", "onApplyHide"]
   );
 }
-af.render = N8;
+af.render = z8;
 af.__file = "src/components/TooltipDirective.vue";
 var s1 = "v-popper--has-tooltip";
-function R8(D, u) {
+function N8(D, u) {
   var f = D.placement;
   if (!f && u) {
     var e = XD(yD), F;
@@ -8467,14 +8487,14 @@ function C1(D, u, f) {
     content: u
   } : u && F === "object" ? e = u : e = {
     content: !1
-  }, e.placement = R8(e, f), e.targetNodes = function() {
+  }, e.placement = N8(e, f), e.targetNodes = function() {
     return [D];
   }, e.referenceNode = function() {
     return D;
   }, e;
 }
-function q8(D, u, f) {
-  var e = C1(D, u, f), F = D.$_popper = $1({
+function R8(D, u, f) {
+  var e = C1(D, u, f), F = D.$_popper = j1({
     name: "VTooltipDirective",
     data: function() {
       return {
@@ -8482,7 +8502,7 @@ function q8(D, u, f) {
       };
     },
     render: function() {
-      return j1(af, iu(iu({}, this.options), {}, {
+      return $1(af, iu(iu({}, this.options), {}, {
         ref: "tooltip"
       }));
     }
@@ -8492,18 +8512,18 @@ function q8(D, u, f) {
 function c1(D) {
   D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(s1);
 }
-function jf(D, u) {
+function $f(D, u) {
   var f = u.value, e = u.modifiers, F = C1(D, f, e);
   if (!F.content || z(F.theme || "tooltip", "disabled"))
     c1(D);
   else {
     var t;
-    D.$_popper ? (t = D.$_popper, t.options = F) : t = q8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
+    D.$_popper ? (t = D.$_popper, t.options = F) : t = R8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
   }
 }
-var L8 = {
-  beforeMount: jf,
-  updated: jf,
+var q8 = {
+  beforeMount: $f,
+  updated: $f,
   beforeUnmount: function(u) {
     c1(u);
   }
@@ -8539,7 +8559,7 @@ function b1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
-var M8 = {
+var L8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
     u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
@@ -8554,15 +8574,15 @@ var M8 = {
 };
 function ZD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  ZD.installed || (ZD.installed = !0, n1(Tu, u), D.directive("tooltip", L8), D.directive("close-popper", M8), D.component("v-tooltip", JD), D.component("VTooltip", JD), D.component("v-dropdown", QD), D.component("VDropdown", QD), D.component("v-menu", KD), D.component("VMenu", KD));
+  ZD.installed || (ZD.installed = !0, n1(Tu, u), D.directive("tooltip", q8), D.directive("close-popper", L8), D.component("v-tooltip", JD), D.component("VTooltip", JD), D.component("v-dropdown", QD), D.component("VDropdown", QD), D.component("v-menu", KD), D.component("VMenu", KD));
 }
-var H8 = {
+var M8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
   install: ZD,
   options: Tu
 }, pD = { exports: {} }, zf;
-function U8() {
+function H8() {
   if (zf) return pD.exports;
   zf = 1;
   function D() {
@@ -8598,23 +8618,23 @@ function U8() {
   }, pD.exports = D, pD.exports.TinyEmitter = D, pD.exports;
 }
 var MD, Nf;
-function V8() {
+function U8() {
   if (Nf) return MD;
   Nf = 1;
-  var D = U8();
+  var D = H8();
   return MD = new D(), MD;
 }
-var W8 = V8();
-const gD = /* @__PURE__ */ uf(W8), G8 = {
+var V8 = U8();
+const gD = /* @__PURE__ */ uf(V8), W8 = {
   $on: (...D) => gD.on(...D),
   $once: (...D) => gD.once(...D),
   $off: (...D) => gD.off(...D),
   $emit: (...D) => gD.emit(...D)
-}, X8 = "BeautifulChat", Q8 = {
+}, G8 = "BeautifulChat", Y8 = {
   install(D, u = {}) {
-    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = G8, this.componentName = u.componentName || X8, D.component(this.componentName, i2), D.use(H8));
+    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = W8, this.componentName = u.componentName || G8, D.component(this.componentName, r2), D.use(M8));
   }
 };
 export {
-  Q8 as default
+  Y8 as default
 };
