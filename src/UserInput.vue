@@ -46,7 +46,7 @@
           <EmojiIcon :on-emoji-picked="_handleEmojiPicked" :color="colors.userInput.text" :colors="colors" />
         </div>
         <div v-if="showFile && !isEditing" class="sc-user-input--button">
-          <FileIcons :on-change="_handleFileSubmit" :color="colors.userInput.text" />
+          <FileIcons :on-change="_handleFileSubmit" :color="colors.userInput.text" :acceptedFileTypes="acceptedFileTypes" />
         </div>
         <div v-if="isEditing" class="sc-user-input--button">
           <UserInputButton
@@ -145,6 +145,11 @@ export default {
     colors: {
       type: Object,
       required: true
+    },
+    acceptedFileTypes: {
+      type: Array,
+      required: false,
+      default: () => ['*/*']
     }
   },
   data() {

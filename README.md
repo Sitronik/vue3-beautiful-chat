@@ -133,7 +133,8 @@ export default {
       }, // specifies the color scheme for the component
       alwaysScrollToBottom: false, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
       messageStyling: true, // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
-      messageMargin: { system: '25px auto' } // sets the margin for the system messages
+      messageMargin: { system: '25px auto' }, // sets the margin for the system messages
+      acceptedFileTypes: ['image/*', 'audio/*'] // sets the accepted file types for the file input, in this example it accepts only images and audio files (omit to accept any type of file)
     }
   },
   methods: {
@@ -182,28 +183,29 @@ For more detailed examples see the demo folder.
 
 #### Props
 
-|prop | type   | description |
-|-----|--------|---------------|
-| *participants | [agentProfile] | Represents your product or service's customer service agents. Fields for each agent: id, name, imageUrl|
-| *onMessageWasSent | function(message) | Called when a message is sent with the message object as an argument. |
-| *isOpen | Boolean | The bool indicating whether or not the chat window should be open. |
-| *open | Function | The function passed to the component that mutates the above mentioned bool toggle for opening the chat |
-| *close | Function | The function passed to the component that mutates the above mentioned bool toggle for closing the chat |
-| messageList | [message] | An array of message objects to be rendered as a conversation. |
-| showEmoji | Boolean | A bool indicating whether or not to show the emoji button
-| showEmojiInText | Boolean | A bool indicating whether or not to send emoji directly as a message as opposed to inserting them into the user input
-| showFile | Boolean | A bool indicating whether or not to show the file chooser button
-| showDeletion | Boolean | A bool indicating whether or not to show the edit button for a message
-| showConfirmationDeletion | Boolean | A bool indicating whether or not to show the confirmation text when we remove a message
+| prop                        | type   | description |
+|-----------------------------|--------|---------------|
+| *participants               | [agentProfile] | Represents your product or service's customer service agents. Fields for each agent: id, name, imageUrl|
+| *onMessageWasSent           | function(message) | Called when a message is sent with the message object as an argument. |
+| *isOpen                     | Boolean | The bool indicating whether or not the chat window should be open. |
+| *open                       | Function | The function passed to the component that mutates the above mentioned bool toggle for opening the chat |
+| *close                      | Function | The function passed to the component that mutates the above mentioned bool toggle for closing the chat |
+| messageList                 | [message] | An array of message objects to be rendered as a conversation. |
+| showEmoji                   | Boolean | A bool indicating whether or not to show the emoji button
+| showEmojiInText             | Boolean | A bool indicating whether or not to send emoji directly as a message as opposed to inserting them into the user input
+| showFile                    | Boolean | A bool indicating whether or not to show the file chooser button
+| showDeletion                | Boolean | A bool indicating whether or not to show the edit button for a message
+| showConfirmationDeletion    | Boolean | A bool indicating whether or not to show the confirmation text when we remove a message
 | confirmationDeletionMessage | String | The message you want to show when confirming the deletion
-| showEdition | Boolean | A bool indicating whether or not to show the delete button for a message
-| showTypingIndicator | String | A string that can be set to a user's participant.id to show `typing` indicator for them
-| showHeader | Boolean | A bool indicating whether or not to show the header of chatwindow
-| disableUserListToggle | Boolean | A bool indicating whether or not to allow the user to toggle between message list and participants list
-| colors | Object | An object containing the specs of the colors used to paint the component. [See here](#faq)
-| messageStyling | Boolean | A bool indicating whether or not to enable `msgdown` support for message formatting in chat. [See here](#faq)
-| autoFocus | Boolean | A bool indicating whether or not to disable auto focus
-| messageMargin | MessageMargin | An object that contains the margin configuration for the sender, recipient and system messages. [See here](#message-margin-object)
+| showEdition                 | Boolean | A bool indicating whether or not to show the delete button for a message
+| showTypingIndicator         | String | A string that can be set to a user's participant.id to show `typing` indicator for them
+| showHeader                  | Boolean | A bool indicating whether or not to show the header of chatwindow
+| disableUserListToggle       | Boolean | A bool indicating whether or not to allow the user to toggle between message list and participants list
+| colors                      | Object | An object containing the specs of the colors used to paint the component. [See here](#faq)
+| messageStyling              | Boolean | A bool indicating whether or not to enable `msgdown` support for message formatting in chat. [See here](#faq)
+| autoFocus                   | Boolean | A bool indicating whether or not to disable auto focus
+| messageMargin               | MessageMargin | An object that contains the margin configuration for the sender, recipient and system messages. [See here](#message-margin-object)
+| acceptedFileTypes           | [String] | An array of strings representing the accepted file types for the file input 
 
 #### Events
 

@@ -54,6 +54,7 @@
       :show-file="showFile"
       :placeholder="placeholder"
       :colors="colors"
+      :acceptedFileTypes="acceptedFileTypes"
       @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
     />
@@ -141,6 +142,11 @@ export default {
     messageMargin: {
       type: Object,
       required: false
+    },
+    acceptedFileTypes: {
+      type: Array,
+      required: false,
+      default: () => ['*/*']
     }
   },
   data() {
