@@ -20,6 +20,7 @@
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
       :message-styling="messageStyling"
+      :messageMargin="messageMargin"
       @scrollToTop="$emit('scrollToTop')"
       @remove="$emit('remove', $event)"
     >
@@ -53,6 +54,7 @@
       :show-file="showFile"
       :placeholder="placeholder"
       :colors="colors"
+      :acceptedFileTypes="acceptedFileTypes"
       @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
     />
@@ -136,6 +138,15 @@ export default {
     confirmationDeletionMessage: {
       type: String,
       required: true
+    },
+    messageMargin: {
+      type: Object,
+      required: false
+    },
+    acceptedFileTypes: {
+      type: Array,
+      required: false,
+      default: () => ['*/*']
     }
   },
   data() {

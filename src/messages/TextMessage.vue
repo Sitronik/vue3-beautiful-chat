@@ -45,7 +45,7 @@ import {mapState} from '../store/'
 import IconBase from './../components/IconBase.vue'
 import IconEdit from './../components/icons/IconEdit.vue'
 import IconCross from './../components/icons/IconCross.vue'
-import escapeGoat from 'escape-goat'
+import {htmlEscape} from 'escape-goat'
 import Autolinker from 'autolinker'
 import store from '../store/'
 
@@ -81,7 +81,7 @@ export default {
   },
   computed: {
     messageText() {
-      const escaped = escapeGoat.escape(this.message.data.text)
+      const escaped = htmlEscape(this.message.data.text)
 
       return Autolinker.link(this.messageStyling ? fmt(escaped) : escaped, {
         className: 'chatLink',

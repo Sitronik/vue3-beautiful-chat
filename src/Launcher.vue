@@ -30,6 +30,8 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
+      :messageMargin="messageMargin"
+      :acceptedFileTypes="acceptedFileTypes"
       @close="close"
       @scrollToTop="$emit('scrollToTop')"
       @onType="$emit('onType', $event)"
@@ -178,6 +180,10 @@ export default {
       type: String,
       default: () => ''
     },
+    messageMargin: {
+      type: Object,
+      required: false
+    },
     colors: {
       type: Object,
       validator: (c) =>
@@ -235,6 +241,10 @@ export default {
     disableUserListToggle: {
       type: Boolean,
       default: false
+    },
+    acceptedFileTypes: {
+      type: Array,
+      default: () => ['*/*']
     }
   },
   computed: {
