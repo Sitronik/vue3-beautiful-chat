@@ -5,6 +5,7 @@
       :title="title"
       :colors="colors"
       @close="$emit('close')"
+      @minimize="$emit('minimize')"
       @userList="handleUserListToggle"
     >
       <slot name="header"> </slot>

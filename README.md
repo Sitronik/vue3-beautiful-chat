@@ -58,6 +58,7 @@ app.use(Chat)
       :newMessagesCount="newMessagesCount"
       :isOpen="isChatOpen"
       :close="closeChat"
+      :minimize="handleMinimize"
       :icons="icons"
       :open="openChat"
       :showEmoji="true"
@@ -73,6 +74,7 @@ app.use(Chat)
       :disableUserListToggle="false"
       :messageStyling="messageStyling"
       :messageMargin="messageMargin"
+      :showMinimizeButton="true"
       @onType="handleOnType"
       @edit="editMessage" />
   </div>
@@ -206,6 +208,9 @@ For more detailed examples see the demo folder.
 | autoFocus                   | Boolean | A bool indicating whether or not to disable auto focus
 | messageMargin               | MessageMargin | An object that contains the margin configuration for the sender, recipient and system messages. [See here](#message-margin-object)
 | acceptedFileTypes           | [String] | An array of strings representing the accepted file types for the file input 
+| minimize                    | Function | The function that handles the minimize event
+| showMinimizeButton          | Boolean | A bool indicating whether or not to show the minimize button (Defaults to `false`)
+
 
 #### Events
 

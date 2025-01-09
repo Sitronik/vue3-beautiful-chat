@@ -32,8 +32,8 @@
   "devDependencies": {
     "@rollup/plugin-dynamic-import-vars": "^2.1.5",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/cli-plugin-babel": "~5.0.8",
-    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "@vue/compiler-sfc": "^3.5.13",
     "@vue/eslint-config-prettier": "^10.1.0",
