@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      v-if="showLauncher"
-      class="sc-launcher"
-      :class="{opened: isOpen}"
-      :style="{backgroundColor: colors.launcher.bg}"
-      @click.prevent="isOpen ? close() : openAndFocus()"
+        v-if="showLauncher"
+        class="sc-launcher"
+        :class="{opened: isOpen}"
+        :style="{backgroundColor: colors.launcher.bg}"
+        @click.prevent="isOpen ? close() : openAndFocus()"
     >
       <div v-if="newMessagesCount > 0 && !isOpen" class="sc-new-messsages-count">
         {{ newMessagesCount }}
@@ -32,7 +32,9 @@
       :message-styling="messageStyling"
       :messageMargin="messageMargin"
       :acceptedFileTypes="acceptedFileTypes"
+      :showMinimizeButton="showMinimizeButton"
       @close="close"
+      @minimize="minimize"
       @scrollToTop="$emit('scrollToTop')"
       @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
@@ -69,7 +71,7 @@
 import store from './store/'
 import ChatWindow from './ChatWindow.vue'
 
-import CloseIcon from './assets/close-icon.png'
+import CloseIcon from './assets/close.svg'
 import OpenIcon from './assets/logo-no-bg.svg'
 
 export default {
@@ -87,6 +89,10 @@ export default {
           },
           close: {
             img: CloseIcon,
+            name: 'default'
+          },
+          minimize: {
+            img: null,
             name: 'default'
           }
         }
@@ -132,6 +138,10 @@ export default {
       type: Function,
       required: true
     },
+    minimize: {
+      type: Function,
+      required: false
+    },
     showFile: {
       type: Boolean,
       default: false
@@ -143,6 +153,11 @@ export default {
     showCloseButton: {
       type: Boolean,
       default: true
+    },
+    showMinimizeButton: {
+      type: Boolean,
+      required: false,
+      default : false
     },
     showHeader: {
       type: Boolean,
