@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-        v-if="showLauncher"
-        class="sc-launcher"
-        :class="{opened: isOpen}"
-        :style="{backgroundColor: colors.launcher.bg}"
-        @click.prevent="isOpen ? close() : openAndFocus()"
+      v-if="showLauncher"
+      class="sc-launcher"
+      :class="{opened: isOpen}"
+      :style="{backgroundColor: colors.launcher.bg}"
+      @click.prevent="isOpen ? close() : openAndFocus()"
     >
       <div v-if="newMessagesCount > 0 && !isOpen" class="sc-new-messsages-count">
         {{ newMessagesCount }}
@@ -30,9 +30,9 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
-      :messageMargin="messageMargin"
-      :acceptedFileTypes="acceptedFileTypes"
-      :showMinimizeButton="showMinimizeButton"
+      :message-margin="messageMargin"
+      :accepted-file-types="acceptedFileTypes"
+      :show-minimize-button="showMinimizeButton"
       @close="close"
       @minimize="minimize"
       @scrollToTop="$emit('scrollToTop')"
@@ -40,28 +40,39 @@
       @edit="$emit('edit', $event)"
       @remove="$emit('remove', $event)"
     >
-      <template v-slot:header>
-        <slot name="header"> </slot>
+      <template #header>
+        <slot name="header"></slot>
       </template>
-      <template v-slot:user-avatar="scopedProps">
-        <slot name="user-avatar" :user="scopedProps.user" :message="scopedProps.message"> </slot>
+      <template #user-avatar="scopedProps">
+        <slot name="user-avatar" :user="scopedProps.user" :message="scopedProps.message"></slot>
       </template>
-      <template v-slot:text-message-body="scopedProps">
+      <template #text-message-body="scopedProps">
         <slot
           name="text-message-body"
           :message="scopedProps.message"
-          :messageText="scopedProps.messageText"
-          :messageColors="scopedProps.messageColors"
+          :message-text="scopedProps.messageText"
+          :message-colors="scopedProps.messageColors"
           :me="scopedProps.me"
         >
         </slot>
       </template>
-      <template v-slot:system-message-body="scopedProps">
-        <slot name="system-message-body" :message="scopedProps.message"> </slot>
+      <template #system-message-body="scopedProps">
+        <slot name="system-message-body" :message="scopedProps.message"></slot>
       </template>
-      <template v-slot:text-message-toolbox="scopedProps">
+      <template #text-message-toolbox="scopedProps">
         <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
         </slot>
+      </template>
+      <template #file-message-body="scopedProps">
+        <slot
+          name="file-message-body"
+          :message="scopedProps.message"
+          :message-colors="scopedProps.messageColors"
+        >
+        </slot>
+      </template>
+      <template #emoji-message-body="scopedProps">
+        <slot name="emoji-message-body" :message="scopedProps.message"></slot>
       </template>
     </ChatWindow>
   </div>
@@ -157,7 +168,7 @@ export default {
     showMinimizeButton: {
       type: Boolean,
       required: false,
-      default : false
+      default: false
     },
     showHeader: {
       type: Boolean,
@@ -326,11 +337,15 @@ export default {
   position: fixed;
   right: 25px;
   bottom: 25px;
-  transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
+  transition:
+    opacity 100ms ease-in-out,
+    transform 100ms ease-in-out;
 }
 
 .sc-launcher .sc-closed-icon {
-  transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
+  transition:
+    opacity 100ms ease-in-out,
+    transform 100ms ease-in-out;
   width: 60px;
   height: 60px;
 }

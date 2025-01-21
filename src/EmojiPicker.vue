@@ -1,11 +1,19 @@
 <template>
-  <div ref="domNode" tabIndex="0" class="sc-emoji-picker" :style="{ background: colors.emojiPicker.bg ?? 'white'  }" @blur="onBlur">
+  <div
+    ref="domNode"
+    tabIndex="0"
+    class="sc-emoji-picker"
+    :style="{background: colors.emojiPicker.bg ?? 'white'}"
+    @blur="onBlur"
+  >
     <div class="sc-emoji-picker--content">
       <div v-for="category in emojiData" :key="category.name" class="sc-emoji-picker--category">
         <div
-            class="sc-emoji-picker--category-title"
-            :style="{ color: colors.emojiPicker.text ?? '#b8c3ca' }"
-        >{{ category.name }}</div>
+          class="sc-emoji-picker--category-title"
+          :style="{color: colors.emojiPicker.text ?? '#b8c3ca'}"
+        >
+          {{ category.name }}
+        </div>
         <span
           v-for="emoji in category.emojis"
           :key="emoji"
@@ -51,7 +59,7 @@ export default {
       elem.style.transition = 'opacity 350ms'
       elem.style.opacity = 1
     })
-    this.$refs.domNode.focus();
+    this.$refs.domNode.focus()
 
     const style = document.createElement('style')
     style.innerHTML = `

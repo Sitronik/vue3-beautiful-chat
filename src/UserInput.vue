@@ -43,10 +43,18 @@
       <div class="sc-user-input--buttons">
         <div class="sc-user-input--button"></div>
         <div v-if="showEmoji && !isEditing" class="sc-user-input--button">
-          <EmojiIcon :on-emoji-picked="_handleEmojiPicked" :color="colors.userInput.text" :colors="colors" />
+          <EmojiIcon
+            :on-emoji-picked="_handleEmojiPicked"
+            :color="colors.userInput.text"
+            :colors="colors"
+          />
         </div>
         <div v-if="showFile && !isEditing" class="sc-user-input--button">
-          <FileIcons :on-change="_handleFileSubmit" :color="colors.userInput.text" :acceptedFileTypes="acceptedFileTypes" />
+          <FileIcons
+            :on-change="_handleFileSubmit"
+            :color="colors.userInput.text"
+            :acceptedFileTypes="acceptedFileTypes"
+          />
         </div>
         <div v-if="isEditing" class="sc-user-input--button">
           <UserInputButton
@@ -353,7 +361,9 @@ export default {
   background-color: #f4f7f9;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .sc-user-input--text {
