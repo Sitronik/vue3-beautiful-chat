@@ -14,28 +14,39 @@
       :message-styling="messageStyling"
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
-      :messageMargin="messageMargin"
+      :message-margin="messageMargin"
       @remove="$emit('remove', message)"
     >
-      <template v-slot:user-avatar="scopedProps">
+      <template #user-avatar="scopedProps">
         <slot name="user-avatar" :user="scopedProps.user" :message="scopedProps.message"> </slot>
       </template>
-      <template v-slot:text-message-body="scopedProps">
+      <template #text-message-body="scopedProps">
         <slot
           name="text-message-body"
           :message="scopedProps.message"
-          :messageText="scopedProps.messageText"
-          :messageColors="scopedProps.messageColors"
+          :message-text="scopedProps.messageText"
+          :message-colors="scopedProps.messageColors"
           :me="scopedProps.me"
         >
         </slot>
       </template>
-      <template v-slot:system-message-body="scopedProps">
+      <template #system-message-body="scopedProps">
         <slot name="system-message-body" :message="scopedProps.message"> </slot>
       </template>
-      <template v-slot:text-message-toolbox="scopedProps">
+      <template #text-message-toolbox="scopedProps">
         <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
         </slot>
+      </template>
+      <template #file-message-body="scopedProps">
+        <slot
+          name="file-message-body"
+          :message="scopedProps.message"
+          :message-colors="scopedProps.messageColors"
+        >
+        </slot>
+      </template>
+      <template #emoji-message-body="scopedProps">
+        <slot name="emoji-message-body" :message="scopedProps.message"> </slot>
       </template>
     </Message>
     <Message
@@ -121,7 +132,7 @@ export default {
   methods: {
     _scrollDown() {
       this.$refs.scrollList.scrollTop = this.$refs.scrollList.scrollHeight
-      !this.initialScrollTop ? this.initialScrollTop = this.$refs.scrollList.scrollTop : '';
+      !this.initialScrollTop ? (this.initialScrollTop = this.$refs.scrollList.scrollTop) : ''
     },
     handleScroll(e) {
       if (e.target.scrollTop === 0) {

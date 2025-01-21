@@ -1,11 +1,15 @@
 <template>
-  <div class="sc-message--emoji">{{ data.emoji }}</div>
+  <div class="sc-message--emoji">
+    <slot :message="message">
+      {{ message.data.emoji }}
+    </slot>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    data: {
+    message: {
       type: Object,
       required: true
     }

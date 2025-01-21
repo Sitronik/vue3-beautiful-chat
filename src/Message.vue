@@ -1,9 +1,10 @@
 <template>
   <div
-      :id="message.id" class="sc-message"
-      :style="{
-        margin: marginStyle
-      }"
+    :id="message.id"
+    class="sc-message"
+    :style="{
+      margin: marginStyle
+    }"
   >
     <div
       class="sc-message--content"
@@ -34,34 +35,47 @@
         :confirmation-deletion-message="confirmationDeletionMessage"
         @remove="$emit('remove')"
       >
-        <template v-slot:default="scopedProps">
+        <template #default="scopedProps">
           <slot
             name="text-message-body"
             :message="scopedProps.message"
-            :messageText="scopedProps.messageText"
-            :messageColors="scopedProps.messageColors"
+            :message-text="scopedProps.messageText"
+            :message-colors="scopedProps.messageColors"
             :me="scopedProps.me"
           >
           </slot>
         </template>
-        <template v-slot:text-message-toolbox="scopedProps">
+        <template #text-message-toolbox="scopedProps">
           <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
           </slot>
         </template>
       </TextMessage>
-      <EmojiMessage v-else-if="message.type === 'emoji'" :data="message.data" />
+      <EmojiMessage v-else-if="message.type === 'emoji'" :message="message">
+        <template #default="scopedProps">
+          <slot name="emoji-message-body" :message="scopedProps.message"></slot>
+        </template>
+      </EmojiMessage>
       <FileMessage
         v-else-if="message.type === 'file'"
-        :data="message.data"
+        :message="message.data"
         :message-colors="messageColors"
-      />
+      >
+        <template #default="scopedProps">
+          <slot
+            name="file-message-body"
+            :message="scopedProps.message"
+            :message-colors="scopedProps.messageColors"
+          >
+          </slot>
+        </template>
+      </FileMessage>
       <TypingMessage v-else-if="message.type === 'typing'" :message-colors="messageColors" />
       <SystemMessage
         v-else-if="message.type === 'system'"
         :data="message.data"
         :message-colors="messageColors"
       >
-        <slot name="system-message-body" :message="message.data"> </slot>
+        <slot name="system-message-body" :message="message.data"></slot>
       </SystemMessage>
     </div>
   </div>
@@ -136,15 +150,13 @@ export default {
       }
     },
     marginStyle() {
-      if (!this.messageMargin)
-        return 'auto';
+      if (!this.messageMargin) return 'auto'
       if (this.message.author === 'me' && this.messageMargin.sender)
-        return this.messageMargin.sender;
+        return this.messageMargin.sender
       if (this.message.type === 'system' && this.messageMargin.system)
-        return this.messageMargin.system;
-      if (this.messageMargin.recipient)
-        return this.messageMargin.recipient;
-      return 'auto';
+        return this.messageMargin.system
+      if (this.messageMargin.recipient) return this.messageMargin.recipient
+      return 'auto'
     }
   }
 }
@@ -156,6 +168,7 @@ export default {
   margin: auto;
   padding-bottom: 10px;
   display: flex;
+
   .sc-message--edited {
     opacity: 0.7;
     word-wrap: normal;
@@ -213,21 +226,26 @@ export default {
   line-height: 1.4;
   position: relative;
   -webkit-font-smoothing: subpixel-antialiased;
+
   .sc-message--text-body {
     .sc-message--text-content {
       white-space: pre-wrap;
     }
   }
+
   &:hover .sc-message--toolbox {
     left: -20px;
     opacity: 1;
   }
+
   &.confirm-delete:hover .sc-message--toolbox {
     left: -90px;
   }
+
   &.confirm-delete .sc-message--toolbox {
     width: auto;
   }
+
   .sc-message--toolbox {
     transition: left 0.2s ease-out 0s;
     white-space: normal;
@@ -236,6 +254,7 @@ export default {
     left: 0px;
     width: 25px;
     top: 0;
+
     button {
       background: none;
       border: none;
@@ -245,12 +264,14 @@ export default {
       width: 100%;
       text-align: center;
       cursor: pointer;
+
       &:focus {
         outline: none;
       }
     }
   }
 }
+
 .sc-message--content.sent .sc-message--text {
   color: white;
   background-color: #4e8cff;
@@ -271,12 +292,14 @@ export default {
 .tooltip {
   display: block !important;
   z-index: 10000;
+
   .tooltip-inner {
     background: black;
     color: white;
     border-radius: 16px;
     padding: 5px 10px 4px;
   }
+
   .tooltip-arrow {
     width: 0;
     height: 0;
@@ -286,8 +309,10 @@ export default {
     border-color: black;
     z-index: 1;
   }
+
   &[x-placement^='top'] {
     margin-bottom: 5px;
+
     .tooltip-arrow {
       border-width: 5px 5px 0 5px;
       border-left-color: transparent !important;
@@ -299,8 +324,10 @@ export default {
       margin-bottom: 0;
     }
   }
+
   &[x-placement^='bottom'] {
     margin-top: 5px;
+
     .tooltip-arrow {
       border-width: 0 5px 5px 5px;
       border-left-color: transparent !important;
@@ -312,8 +339,10 @@ export default {
       margin-bottom: 0;
     }
   }
+
   &[x-placement^='right'] {
     margin-left: 5px;
+
     .tooltip-arrow {
       border-width: 5px 5px 5px 0;
       border-left-color: transparent !important;
@@ -325,8 +354,10 @@ export default {
       margin-right: 0;
     }
   }
+
   &[x-placement^='left'] {
     margin-right: 5px;
+
     .tooltip-arrow {
       border-width: 5px 0 5px 5px;
       border-top-color: transparent !important;
@@ -338,18 +369,24 @@ export default {
       margin-right: 0;
     }
   }
+
   &[aria-hidden='true'] {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.15s, visibility 0.15s;
+    transition:
+      opacity 0.15s,
+      visibility 0.15s;
   }
+
   &[aria-hidden='false'] {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.15s;
   }
+
   &.info {
     $color: rgba(#004499, 0.9);
+
     .tooltip-inner {
       background: $color;
       color: white;
@@ -357,12 +394,15 @@ export default {
       border-radius: 5px;
       box-shadow: 0 5px 30px rgba(black, 0.1);
     }
+
     .tooltip-arrow {
       border-color: $color;
     }
   }
+
   &.popover {
     $color: #f9f9f9;
+
     .popover-inner {
       background: $color;
       color: black;
@@ -370,6 +410,7 @@ export default {
       border-radius: 5px;
       box-shadow: 0 5px 30px rgba(black, 0.1);
     }
+
     .popover-arrow {
       border-color: $color;
     }

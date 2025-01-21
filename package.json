@@ -1,6 +1,6 @@
 {
   "name": "vue3-beautiful-chat",
-  "version": "3.3.5",
+  "version": "3.4.0",
   "description": "A simple and beautiful Vue 3 chat component backend agnostic.",
   "main": "index.js",
   "repository": "https://github.com/Sitronik/vue3-beautiful-chat.git",
@@ -11,7 +11,8 @@
     "build:prod": "vite build",
     "lint": "vue-cli-service lint",
     "build:dev": "npm run build -- --mode development --watch",
-    "prepublishOnly": "npm run build:prod"
+    "prepublishOnly": "npm run build:prod",
+    "format": "prettier --write \"src/**/*.{js,vue}\""
   },
   "files": [
     "dist/*",
@@ -30,6 +31,7 @@
     "v-tooltip": "^4.0.0-alpha.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.26.5",
     "@rollup/plugin-dynamic-import-vars": "^2.1.5",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/cli-plugin-babel": "^5.0.8",
@@ -37,7 +39,6 @@
     "@vue/cli-service": "^5.0.8",
     "@vue/compiler-sfc": "^3.5.13",
     "@vue/eslint-config-prettier": "^10.1.0",
-    "babel-eslint": "^10.1.0",
     "eslint": "^9.17.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
