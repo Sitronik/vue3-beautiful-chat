@@ -1,5 +1,5 @@
 <template>
-  <div class="sc-header" :style="{background: colors.header.bg, color: colors.header.text}">
+  <div class="sc-header" :style="{background: colors.header.bg, color: colors.header.text, zIndex: 1}">
     <img v-if="titleImageUrl" class="sc-header--img" :src="titleImageUrl" alt="" />
     <div v-if="!disableUserListToggle" class="sc-header--title enabled" @click="toggleUserList">
       <slot>

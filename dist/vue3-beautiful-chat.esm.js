@@ -66,7 +66,7 @@ const M = (D, u) => {
 function q1(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-header",
-    style: I({ background: f.colors.header.bg, color: f.colors.header.text })
+    style: I({ background: f.colors.header.bg, color: f.colors.header.text, zIndex: 1 })
   }, [
     D.titleImageUrl ? (b(), m("img", {
       key: 0,
@@ -161,7 +161,7 @@ function q1(D, u, f, e, F, t) {
     ])) : z("", !0)
   ], 4);
 }
-const L1 = /* @__PURE__ */ M(I1, [["render", q1], ["__scopeId", "data-v-db5e8e95"]]), R1 = {
+const L1 = /* @__PURE__ */ M(I1, [["render", q1], ["__scopeId", "data-v-83a4c0f7"]]), R1 = {
   props: {
     iconName: {
       type: String,
@@ -1974,7 +1974,7 @@ function W3(D, u, f, e, F, t) {
         _: 3
       }, 8, ["message"])) : f.message.type === "file" ? (b(), V(r, {
         key: 2,
-        message: f.message.data,
+        message: f.message,
         "message-colors": t.messageColors
       }, {
         default: x((o) => [
