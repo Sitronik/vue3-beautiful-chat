@@ -1,4 +1,4 @@
-import { reactive as y1, openBlock as b, createElementBlock as m, normalizeStyle as I, createCommentVNode as z, renderSlot as k, createTextVNode as $u, toDisplayString as Z, createElementVNode as p, resolveComponent as O, createVNode as L, withCtx as x, resolveDirective as w1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Ku, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as $1, withKeys as O1, mergeProps as Lf, createApp as j1, h as P1 } from "vue";
+import { reactive as y1, openBlock as b, createElementBlock as m, normalizeStyle as j, createCommentVNode as z, renderSlot as k, createTextVNode as Nu, toDisplayString as Z, createElementVNode as p, resolveComponent as O, createVNode as L, withCtx as x, resolveDirective as w1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Ku, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as $1, withKeys as O1, mergeProps as Lf, createApp as j1, h as P1 } from "vue";
 const Du = {
   state: y1({
     editMessage: null
@@ -66,7 +66,7 @@ const M = (D, u) => {
 function q1(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-header",
-    style: I({ background: f.colors.header.bg, color: f.colors.header.text })
+    style: j({ background: f.colors.header.bg, color: f.colors.header.text, zIndex: 1 })
   }, [
     D.titleImageUrl ? (b(), m("img", {
       key: 0,
@@ -76,7 +76,7 @@ function q1(D, u, f, e, F, t) {
     }, null, 8, z1)) : z("", !0),
     D.disableUserListToggle ? (b(), m("div", N1, [
       k(D.$slots, "default", {}, () => [
-        $u(Z(f.title), 1)
+        Nu(Z(f.title), 1)
       ], !0)
     ])) : (b(), m("div", {
       key: 1,
@@ -84,7 +84,7 @@ function q1(D, u, f, e, F, t) {
       onClick: u[0] || (u[0] = (...a) => t.toggleUserList && t.toggleUserList(...a))
     }, [
       k(D.$slots, "default", {}, () => [
-        $u(Z(f.title), 1)
+        Nu(Z(f.title), 1)
       ], !0)
     ])),
     D.showMinimizeButton ? (b(), m("div", {
@@ -93,7 +93,7 @@ function q1(D, u, f, e, F, t) {
       onClick: u[1] || (u[1] = (a) => D.$emit("minimize"))
     }, [
       (b(), m("svg", {
-        style: I({ fill: f.colors.header.text }),
+        style: j({ fill: f.colors.header.text }),
         xmlns: "http://www.w3.org/2000/svg",
         x: "0px",
         y: "0px",
@@ -130,7 +130,7 @@ function q1(D, u, f, e, F, t) {
       onClick: u[2] || (u[2] = (a) => D.$emit("close"))
     }, [
       (b(), m("svg", {
-        style: I({ fill: f.colors.header.text }),
+        style: j({ fill: f.colors.header.text }),
         xmlns: "http://www.w3.org/2000/svg",
         x: "0px",
         y: "0px",
@@ -161,7 +161,7 @@ function q1(D, u, f, e, F, t) {
     ])) : z("", !0)
   ], 4);
 }
-const L1 = /* @__PURE__ */ M(I1, [["render", q1], ["__scopeId", "data-v-db5e8e95"]]), R1 = {
+const L1 = /* @__PURE__ */ M(I1, [["render", q1], ["__scopeId", "data-v-83a4c0f7"]]), R1 = {
   props: {
     iconName: {
       type: String,
@@ -232,7 +232,7 @@ function e0(D, u, f) {
   var e;
   return D.length > u && (f == null ? (f = "&hellip;", e = 3) : e = f.length, D = D.substring(0, u - e) + f), D;
 }
-function P(D, u) {
+function I(D, u) {
   for (var f = D.length - 1; f >= 0; f--)
     D[f] === u && D.splice(f, 1);
 }
@@ -240,10 +240,10 @@ function wu(D, u) {
   for (var f = D.length - 1; f >= 0; f--)
     u(D[f]) === !0 && D.splice(f, 1);
 }
-function zu(D) {
+function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var Nu = /[A-Za-z]/, J = /[\d]/, du = /\s/, OD = /['"]/, t0 = /[\x00-\x1F\x7F]/, F0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, n0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, a0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, d0 = F0 + n0 + a0, r0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = d0 + r0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
+var zu = /[A-Za-z]/, J = /[\d]/, du = /\s/, OD = /['"]/, t0 = /[\x00-\x1F\x7F]/, F0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, n0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, a0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, d0 = F0 + n0 + a0, r0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = d0 + r0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
   /** @class */
   function() {
     function D(u) {
@@ -314,27 +314,27 @@ function i0(D, u, f) {
   };
   if (D.length <= u)
     return D;
-  var r = u - F, s = t(D);
-  if (s.query) {
-    var d = s.query.match(/^(.*?)(?=(\?|\#))(.*?)$/i);
-    d && (s.query = s.query.substr(0, d[1].length), D = a(s));
+  var r = u - F, o = t(D);
+  if (o.query) {
+    var d = o.query.match(/^(.*?)(?=(\?|\#))(.*?)$/i);
+    d && (o.query = o.query.substr(0, d[1].length), D = a(o));
   }
-  if (D.length <= u || (s.host && (s.host = s.host.replace(/^www\./, ""), D = a(s)), D.length <= u))
+  if (D.length <= u || (o.host && (o.host = o.host.replace(/^www\./, ""), D = a(o)), D.length <= u))
     return D;
   var c = "";
-  if (s.host && (c += s.host), c.length >= r)
-    return s.host.length == u ? (s.host.substr(0, u - F) + f).substr(0, r + e) : n(c, r).substr(0, r + e);
-  var o = "";
-  if (s.path && (o += "/" + s.path), s.query && (o += "?" + s.query), o)
-    if ((c + o).length >= r) {
-      if ((c + o).length == u)
-        return (c + o).substr(0, u);
+  if (o.host && (c += o.host), c.length >= r)
+    return o.host.length == u ? (o.host.substr(0, u - F) + f).substr(0, r + e) : n(c, r).substr(0, r + e);
+  var s = "";
+  if (o.path && (s += "/" + o.path), o.query && (s += "?" + o.query), s)
+    if ((c + s).length >= r) {
+      if ((c + s).length == u)
+        return (c + s).substr(0, u);
       var B = r - c.length;
-      return (c + n(o, B)).substr(0, r + e);
+      return (c + n(s, B)).substr(0, r + e);
     } else
-      c += o;
-  if (s.fragment) {
-    var E = "#" + s.fragment;
+      c += s;
+  if (o.fragment) {
+    var E = "#" + o.fragment;
     if ((c + E).length >= r) {
       if ((c + E).length == u)
         return (c + E).substr(0, u);
@@ -343,8 +343,8 @@ function i0(D, u, f) {
     } else
       c += E;
   }
-  if (s.scheme && s.host) {
-    var _ = s.scheme + "://";
+  if (o.scheme && o.host) {
+    var _ = o.scheme + "://";
     if ((c + _).length < r)
       return (_ + c).substr(0, u);
   }
@@ -353,7 +353,7 @@ function i0(D, u, f) {
   var w = "";
   return r > 0 && (w = c.substr(-1 * Math.floor(r / 2))), (c.substr(0, Math.ceil(r / 2)) + f + w).substr(0, r + e);
 }
-function o0(D, u, f) {
+function s0(D, u, f) {
   if (D.length <= u)
     return D;
   var e, F;
@@ -361,7 +361,7 @@ function o0(D, u, f) {
   var t = u - F, a = "";
   return t > 0 && (a = D.substr(-1 * Math.floor(t / 2))), (D.substr(0, Math.ceil(t / 2)) + f + a).substr(0, t + e);
 }
-function s0(D, u, f) {
+function o0(D, u, f) {
   return e0(D, u, f);
 }
 var C0 = (
@@ -397,7 +397,7 @@ var C0 = (
       if (!f || !f.length)
         return u;
       var e = f.length, F = f.location;
-      return F === "smart" ? i0(u, e) : F === "middle" ? o0(u, e) : s0(u, e);
+      return F === "smart" ? i0(u, e) : F === "middle" ? s0(u, e) : o0(u, e);
     }, D;
   }()
 ), HD = function(D, u) {
@@ -445,10 +445,10 @@ var eD = (
   }()
 ), c0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", E0 = new RegExp("^" + c0 + "$"), l0 = /[\/?#]/, B0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Wf = /[?!:,.;^]/, Gf = /https?:\/\//i, b0 = new RegExp("^" + Gf.source, "i"), p0 = new RegExp(Wf.source + "$"), g0 = /^(javascript|vbscript):/i, m0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, h0 = /^(?:\/\/)?([^/#?:]+)/;
 function Vu(D) {
-  return Nu.test(D);
+  return zu.test(D);
 }
 function rf(D) {
-  return Nu.test(D) || J.test(D) || D === "+" || D === "-" || D === ".";
+  return zu.test(D) || J.test(D) || D === "+" || D === "-" || D === ".";
 }
 function _u(D) {
   return Su.test(D);
@@ -456,7 +456,7 @@ function _u(D) {
 function jD(D) {
   return D === "_" || _u(D);
 }
-function of(D) {
+function sf(D) {
   return Su.test(D) || B0.test(D) || Wf.test(D);
 }
 function PD(D) {
@@ -472,7 +472,7 @@ function _0(D) {
   if (!u)
     return !1;
   var f = !!u[1], e = u[2];
-  return f ? !0 : !(e.indexOf(".") === -1 || !Nu.test(e));
+  return f ? !0 : !(e.indexOf(".") === -1 || !zu.test(e));
 }
 function v0(D) {
   var u = D.match(h0);
@@ -566,7 +566,7 @@ var L0 = (
     }, u;
   }(eD)
 );
-function sf(D) {
+function of(D) {
   return D === "_" || Su.test(D);
 }
 function R0(D) {
@@ -606,7 +606,7 @@ var M0 = [
         case "youtube":
           return "https://youtube.com/hashtag/" + e;
         default:
-          throw zu(f), new Error("Invalid hashtag service: ".concat(f));
+          throw Iu(f), new Error("Invalid hashtag service: ".concat(f));
       }
     }, u.prototype.getAnchorText = function() {
       return "#" + this.hashtag;
@@ -667,7 +667,7 @@ var G0 = [
         case "youtube":
           return "https://youtube.com/@" + this.mention;
         default:
-          throw zu(this.serviceName), new Error("Unknown service name to point mention to: " + this.serviceName);
+          throw Iu(this.serviceName), new Error("Unknown service name to point mention to: " + this.serviceName);
       }
     }, u.prototype.getAnchorText = function() {
       return "@" + this.mention;
@@ -709,150 +709,150 @@ var f3 = (
   }(eD)
 );
 function e3(D, u) {
-  for (var f = u.tagBuilder, e = u.stripPrefix, F = u.stripTrailingSlash, t = u.decodePercentEncoding, a = u.hashtagServiceName, n = u.mentionServiceName, r = [], s = D.length, d = [], c = 0; c < s; c++) {
-    var o = D.charAt(c);
+  for (var f = u.tagBuilder, e = u.stripPrefix, F = u.stripTrailingSlash, t = u.decodePercentEncoding, a = u.hashtagServiceName, n = u.mentionServiceName, r = [], o = D.length, d = [], c = 0; c < o; c++) {
+    var s = D.charAt(c);
     if (d.length === 0)
-      w(o);
+      w(s);
     else {
       for (var B = d.length - 1; B >= 0; B--) {
         var E = d[B];
         switch (E.state) {
           // Protocol-relative URL states
           case 11:
-            T(E, o);
+            T(E, s);
             break;
           case 12:
-            $(E, o);
+            $(E, s);
             break;
           case 0:
-            v(E, o);
+            v(E, s);
             break;
           case 1:
-            A(E, o);
+            A(E, s);
             break;
           case 2:
-            g(E, o);
+            g(E, s);
             break;
           case 3:
-            h(E, o);
+            h(E, s);
             break;
           case 4:
-            S(E, o);
+            S(E, s);
             break;
           case 5:
-            H(E, o);
+            H(E, s);
             break;
           case 6:
-            N(E, o);
+            N(E, s);
             break;
           case 7:
-            U(E, o);
+            U(E, s);
             break;
           case 13:
-            uu(E, o);
+            uu(E, s);
             break;
           case 14:
-            G(E, o);
+            G(E, s);
             break;
           case 8:
-            nu(E, o);
+            nu(E, s);
             break;
           case 9:
-            gu(E, o);
+            gu(E, s);
             break;
           case 10:
-            Eu(E, o);
+            Eu(E, s);
             break;
           // Email States
           case 15:
-            au(E, o);
+            au(E, s);
             break;
           case 16:
-            yu(E, o);
+            yu(E, s);
             break;
           case 17:
-            W(E, o);
+            W(E, s);
             break;
           case 18:
-            X(E, o);
+            X(E, s);
             break;
           case 19:
-            Q(E, o);
+            Q(E, s);
             break;
           case 20:
-            lu(E, o);
+            lu(E, s);
             break;
           case 21:
-            Bu(E, o);
+            Bu(E, s);
             break;
           case 22:
-            K(E, o);
+            K(E, s);
             break;
           case 23:
-            l(E, o);
+            l(E, s);
             break;
           case 24:
-            Ou(E, o);
+            $u(E, s);
             break;
           case 25:
-            Mu(E, o);
+            Mu(E, s);
             break;
           case 26:
-            mu(E, o);
+            mu(E, s);
             break;
           case 27:
-            Hu(E, o);
+            Hu(E, s);
             break;
           // Hashtag states
           case 28:
-            aD(E, o);
+            aD(E, s);
             break;
           case 29:
-            dD(E, o);
+            dD(E, s);
             break;
           // Mention states
           case 30:
-            rD(E, o);
+            rD(E, s);
             break;
           case 31:
-            iD(E, o);
+            iD(E, s);
             break;
           // Phone number states
           case 32:
-            TD(E, o);
+            TD(E, s);
             break;
           case 33:
-            ju(E, o);
+            Ou(E, s);
             break;
           case 34:
-            oD(E, o);
+            sD(E, s);
             break;
           case 35:
-            sD(E, o);
+            oD(E, s);
             break;
           case 36:
-            CD(E, o);
+            CD(E, s);
             break;
           case 37:
-            SD(E, o);
+            SD(E, s);
             break;
           case 38:
-            g1(E, o);
+            g1(E, s);
             break;
           case 39:
-            m1(E, o);
+            m1(E, s);
             break;
           case 40:
-            h1(E, o);
+            h1(E, s);
             break;
           case 41:
-            _1(E, o);
+            _1(E, s);
             break;
           default:
-            zu(E.state);
+            Iu(E.state);
         }
       }
-      if (c > 0 && Vu(o)) {
+      if (c > 0 && Vu(s)) {
         var y = D.charAt(c - 1);
         !Vu(y) && !d.some(i3) && d.push(cD(
           c,
@@ -923,33 +923,33 @@ function e3(D, u) {
     }
   }
   function v(i, C) {
-    C === ":" ? i.state = 2 : C === "-" ? i.state = 1 : rf(C) || P(d, i);
+    C === ":" ? i.state = 2 : C === "-" ? i.state = 1 : rf(C) || I(d, i);
   }
   function A(i, C) {
-    C === "-" || (C === "/" ? (P(d, i), d.push(ND(
+    C === "-" || (C === "/" ? (I(d, i), d.push(ND(
       c,
       11
       /* State.ProtocolRelativeSlash1 */
-    ))) : rf(C) ? i.state = 0 : P(d, i));
+    ))) : rf(C) ? i.state = 0 : I(d, i));
   }
   function g(i, C) {
-    C === "/" ? i.state = 3 : C === "." ? P(d, i) : _u(C) ? (i.state = 5, Vu(C) && d.push(cD(
+    C === "/" ? i.state = 3 : C === "." ? I(d, i) : _u(C) ? (i.state = 5, Vu(C) && d.push(cD(
       c,
       0
       /* State.SchemeChar */
-    ))) : P(d, i);
+    ))) : I(d, i);
   }
   function h(i, C) {
-    C === "/" ? i.state = 4 : of(C) ? (i.state = 10, i.acceptStateReached = !0) : R(i);
+    C === "/" ? i.state = 4 : sf(C) ? (i.state = 10, i.acceptStateReached = !0) : R(i);
   }
   function S(i, C) {
-    C === "/" ? i.state = 10 : _u(C) ? (i.state = 5, i.acceptStateReached = !0) : P(d, i);
+    C === "/" ? i.state = 10 : _u(C) ? (i.state = 5, i.acceptStateReached = !0) : I(d, i);
   }
   function T(i, C) {
-    C === "/" ? i.state = 12 : P(d, i);
+    C === "/" ? i.state = 12 : I(d, i);
   }
   function $(i, C) {
-    _u(C) ? i.state = 5 : P(d, i);
+    _u(C) ? i.state = 5 : I(d, i);
   }
   function H(i, C) {
     C === "." ? i.state = 7 : C === "-" ? i.state = 6 : C === ":" ? i.state = 8 : PD(C) ? i.state = 10 : jD(C) || R(i);
@@ -961,7 +961,7 @@ function e3(D, u) {
     C === "." ? R(i) : _u(C) ? (i.state = 5, i.acceptStateReached = !0) : R(i);
   }
   function uu(i, C) {
-    C === "." ? i.state = 14 : C === ":" ? i.state = 8 : J.test(C) || (PD(C) ? i.state = 10 : Su.test(C) ? P(d, i) : R(i));
+    C === "." ? i.state = 14 : C === ":" ? i.state = 8 : J.test(C) || (PD(C) ? i.state = 10 : Su.test(C) ? I(d, i) : R(i));
   }
   function G(i, C) {
     J.test(C) ? (i.octetsEncountered++, i.octetsEncountered === 4 && (i.acceptStateReached = !0), i.state = 13) : R(i);
@@ -973,7 +973,7 @@ function e3(D, u) {
     J.test(C) || (PD(C) ? i.state = 10 : R(i));
   }
   function Eu(i, C) {
-    of(C) || R(i);
+    sf(C) || R(i);
   }
   function au(i, C) {
     C.toLowerCase() === "a" ? i.state = 16 : K(i, C);
@@ -994,16 +994,16 @@ function e3(D, u) {
     C.toLowerCase() === ":" ? i.state = 21 : K(i, C);
   }
   function Bu(i, C) {
-    ID(C) ? i.state = 22 : P(d, i);
+    ID(C) ? i.state = 22 : I(d, i);
   }
   function K(i, C) {
-    C === "." ? i.state = 23 : C === "@" ? i.state = 24 : ID(C) ? i.state = 22 : P(d, i);
+    C === "." ? i.state = 23 : C === "@" ? i.state = 24 : ID(C) ? i.state = 22 : I(d, i);
   }
   function l(i, C) {
-    C === "." || C === "@" ? P(d, i) : ID(C) ? i.state = 22 : P(d, i);
+    C === "." || C === "@" ? I(d, i) : ID(C) ? i.state = 22 : I(d, i);
   }
-  function Ou(i, C) {
-    _u(C) ? i.state = 25 : P(d, i);
+  function $u(i, C) {
+    _u(C) ? i.state = 25 : I(d, i);
   }
   function Mu(i, C) {
     C === "." ? i.state = 27 : C === "-" ? i.state = 26 : jD(C) || R(i);
@@ -1015,34 +1015,34 @@ function e3(D, u) {
     C === "." || C === "-" ? R(i) : _u(C) ? (i.state = 25, i.acceptStateReached = !0) : R(i);
   }
   function aD(i, C) {
-    sf(C) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
+    of(C) ? (i.state = 29, i.acceptStateReached = !0) : I(d, i);
   }
   function dD(i, C) {
-    sf(C) || R(i);
+    of(C) || R(i);
   }
   function rD(i, C) {
-    Cf(C) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
+    Cf(C) ? (i.state = 31, i.acceptStateReached = !0) : I(d, i);
   }
   function iD(i, C) {
-    Cf(C) || (Su.test(C) ? P(d, i) : R(i));
+    Cf(C) || (Su.test(C) ? I(d, i) : R(i));
   }
   function SD(i, C) {
-    J.test(C) ? i.state = 38 : (P(d, i), w(C));
+    J.test(C) ? i.state = 38 : (I(d, i), w(C));
   }
   function TD(i, C) {
-    J.test(C) ? i.state = 33 : P(d, i), w(C);
+    J.test(C) ? i.state = 33 : I(d, i), w(C);
   }
-  function ju(i, C) {
-    J.test(C) ? i.state = 34 : P(d, i);
-  }
-  function oD(i, C) {
-    J.test(C) ? i.state = 35 : P(d, i);
+  function Ou(i, C) {
+    J.test(C) ? i.state = 34 : I(d, i);
   }
   function sD(i, C) {
-    C === ")" ? i.state = 36 : P(d, i);
+    J.test(C) ? i.state = 35 : I(d, i);
+  }
+  function oD(i, C) {
+    C === ")" ? i.state = 36 : I(d, i);
   }
   function CD(i, C) {
-    J.test(C) ? i.state = 38 : cf(C) ? i.state = 39 : P(d, i);
+    J.test(C) ? i.state = 38 : cf(C) ? i.state = 39 : I(d, i);
   }
   function g1(i, C) {
     i.acceptStateReached = !0, zD(C) ? i.state = 40 : C === "#" ? i.state = 41 : J.test(C) || (C === "(" ? i.state = 32 : cf(C) ? i.state = 39 : (R(i), Vu(C) && d.push(cD(
@@ -1058,35 +1058,35 @@ function e3(D, u) {
     zD(C) || (C === "#" ? i.state = 41 : J.test(C) ? i.state = 38 : R(i));
   }
   function _1(i, C) {
-    zD(C) ? i.state = 40 : J.test(C) ? P(d, i) : R(i);
+    zD(C) ? i.state = 40 : J.test(C) ? I(d, i) : R(i);
   }
   function R(i) {
-    if (P(d, i), !!i.acceptStateReached) {
-      var C = i.startIdx, j = D.slice(i.startIdx, c);
-      if (j = F3(j), i.type === "url") {
+    if (I(d, i), !!i.acceptStateReached) {
+      var C = i.startIdx, P = D.slice(i.startIdx, c);
+      if (P = F3(P), i.type === "url") {
         var v1 = D.charAt(i.startIdx - 1);
         if (v1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
-          var $D = Gf.exec(j);
-          if ($D && (C = C + $D.index, j = j.slice($D.index)), !_0(j))
+          var $D = Gf.exec(P);
+          if ($D && (C = C + $D.index, P = P.slice($D.index)), !_0(P))
             return;
         } else if (Uu === "tld") {
-          if (!v0(j))
+          if (!v0(P))
             return;
         } else if (Uu === "ipV4") {
-          if (!w0(j))
+          if (!w0(P))
             return;
         } else
-          zu(Uu);
+          Iu(Uu);
         r.push(new S0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: P,
           offset: C,
           urlMatchType: Uu,
-          url: j,
-          protocolRelativeMatch: j.slice(0, 2) === "//",
+          url: P,
+          protocolRelativeMatch: P.slice(0, 2) === "//",
           // TODO: Do these settings need to be passed to the match,
           // or should we handle them here in UrlMatcher?
           stripPrefix: e,
@@ -1094,42 +1094,42 @@ function e3(D, u) {
           decodePercentEncoding: t
         }));
       } else if (i.type === "email")
-        q0(j) && r.push(new L0({
+        q0(P) && r.push(new L0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: P,
           offset: C,
-          email: j.replace(I0, "")
+          email: P.replace(I0, "")
         }));
       else if (i.type === "hashtag")
-        R0(j) && r.push(new H0({
+        R0(P) && r.push(new H0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: P,
           offset: C,
           serviceName: a,
-          hashtag: j.slice(1)
+          hashtag: P.slice(1)
         }));
       else if (i.type === "mention")
-        W0(j, n) && r.push(new Y0({
+        W0(P, n) && r.push(new Y0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: P,
           offset: C,
           serviceName: n,
-          mention: j.slice(1)
+          mention: P.slice(1)
           // strip off the '@' character at the beginning
         }));
       else if (i.type === "phone") {
-        if (j = j.replace(/ +$/g, ""), D3(j)) {
-          var A1 = j.replace(/[^0-9,;#]/g, "");
+        if (P = P.replace(/ +$/g, ""), D3(P)) {
+          var A1 = P.replace(/[^0-9,;#]/g, "");
           r.push(new f3({
             tagBuilder: f,
-            matchedText: j,
+            matchedText: P,
             offset: C,
             number: A1,
-            plusSign: j.charAt(0) === "+"
+            plusSign: P.charAt(0) === "+"
           }));
         }
       } else
-        zu(i);
+        Iu(i);
     }
   }
 }
@@ -1224,8 +1224,8 @@ function qD(D, u) {
 function i3(D) {
   return D.type === "url" && D.matchType === "scheme";
 }
-function o3(D, u) {
-  for (var f = u.onOpenTag, e = u.onCloseTag, F = u.onText, t = u.onComment, a = u.onDoctype, n = new bu(), r = 0, s = D.length, d = 0, c = 0, o = n; r < s; ) {
+function s3(D, u) {
+  for (var f = u.onOpenTag, e = u.onCloseTag, F = u.onText, t = u.onComment, a = u.onDoctype, n = new bu(), r = 0, o = D.length, d = 0, c = 0, s = n; r < o; ) {
     var B = D.charAt(r);
     switch (d) {
       case 0:
@@ -1292,7 +1292,7 @@ function o3(D, u) {
         yu(B);
         break;
       default:
-        zu(d);
+        Iu(d);
     }
     r++;
   }
@@ -1301,13 +1301,13 @@ function o3(D, u) {
     l === "<" && X();
   }
   function y(l) {
-    l === "!" ? d = 13 : l === "/" ? (d = 2, o = new bu(Y(Y({}, o), { isClosing: !0 }))) : l === "<" ? X() : Nu.test(l) ? (d = 3, o = new bu(Y(Y({}, o), { isOpening: !0 }))) : (d = 0, o = n);
+    l === "!" ? d = 13 : l === "/" ? (d = 2, s = new bu(Y(Y({}, s), { isClosing: !0 }))) : l === "<" ? X() : zu.test(l) ? (d = 3, s = new bu(Y(Y({}, s), { isOpening: !0 }))) : (d = 0, s = n);
   }
   function _(l) {
-    du.test(l) ? (o = new bu(Y(Y({}, o), { name: Bu() })), d = 4) : l === "<" ? X() : l === "/" ? (o = new bu(Y(Y({}, o), { name: Bu() })), d = 12) : l === ">" ? (o = new bu(Y(Y({}, o), { name: Bu() })), Q()) : !Nu.test(l) && !J.test(l) && l !== ":" && W();
+    du.test(l) ? (s = new bu(Y(Y({}, s), { name: Bu() })), d = 4) : l === "<" ? X() : l === "/" ? (s = new bu(Y(Y({}, s), { name: Bu() })), d = 12) : l === ">" ? (s = new bu(Y(Y({}, s), { name: Bu() })), Q()) : !zu.test(l) && !J.test(l) && l !== ":" && W();
   }
   function w(l) {
-    l === ">" ? W() : Nu.test(l) ? d = 3 : W();
+    l === ">" ? W() : zu.test(l) ? d = 3 : W();
   }
   function v(l) {
     du.test(l) || (l === "/" ? d = 12 : l === ">" ? Q() : l === "<" ? X() : l === "=" || OD.test(l) || t0.test(l) ? W() : d = 5);
@@ -1334,10 +1334,10 @@ function o3(D, u) {
     du.test(l) ? d = 4 : l === "/" ? d = 12 : l === ">" ? Q() : l === "<" ? X() : (d = 4, K());
   }
   function N(l) {
-    l === ">" ? (o = new bu(Y(Y({}, o), { isClosing: !0 })), Q()) : d = 4;
+    l === ">" ? (s = new bu(Y(Y({}, s), { isClosing: !0 })), Q()) : d = 4;
   }
   function U(l) {
-    D.substr(r, 2) === "--" ? (r += 2, o = new bu(Y(Y({}, o), { type: "comment" })), d = 14) : D.substr(r, 7).toUpperCase() === "DOCTYPE" ? (r += 7, o = new bu(Y(Y({}, o), { type: "doctype" })), d = 20) : W();
+    D.substr(r, 2) === "--" ? (r += 2, s = new bu(Y(Y({}, s), { type: "comment" })), d = 14) : D.substr(r, 7).toUpperCase() === "DOCTYPE" ? (r += 7, s = new bu(Y(Y({}, s), { type: "doctype" })), d = 20) : W();
   }
   function uu(l) {
     l === "-" ? d = 15 : l === ">" ? W() : d = 16;
@@ -1361,21 +1361,21 @@ function o3(D, u) {
     l === ">" ? Q() : l === "<" && X();
   }
   function W() {
-    d = 0, o = n;
+    d = 0, s = n;
   }
   function X() {
-    d = 1, o = new bu({ idx: r });
+    d = 1, s = new bu({ idx: r });
   }
   function Q() {
-    var l = D.slice(c, o.idx);
-    l && F(l, c), o.type === "comment" ? t(o.idx) : o.type === "doctype" ? a(o.idx) : (o.isOpening && f(o.name, o.idx), o.isClosing && e(o.name, o.idx)), W(), c = r + 1;
+    var l = D.slice(c, s.idx);
+    l && F(l, c), s.type === "comment" ? t(s.idx) : s.type === "doctype" ? a(s.idx) : (s.isOpening && f(s.name, s.idx), s.isClosing && e(s.name, s.idx)), W(), c = r + 1;
   }
   function lu() {
     var l = D.slice(c, r);
     F(l, c), c = r + 1;
   }
   function Bu() {
-    var l = o.idx + (o.isClosing ? 2 : 1);
+    var l = s.idx + (s.isClosing ? 2 : 1);
     return D.slice(l, r).toLowerCase();
   }
   function K() {
@@ -1390,7 +1390,7 @@ var bu = (
     }
     return D;
   }()
-), s3 = (
+), o3 = (
   /** @class */
   function() {
     function D(u) {
@@ -1417,15 +1417,15 @@ var bu = (
       return e.parse(u);
     }, D.prototype.parse = function(u) {
       var f = this, e = ["a", "style", "script"], F = 0, t = [];
-      return o3(u, {
+      return s3(u, {
         onOpenTag: function(a) {
           e.indexOf(a) >= 0 && F++;
         },
         onText: function(a, n) {
           if (F === 0) {
-            var r = /(&nbsp;|&#160;|&lt;|&#60;|&gt;|&#62;|&quot;|&#34;|&#39;)/gi, s = a.split(r), d = n;
-            s.forEach(function(c, o) {
-              if (o % 2 === 0) {
+            var r = /(&nbsp;|&#160;|&lt;|&#60;|&gt;|&#62;|&quot;|&#34;|&#39;)/gi, o = a.split(r), d = n;
+            o.forEach(function(c, s) {
+              if (s % 2 === 0) {
                 var B = f.parseText(c, d);
                 t.push.apply(t, B);
               }
@@ -1444,8 +1444,8 @@ var bu = (
         // no need to process doctype nodes
       }), t = this.compactMatches(t), t = this.removeUnwantedMatches(t), t;
     }, D.prototype.compactMatches = function(u) {
-      u.sort(function(r, s) {
-        return r.getOffset() - s.getOffset();
+      u.sort(function(r, o) {
+        return r.getOffset() - o.getOffset();
       });
       for (var f = 0; f < u.length - 1; ) {
         var e = u[f], F = e.getOffset(), t = e.getMatchedText().length, a = F + t;
@@ -1564,21 +1564,21 @@ function B3() {
   return LD = (t, a = D) => {
     a = Object.assign({}, D, a);
     let n = "", r = 0;
-    const s = () => {
+    const o = () => {
       n += t[r], r++;
-    }, d = (o, B) => {
-      n += B + o, r += o.length;
-    }, c = (o) => {
+    }, d = (s, B) => {
+      n += B + s, r += s.length;
+    }, c = (s) => {
       if (r++, t[r] === " ")
-        n += o.delimiter, s();
+        n += s.delimiter, o();
       else {
-        const B = t.substr(r), E = F(B, o.delimiter);
-        E.length === 0 ? d(B, o.delimiter) : (n += e(E, o.tag), r += E.length + 1);
+        const B = t.substr(r), E = F(B, s.delimiter);
+        E.length === 0 ? d(B, s.delimiter) : (n += e(E, s.tag), r += E.length + 1);
       }
     };
     for (; r < t.length; ) {
-      const o = t[r];
-      o === a.bold.delimiter ? c(a.bold) : o === a.italic.delimiter ? c(a.italic) : o === a.underline.delimiter ? c(a.underline) : o === a.strike.delimiter ? c(a.strike) : o === a.code.delimiter ? c(a.code) : o === a.sup.delimiter ? c(a.sup) : o === a.sub.delimiter ? c(a.sub) : s();
+      const s = t[r];
+      s === a.bold.delimiter ? c(a.bold) : s === a.italic.delimiter ? c(a.italic) : s === a.underline.delimiter ? c(a.underline) : s === a.strike.delimiter ? c(a.strike) : s === a.code.delimiter ? c(a.code) : s === a.sup.delimiter ? c(a.sup) : s === a.sub.delimiter ? c(a.sub) : o();
     }
     return n;
   }, LD;
@@ -1615,7 +1615,7 @@ const p3 = /* @__PURE__ */ uf(b3), g3 = {
   computed: {
     messageText() {
       const D = J1(this.message.data.text);
-      return s3.link(this.messageStyling ? p3(D) : D, {
+      return o3.link(this.messageStyling ? p3(D) : D, {
         className: "chatLink",
         truncate: { length: 50, location: "smart" }
       });
@@ -1651,16 +1651,16 @@ function A3(D, u, f, e, F, t) {
   const a = O("IconEdit"), n = O("IconBase"), r = O("IconCross");
   return b(), m("div", {
     class: "sc-message--text",
-    style: I(f.messageColors)
+    style: j(f.messageColors)
   }, [
     p("div", {
       class: "sc-message--toolbox",
-      style: I({ background: f.messageColors.backgroundColor })
+      style: j({ background: f.messageColors.backgroundColor })
     }, [
       D.showEdition && t.me && f.message.id ? (b(), m("button", {
         key: 0,
         disabled: t.isEditing,
-        onClick: u[0] || (u[0] = (...s) => t.edit && t.edit(...s))
+        onClick: u[0] || (u[0] = (...o) => t.edit && t.edit(...o))
       }, [
         L(n, {
           color: t.isEditing ? "black" : f.messageColors.color,
@@ -1676,7 +1676,7 @@ function A3(D, u, f, e, F, t) {
       D.showDeletion ? (b(), m("div", h3, [
         t.me && f.message.id != null && f.message.id != null ? (b(), m("button", {
           key: 0,
-          onClick: u[1] || (u[1] = (s) => t.ifelse(
+          onClick: u[1] || (u[1] = (o) => t.ifelse(
             f.showConfirmationDeletion,
             t.withConfirm(f.confirmationDeletionMessage, () => D.$emit("remove")),
             () => D.$emit("remove")
@@ -1712,7 +1712,7 @@ function A3(D, u, f, e, F, t) {
       f.message.data.meta ? (b(), m("p", {
         key: 0,
         class: "sc-message--meta",
-        style: I({ color: f.messageColors.color })
+        style: j({ color: f.messageColors.color })
       }, Z(f.message.data.meta), 5)) : z("", !0),
       f.message.isEdited ? (b(), m("p", v3, [
         L(n, {
@@ -1724,7 +1724,7 @@ function A3(D, u, f, e, F, t) {
           ]),
           _: 1
         }),
-        u[2] || (u[2] = $u(" edited "))
+        u[2] || (u[2] = Nu(" edited "))
       ])) : z("", !0)
     ], !0)
   ], 4);
@@ -1744,13 +1744,13 @@ const y3 = /* @__PURE__ */ M(g3, [["render", A3], ["__scopeId", "data-v-329dc07b
 function T3(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-message--file",
-    style: I(f.messageColors)
+    style: j(f.messageColors)
   }, [
     k(D.$slots, "default", {
       message: f.message,
       messagecolors: f.messageColors
     }, () => {
-      var a, n, r, s;
+      var a, n, r, o;
       return [
         p("div", k3, [
           p("img", {
@@ -1760,22 +1760,22 @@ function T3(D, u, f, e, F, t) {
         ]),
         p("div", {
           class: "sc-message--file-name",
-          style: I(f.messageColors)
+          style: j(f.messageColors)
         }, [
           p("a", {
             href: (n = f.message.data.file) != null && n.url ? (r = f.message.data.file) == null ? void 0 : r.url : "#",
             target: "_blank"
-          }, Z(((s = f.message.data.file) == null ? void 0 : s.name) || ""), 9, S3)
+          }, Z(((o = f.message.data.file) == null ? void 0 : o.name) || ""), 9, S3)
         ], 4),
         p("div", {
           class: "sc-message--file-text",
-          style: I(f.messageColors)
+          style: j(f.messageColors)
         }, [
-          $u(Z(f.message.data.text) + " ", 1),
+          Nu(Z(f.message.data.text) + " ", 1),
           D.data.meta ? (b(), m("p", {
             key: 0,
             class: "sc-message--meta",
-            style: I(f.messageColors)
+            style: j(f.messageColors)
           }, Z(f.message.data.meta), 5)) : z("", !0)
         ], 4)
       ];
@@ -1793,7 +1793,7 @@ const $3 = /* @__PURE__ */ M(w3, [["render", T3], ["__scopeId", "data-v-5a292881
 function P3(D, u, f, e, F, t) {
   return b(), m("div", j3, [
     k(D.$slots, "default", { message: f.message }, () => [
-      $u(Z(f.message.data.emoji), 1)
+      Nu(Z(f.message.data.emoji), 1)
     ], !0)
   ]);
 }
@@ -1808,7 +1808,7 @@ const I3 = /* @__PURE__ */ M(O3, [["render", P3], ["__scopeId", "data-v-e27f2e7b
 function N3(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-typing-indicator",
-    style: I(f.messageColors)
+    style: j(f.messageColors)
   }, u[0] || (u[0] = [
     p("span", null, null, -1),
     p("span", null, null, -1),
@@ -1830,14 +1830,14 @@ const q3 = /* @__PURE__ */ M(z3, [["render", N3], ["__scopeId", "data-v-3df57161
 function R3(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-message--system",
-    style: I(f.messageColors)
+    style: j(f.messageColors)
   }, [
     k(D.$slots, "default", { message: f.data }, () => [
-      $u(Z(f.data.text) + " ", 1),
+      Nu(Z(f.data.text) + " ", 1),
       f.data.meta ? (b(), m("p", {
         key: 0,
         class: "sc-message--meta",
-        style: I({ color: f.messageColors.color })
+        style: j({ color: f.messageColors.color })
       }, Z(f.data.meta), 5)) : z("", !0)
     ], !0)
   ], 4);
@@ -1908,11 +1908,11 @@ const M3 = /* @__PURE__ */ M(L3, [["render", R3], ["__scopeId", "data-v-c0484e01
   }
 }, U3 = ["id"], V3 = ["title"];
 function W3(D, u, f, e, F, t) {
-  const a = O("TextMessage"), n = O("EmojiMessage"), r = O("FileMessage"), s = O("TypingMessage"), d = O("SystemMessage"), c = w1("tooltip");
+  const a = O("TextMessage"), n = O("EmojiMessage"), r = O("FileMessage"), o = O("TypingMessage"), d = O("SystemMessage"), c = w1("tooltip");
   return b(), m("div", {
     id: f.message.id,
     class: "sc-message",
-    style: I({
+    style: j({
       margin: t.marginStyle
     })
   }, [
@@ -1931,7 +1931,7 @@ function W3(D, u, f, e, F, t) {
           key: 0,
           title: t.authorName,
           class: "sc-message--avatar",
-          style: I({
+          style: j({
             backgroundImage: `url(${t.chatImageUrl})`
           })
         }, null, 12, V3)), [
@@ -1945,20 +1945,20 @@ function W3(D, u, f, e, F, t) {
         "message-styling": f.messageStyling,
         "show-confirmation-deletion": f.showConfirmationDeletion,
         "confirmation-deletion-message": f.confirmationDeletionMessage,
-        onRemove: u[0] || (u[0] = (o) => D.$emit("remove"))
+        onRemove: u[0] || (u[0] = (s) => D.$emit("remove"))
       }, {
-        default: x((o) => [
+        default: x((s) => [
           k(D.$slots, "text-message-body", {
-            message: o.message,
-            messageText: o.messageText,
-            messageColors: o.messageColors,
-            me: o.me
+            message: s.message,
+            messageText: s.messageText,
+            messageColors: s.messageColors,
+            me: s.me
           })
         ]),
-        "text-message-toolbox": x((o) => [
+        "text-message-toolbox": x((s) => [
           k(D.$slots, "text-message-toolbox", {
-            message: o.message,
-            me: o.me
+            message: s.message,
+            me: s.me
           })
         ]),
         _: 3
@@ -1966,25 +1966,25 @@ function W3(D, u, f, e, F, t) {
         key: 1,
         message: f.message
       }, {
-        default: x((o) => [
+        default: x((s) => [
           k(D.$slots, "emoji-message-body", {
-            message: o.message
+            message: s.message
           })
         ]),
         _: 3
       }, 8, ["message"])) : f.message.type === "file" ? (b(), V(r, {
         key: 2,
-        message: f.message.data,
+        message: f.message,
         "message-colors": t.messageColors
       }, {
-        default: x((o) => [
+        default: x((s) => [
           k(D.$slots, "file-message-body", {
-            message: o.message,
-            messageColors: o.messageColors
+            message: s.message,
+            messageColors: s.messageColors
           })
         ]),
         _: 3
-      }, 8, ["message", "message-colors"])) : f.message.type === "typing" ? (b(), V(s, {
+      }, 8, ["message", "message-colors"])) : f.message.type === "typing" ? (b(), V(o, {
         key: 3,
         "message-colors": t.messageColors
       }, null, 8, ["message-colors"])) : f.message.type === "system" ? (b(), V(d, {
@@ -2092,7 +2092,7 @@ function X3(D, u, f, e, F, t) {
   return b(), m("div", {
     ref: "scrollList",
     class: "sc-message-list",
-    style: I({ backgroundColor: f.colors.messageList.bg }),
+    style: j({ backgroundColor: f.colors.messageList.bg }),
     onScroll: u[0] || (u[0] = (...n) => t.handleScroll && t.handleScroll(...n))
   }, [
     (b(!0), m(qu, null, Ku(f.messages, (n, r) => (b(), V(a, {
@@ -2104,42 +2104,42 @@ function X3(D, u, f, e, F, t) {
       "show-confirmation-deletion": f.showConfirmationDeletion,
       "confirmation-deletion-message": f.confirmationDeletionMessage,
       "message-margin": f.messageMargin,
-      onRemove: (s) => D.$emit("remove", n)
+      onRemove: (o) => D.$emit("remove", n)
     }, {
-      "user-avatar": x((s) => [
+      "user-avatar": x((o) => [
         k(D.$slots, "user-avatar", {
-          user: s.user,
-          message: s.message
+          user: o.user,
+          message: o.message
         }, void 0, !0)
       ]),
-      "text-message-body": x((s) => [
+      "text-message-body": x((o) => [
         k(D.$slots, "text-message-body", {
-          message: s.message,
-          messageText: s.messageText,
-          messageColors: s.messageColors,
-          me: s.me
+          message: o.message,
+          messageText: o.messageText,
+          messageColors: o.messageColors,
+          me: o.me
         }, void 0, !0)
       ]),
-      "system-message-body": x((s) => [
+      "system-message-body": x((o) => [
         k(D.$slots, "system-message-body", {
-          message: s.message
+          message: o.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": x((s) => [
+      "text-message-toolbox": x((o) => [
         k(D.$slots, "text-message-toolbox", {
-          message: s.message,
-          me: s.me
+          message: o.message,
+          me: o.me
         }, void 0, !0)
       ]),
-      "file-message-body": x((s) => [
+      "file-message-body": x((o) => [
         k(D.$slots, "file-message-body", {
-          message: s.message,
-          messageColors: s.messageColors
+          message: o.message,
+          messageColors: o.messageColors
         }, void 0, !0)
       ]),
-      "emoji-message-body": x((s) => [
+      "emoji-message-body": x((o) => [
         k(D.$slots, "emoji-message-body", {
-          message: s.message
+          message: o.message
         }, void 0, !0)
       ]),
       _: 2
@@ -2178,57 +2178,57 @@ function Z3() {
       }, F.prototype.replace_emoticons_with_colons = function(t) {
         var a = this;
         a.init_emoticons();
-        var n = 0, r = [], s = t.replace(a.rx_emoticons, function(o, B, E, y) {
+        var n = 0, r = [], o = t.replace(a.rx_emoticons, function(s, B, E, y) {
           var _ = n;
-          n = y + o.length;
+          n = y + s.length;
           var w = E.indexOf("(") !== -1, v = E.indexOf(")") !== -1;
           if ((w || v) && r.indexOf(E) == -1 && r.push(E), v && !w) {
             var A = t.substring(_, y);
-            if (A.indexOf("(") !== -1 && A.indexOf(")") === -1) return o;
+            if (A.indexOf("(") !== -1 && A.indexOf(")") === -1) return s;
           }
-          if (o === `
+          if (s === `
 8)`) {
             var g = t.substring(0, y);
-            if (/\n?(6\)|7\))/.test(g)) return o;
+            if (/\n?(6\)|7\))/.test(g)) return s;
           }
           var h = a.data[a.map.emoticons[E]][3][0];
-          return h ? B + ":" + h + ":" : o;
+          return h ? B + ":" + h + ":" : s;
         });
         if (r.length) {
           var d = r.map(a.escape_rx), c = new RegExp("(\\(.+)(" + d.join("|") + ")(.+\\))", "g");
-          s = s.replace(c, function(o, B, E, y) {
+          o = o.replace(c, function(s, B, E, y) {
             var _ = a.data[a.map.emoticons[E]][3][0];
-            return _ ? B + ":" + _ + ":" + y : o;
+            return _ ? B + ":" + _ + ":" + y : s;
           });
         }
-        return s;
+        return o;
       }, F.prototype.replace_colons = function(t) {
         var a = this;
         return a.init_colons(), t.replace(a.rx_colons, function(n) {
           var r = n.substr(1, n.length - 2);
           if (a.allow_caps && (r = r.toLowerCase()), r.indexOf("::skin-tone-") > -1) {
-            var s = r.substr(-1, 1), d = "skin-tone-" + s, c = a.map.colons[d];
+            var o = r.substr(-1, 1), d = "skin-tone-" + o, c = a.map.colons[d];
             r = r.substr(0, r.length - 13);
-            var o = a.map.colons[r];
-            return o ? a.replacement(o, r, ":", {
+            var s = a.map.colons[r];
+            return s ? a.replacement(s, r, ":", {
               idx: c,
               actual: d,
               wrapper: ":"
             }) : ":" + r + ":" + a.replacement(c, d, ":");
           } else {
-            var o = a.map.colons[r];
-            return o ? a.replacement(o, r, ":") : n;
+            var s = a.map.colons[r];
+            return s ? a.replacement(s, r, ":") : n;
           }
         });
       }, F.prototype.replace_unified = function(t) {
         var a = this;
-        return a.init_unified(), t.replace(a.rx_unified, function(n, r, s) {
+        return a.init_unified(), t.replace(a.rx_unified, function(n, r, o) {
           var d = a.map.unified[r];
           if (d) {
             var c = null;
-            return s == "🏻" && (c = "1f3fb"), s == "🏼" && (c = "1f3fc"), s == "🏽" && (c = "1f3fd"), s == "🏾" && (c = "1f3fe"), s == "🏿" && (c = "1f3ff"), c ? a.replacement(d, null, null, {
+            return o == "🏻" && (c = "1f3fb"), o == "🏼" && (c = "1f3fc"), o == "🏽" && (c = "1f3fd"), o == "🏾" && (c = "1f3fe"), o == "🏿" && (c = "1f3ff"), c ? a.replacement(d, null, null, {
               idx: c,
-              actual: s,
+              actual: o,
               wrapper: ""
             }) : a.replacement(d);
           }
@@ -2248,22 +2248,22 @@ function Z3() {
           var r = t[n];
           delete a.map.colons[r];
           u:
-            for (var s in a.data)
-              for (var d = 0; d < a.data[s][3].length; d++)
-                if (r == a.data[s][3][d]) {
-                  a.map.colons[r] = s;
+            for (var o in a.data)
+              for (var d = 0; d < a.data[o][3].length; d++)
+                if (r == a.data[o][3][d]) {
+                  a.map.colons[r] = o;
                   break u;
                 }
         }
-      }, F.prototype.replacement = function(t, a, n, r, s) {
-        var d = this, c = "", o = null;
-        if (typeof r == "object" && (c = d.replacement(r.idx, r.actual, r.wrapper, void 0, !0), o = r.idx), n = n || "", d.colons_mode) return ":" + d.data[t][3][0] + ":" + c;
+      }, F.prototype.replacement = function(t, a, n, r, o) {
+        var d = this, c = "", s = null;
+        if (typeof r == "object" && (c = d.replacement(r.idx, r.actual, r.wrapper, void 0, !0), s = r.idx), n = n || "", d.colons_mode) return ":" + d.data[t][3][0] + ":" + c;
         var B = a ? n + a + n : d.data[t][8] || n + d.data[t][3][0] + n;
         if (d.text_mode) return B + c;
-        var E = d.find_image(t, o);
-        if (d.init_env(), d.replace_mode == "softbank" && d.allow_native && d.data[t][1]) return d.format_native(d.data[t][1] + c, !s);
-        if (d.replace_mode == "google" && d.allow_native && d.data[t][2]) return d.format_native(d.data[t][2] + c, !s);
-        if (E.is_var && (c = ""), d.replace_mode == "unified" && d.allow_native) return d.format_native(E.unified + c, !s);
+        var E = d.find_image(t, s);
+        if (d.init_env(), d.replace_mode == "softbank" && d.allow_native && d.data[t][1]) return d.format_native(d.data[t][1] + c, !o);
+        if (d.replace_mode == "google" && d.allow_native && d.data[t][2]) return d.format_native(d.data[t][2] + c, !o);
+        if (E.is_var && (c = ""), d.replace_mode == "unified" && d.allow_native) return d.format_native(E.unified + c, !o);
         var y = d.include_title ? ' title="' + (a || d.data[t][3][0]) + '"' : "", _ = d.include_text ? n + (a || d.data[t][3][0]) + n : "";
         if (d.data[t][7] && (E.path = d.data[t][7], E.px = null, E.py = null, E.is_var = !1), E.is_var && d.include_text && r && r.actual && r.wrapper && (_ += r.wrapper + r.actual + r.wrapper), d.replace_mode == "css")
           if (d.use_sheet && E.px != null && E.py != null) {
@@ -2284,20 +2284,20 @@ function Z3() {
           full_idx: t,
           is_var: !1,
           unified: n.data[t][0][0]
-        }, s = n.data[t][6];
+        }, o = n.data[t][6];
         if (a && n.variations_data[t] && n.variations_data[t][a]) {
           var d = n.variations_data[t][a];
-          r.px = d[1], r.py = d[2], r.full_idx = d[0], r.is_var = !0, r.unified = d[4][0], s = d[3];
+          r.px = d[1], r.py = d[2], r.full_idx = d[0], r.is_var = !0, r.unified = d[4][0], o = d[3];
         }
-        for (var c = [n.img_set, "apple", "google", "twitter", "facebook", "messenger"], o = 0; o < c.length; o++) {
-          if (!n.img_sets[c[o]])
+        for (var c = [n.img_set, "apple", "google", "twitter", "facebook", "messenger"], s = 0; s < c.length; s++) {
+          if (!n.img_sets[c[s]])
             throw Error("Invalid value for img_set");
-          if (s & n.img_sets[c[o]].mask)
-            return r.path = n.img_sets[c[o]].path + r.full_idx + ".png" + n.img_suffix, r.sheet = n.img_sets[n.img_set].sheet, r.sheet_size = n.img_sets[n.img_set].sheet_size, r;
+          if (o & n.img_sets[c[s]].mask)
+            return r.path = n.img_sets[c[s]].path + r.full_idx + ".png" + n.img_suffix, r.sheet = n.img_sets[n.img_set].sheet, r.sheet_size = n.img_sets[n.img_set].sheet_size, r;
           if (n.obsoletes_data[r.full_idx]) {
             var B = n.obsoletes_data[r.full_idx];
-            if (B[3] & n.img_sets[c[o]].mask)
-              return r.path = n.img_sets[c[o]].path + B[0] + ".png" + n.img_suffix, r.sheet = n.img_sets[c[o]].sheet, r.sheet_size = n.img_sets[c[o]].sheet_size, r.px = B[1], r.py = B[2], r;
+            if (B[3] & n.img_sets[c[s]].mask)
+              return r.path = n.img_sets[c[s]].path + B[0] + ".png" + n.img_suffix, r.sheet = n.img_sets[c[s]].sheet, r.sheet_size = n.img_sets[c[s]].sheet_size, r.px = B[1], r.py = B[2], r;
           }
         }
         return r;
@@ -2332,9 +2332,9 @@ function Z3() {
               a.push(t.data[n][0][r].replace("*", "\\*")), t.map.unified[t.data[n][0][r]] = n;
           for (var n in t.variations_data)
             if (!(t.variations_data[n]["1f3fb"] && t.variations_data[n]["1f3fb"][0] == n + "-1f3fb"))
-              for (var s in t.variations_data[n])
-                for (var r = 0; r < t.variations_data[n][s][4].length; r++)
-                  a.push(t.variations_data[n][s][4][r].replace("*", "\\*")), t.map.unified_vars[t.variations_data[n][s][4][r]] = [n, s];
+              for (var o in t.variations_data[n])
+                for (var r = 0; r < t.variations_data[n][o][4].length; r++)
+                  a.push(t.variations_data[n][o][4][r].replace("*", "\\*")), t.map.unified_vars[t.variations_data[n][o][4][r]] = [n, o];
           a = a.sort(function(d, c) {
             return c.length - d.length;
           }), t.rx_unified = new RegExp("(" + a.join("|") + ")(\uD83C[\uDFFB-\uDFFF])?", "g");
@@ -5448,7 +5448,7 @@ function te(D, u, f, e, F, t) {
     ref: "domNode",
     tabIndex: "0",
     class: "sc-emoji-picker",
-    style: I({ background: f.colors.emojiPicker.bg ?? "white" }),
+    style: j({ background: f.colors.emojiPicker.bg ?? "white" }),
     onBlur: u[0] || (u[0] = (...a) => f.onBlur && f.onBlur(...a))
   }, [
     p("div", fe, [
@@ -5458,7 +5458,7 @@ function te(D, u, f, e, F, t) {
       }, [
         p("div", {
           class: "sc-emoji-picker--category-title",
-          style: I({ color: f.colors.emojiPicker.text ?? "#b8c3ca" })
+          style: j({ color: f.colors.emojiPicker.text ?? "#b8c3ca" })
         }, Z(a.name), 5),
         (b(!0), m(qu, null, Ku(a.emojis, (n) => (b(), m("span", {
           key: n,
@@ -5557,7 +5557,7 @@ function re(D, u, f, e, F, t) {
     ])
   ]);
 }
-const ie = /* @__PURE__ */ M(ne, [["render", re], ["__scopeId", "data-v-9dacb28b"]]), oe = {
+const ie = /* @__PURE__ */ M(ne, [["render", re], ["__scopeId", "data-v-9dacb28b"]]), se = {
   props: {
     onChange: {
       type: Function,
@@ -5581,9 +5581,9 @@ const ie = /* @__PURE__ */ M(ne, [["render", re], ["__scopeId", "data-v-9dacb28b
       this.onChange(D.target.files[0]);
     }
   }
-}, se = { style: { position: "relative" } }, Ce = ["color"], ce = ["accept"];
+}, oe = { style: { position: "relative" } }, Ce = ["color"], ce = ["accept"];
 function Ee(D, u, f, e, F, t) {
-  return b(), m("div", se, [
+  return b(), m("div", oe, [
     p("button", {
       class: "sc-user-input--file-icon-wrapper",
       type: "button",
@@ -5615,7 +5615,7 @@ function Ee(D, u, f, e, F, t) {
     ])
   ]);
 }
-const le = /* @__PURE__ */ M(oe, [["render", Ee], ["__scopeId", "data-v-4ceda3fa"]]), Be = {
+const le = /* @__PURE__ */ M(se, [["render", Ee], ["__scopeId", "data-v-4ceda3fa"]]), Be = {
   components: {
     IconBase: Mf
   },
@@ -5664,12 +5664,12 @@ const ge = /* @__PURE__ */ M(Be, [["render", pe], ["__scopeId", "data-v-3ee3b811
 function _e(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "sc-suggestions-row",
-    style: I({ background: f.colors.messageList.bg })
+    style: j({ background: f.colors.messageList.bg })
   }, [
     (b(!0), m(qu, null, Ku(f.suggestions, (a, n) => (b(), m("button", {
       key: n,
       class: "sc-suggestions-element",
-      style: I({
+      style: j({
         borderColor: f.colors.sentMessage.bg,
         color: f.colors.sentMessage.bg
       }),
@@ -5749,7 +5749,8 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
     return {
       file: null,
       inputActive: !1,
-      prevSelectionRange: null
+      prevSelectionRange: null,
+      imageData: null
     };
   },
   computed: {
@@ -5856,24 +5857,31 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
       u.deleteContents(), u.insertNode(e), u.collapse(!1), this.$refs.userInput.focus();
     },
     _handleFileSubmit(D) {
-      this.file = D;
+      if (this.file = D, D.type.startsWith("image/")) {
+        const u = new FileReader();
+        u.onload = (f) => {
+          var e;
+          this.imageData = (e = f.target) == null ? void 0 : e.result;
+        }, u.readAsDataURL(D);
+      }
+      D.value = D;
     },
     _editFinish() {
       Du.setState("editMessage", null);
     }
   }
-}, Pe = { class: "icon-file-message" }, Ie = ["src", "alt"], ze = ["src", "alt"], Ne = ["placeholder"], qe = { class: "sc-user-input--buttons" }, Le = {
+}, Pe = { class: "flex flex-row items-center gap-3" }, Ie = { class: "icon-file-message" }, ze = ["src", "alt"], Ne = ["src"], qe = ["placeholder"], Le = { class: "sc-user-input--buttons" }, Re = {
   key: 0,
   class: "sc-user-input--button"
-}, Re = {
+}, Me = {
   key: 1,
   class: "sc-user-input--button"
-}, Me = {
+}, He = {
   key: 2,
   class: "sc-user-input--button"
-}, He = { class: "sc-user-input--button" };
-function Ue(D, u, f, e, F, t) {
-  const a = O("Suggestions"), n = O("EmojiIcon"), r = O("FileIcons"), s = O("IconCross"), d = O("UserInputButton"), c = O("IconOk"), o = O("IconSend");
+}, Ue = { class: "sc-user-input--button" };
+function Ve(D, u, f, e, F, t) {
+  const a = O("Suggestions"), n = O("EmojiIcon"), r = O("FileIcons"), o = O("IconCross"), d = O("UserInputButton"), c = O("IconOk"), s = O("IconSend");
   return b(), m("div", null, [
     L(a, {
       suggestions: f.suggestions,
@@ -5883,34 +5891,46 @@ function Ue(D, u, f, e, F, t) {
     F.file ? (b(), m("div", {
       key: 0,
       class: "file-container",
-      style: I({
-        backgroundColor: f.colors.userInput.text,
-        color: f.colors.userInput.bg
+      style: j({
+        backgroundColor: f.colors.userInput.bg,
+        color: f.colors.userInput.text
       })
     }, [
-      p("span", Pe, [
-        p("img", {
-          src: f.icons.file.img,
-          alt: f.icons.file.name,
-          height: "15"
-        }, null, 8, Ie)
-      ]),
-      $u(" " + Z(F.file.name) + " ", 1),
-      p("span", {
-        class: "delete-file-message",
-        onClick: u[0] || (u[0] = (B) => t.cancelFile())
-      }, [
-        p("img", {
-          src: f.icons.closeSvg.img,
-          alt: f.icons.closeSvg.name,
-          height: "10",
-          title: "Remove the file"
-        }, null, 8, ze)
+      p("div", Pe, [
+        p("span", Ie, [
+          F.imageData ? (b(), m("img", {
+            key: 1,
+            src: F.imageData,
+            alt: "Uploaded Image",
+            style: { height: "65px", "object-fit": "cover" }
+          }, null, 8, Ne)) : (b(), m("img", {
+            key: 0,
+            src: f.icons.file.img,
+            alt: f.icons.file.name,
+            style: { height: "65px" }
+          }, null, 8, ze))
+        ]),
+        p("span", null, Z(
+          // @ts-ignore
+          F.file.name
+        ), 1),
+        p("span", {
+          class: "delete-file-message",
+          onClick: u[0] || (u[0] = (B) => t.cancelFile())
+        }, [
+          (b(), m("svg", {
+            viewBox: "0 0 47.971 47.971",
+            xmlns: "http://www.w3.org/2000/svg",
+            style: j(`width: 15px; height: 15px; fill: ${f.colors.userInput.text}`)
+          }, u[6] || (u[6] = [
+            p("path", { d: "M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88   c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242   C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879   s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z" }, null, -1)
+          ]), 4))
+        ])
       ])
     ], 4)) : z("", !0),
     p("form", {
       class: DD(["sc-user-input", { active: F.inputActive }]),
-      style: I({ background: f.colors.userInput.bg })
+      style: j({ background: f.colors.userInput.bg })
     }, [
       p("div", {
         ref: "userInput",
@@ -5919,42 +5939,42 @@ function Ue(D, u, f, e, F, t) {
         contentEditable: "true",
         placeholder: f.placeholder,
         class: "sc-user-input--text",
-        style: I({ color: f.colors.userInput.text }),
+        style: j({ color: f.colors.userInput.text }),
         onFocus: u[1] || (u[1] = (B) => t.setInputActive(!0)),
         onBlur: u[2] || (u[2] = (B) => t.setInputActive(!1)),
         onKeydown: u[3] || (u[3] = (...B) => t.handleKey && t.handleKey(...B)),
         onInput: u[4] || (u[4] = (...B) => t.handleInput && t.handleInput(...B)),
         "on:focusUserInput": u[5] || (u[5] = (B) => t.focusUserInput())
-      }, null, 44, Ne),
-      p("div", qe, [
-        u[6] || (u[6] = p("div", { class: "sc-user-input--button" }, null, -1)),
-        f.showEmoji && !t.isEditing ? (b(), m("div", Le, [
+      }, null, 44, qe),
+      p("div", Le, [
+        u[7] || (u[7] = p("div", { class: "sc-user-input--button" }, null, -1)),
+        f.showEmoji && !t.isEditing ? (b(), m("div", Re, [
           L(n, {
             "on-emoji-picked": t._handleEmojiPicked,
             color: f.colors.userInput.text,
             colors: f.colors
           }, null, 8, ["on-emoji-picked", "color", "colors"])
         ])) : z("", !0),
-        f.showFile && !t.isEditing ? (b(), m("div", Re, [
+        f.showFile && !t.isEditing ? (b(), m("div", Me, [
           L(r, {
             "on-change": t._handleFileSubmit,
             color: f.colors.userInput.text,
-            acceptedFileTypes: f.acceptedFileTypes
-          }, null, 8, ["on-change", "color", "acceptedFileTypes"])
+            "accepted-file-types": f.acceptedFileTypes
+          }, null, 8, ["on-change", "color", "accepted-file-types"])
         ])) : z("", !0),
-        t.isEditing ? (b(), m("div", Me, [
+        t.isEditing ? (b(), m("div", He, [
           L(d, {
             color: f.colors.userInput.text,
             tooltip: "cancel",
             onClick: Gu(t._editFinish, ["prevent"])
           }, {
             default: x(() => [
-              L(s)
+              L(o)
             ]),
             _: 1
           }, 8, ["color", "onClick"])
         ])) : z("", !0),
-        p("div", He, [
+        p("div", Ue, [
           t.isEditing ? (b(), V(d, {
             key: 0,
             color: f.colors.userInput.text,
@@ -5972,7 +5992,7 @@ function Ue(D, u, f, e, F, t) {
             onClick: Gu(t._submitText, ["prevent"])
           }, {
             default: x(() => [
-              L(o)
+              L(s)
             ]),
             _: 1
           }, 8, ["color", "onClick"]))
@@ -5981,7 +6001,7 @@ function Ue(D, u, f, e, F, t) {
     ], 6)
   ]);
 }
-const Ve = /* @__PURE__ */ M(je, [["render", Ue]]), We = {
+const We = /* @__PURE__ */ M(je, [["render", Ve]]), Ge = {
   props: {
     participants: {
       type: Array,
@@ -6002,39 +6022,39 @@ const Ve = /* @__PURE__ */ M(je, [["render", Ue]]), We = {
       }, this.colors);
     }
   }
-}, Ge = { style: { "padding-top": "5px" } }, Ye = { style: { "text-align": "center" } }, Xe = ["src"];
-function Ke(D, u, f, e, F, t) {
+}, Ye = { style: { "padding-top": "5px" } }, Xe = { style: { "text-align": "center" } }, Ke = ["src"];
+function Ze(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "user-list",
-    style: I({ background: t.userListColor.userList.bg })
+    style: j({ background: t.userListColor.userList.bg })
   }, [
-    p("table", Ge, [
+    p("table", Ye, [
       p("tbody", null, [
         (b(!0), m(qu, null, Ku(f.participants, (a) => (b(), m("tr", {
           key: a.id
         }, [
-          p("td", Ye, [
+          p("td", Xe, [
             p("img", {
               src: a.imageUrl,
               class: "img-msg"
-            }, null, 8, Xe)
+            }, null, 8, Ke)
           ]),
           p("td", {
             class: "user-element",
-            style: I({ color: t.userListColor.userList.text })
+            style: j({ color: t.userListColor.userList.text })
           }, Z(a.name), 5)
         ]))), 128))
       ])
     ])
   ], 4);
 }
-const Ze = /* @__PURE__ */ M(We, [["render", Ke], ["__scopeId", "data-v-4899c8d9"]]), Qe = {
+const Qe = /* @__PURE__ */ M(Ge, [["render", Ze], ["__scopeId", "data-v-4899c8d9"]]), Je = {
   components: {
     // eslint-disable-next-line vue/no-reserved-component-names
     Header: L1,
     MessageList: K3,
-    UserInput: Ve,
-    UserList: Ze
+    UserInput: We,
+    UserList: Qe
   },
   props: {
     showEmoji: {
@@ -6130,8 +6150,8 @@ const Ze = /* @__PURE__ */ M(We, [["render", Ke], ["__scopeId", "data-v-4899c8d9
     }
   }
 };
-function Je(D, u, f, e, F, t) {
-  const a = O("Header"), n = O("UserList"), r = O("MessageList"), s = O("UserInput");
+function u2(D, u, f, e, F, t) {
+  const a = O("Header"), n = O("UserList"), r = O("MessageList"), o = O("UserInput");
   return b(), m("div", {
     class: DD(["sc-chat-window", { opened: f.isOpen, closed: !f.isOpen }])
   }, [
@@ -6205,7 +6225,7 @@ function Je(D, u, f, e, F, t) {
       ]),
       _: 3
     }, 8, ["messages", "participants", "show-typing-indicator", "colors", "always-scroll-to-bottom", "show-confirmation-deletion", "confirmation-deletion-message", "message-styling", "message-margin"])),
-    F.showUserList ? z("", !0) : (b(), V(s, {
+    F.showUserList ? z("", !0) : (b(), V(o, {
       key: 3,
       "show-emoji": f.showEmoji,
       "show-emoji-in-text": f.showEmojiInText,
@@ -6220,9 +6240,9 @@ function Je(D, u, f, e, F, t) {
     }, null, 8, ["show-emoji", "show-emoji-in-text", "on-submit", "suggestions", "show-file", "placeholder", "colors", "accepted-file-types"]))
   ], 2);
 }
-const u2 = /* @__PURE__ */ M(Qe, [["render", Je], ["__scopeId", "data-v-0a3a5922"]]), D2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", f2 = {
+const D2 = /* @__PURE__ */ M(Je, [["render", u2], ["__scopeId", "data-v-0a3a5922"]]), f2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", e2 = {
   components: {
-    ChatWindow: u2
+    ChatWindow: D2
   },
   props: {
     icons: {
@@ -6230,7 +6250,7 @@ const u2 = /* @__PURE__ */ M(Qe, [["render", Je], ["__scopeId", "data-v-0a3a5922
       default: function() {
         return {
           open: {
-            img: D2,
+            img: f2,
             name: "default"
           },
           close: {
@@ -6412,31 +6432,31 @@ const u2 = /* @__PURE__ */ M(Qe, [["render", Je], ["__scopeId", "data-v-0a3a5922
       this.open(), this.autoFocus && this.$event.$emit("focusUserInput");
     }
   }
-}, e2 = {
+}, t2 = {
   key: 0,
   class: "sc-new-messsages-count"
-}, t2 = ["src", "alt"], F2 = ["src", "alt"];
-function n2(D, u, f, e, F, t) {
+}, F2 = ["src", "alt"], n2 = ["src", "alt"];
+function a2(D, u, f, e, F, t) {
   const a = O("ChatWindow");
   return b(), m("div", null, [
     f.showLauncher ? (b(), m("div", {
       key: 0,
       class: DD(["sc-launcher", { opened: f.isOpen }]),
-      style: I({ backgroundColor: f.colors.launcher.bg }),
+      style: j({ backgroundColor: f.colors.launcher.bg }),
       onClick: u[0] || (u[0] = Gu((n) => f.isOpen ? f.close() : t.openAndFocus(), ["prevent"]))
     }, [
-      f.newMessagesCount > 0 && !f.isOpen ? (b(), m("div", e2, Z(f.newMessagesCount), 1)) : z("", !0),
+      f.newMessagesCount > 0 && !f.isOpen ? (b(), m("div", t2, Z(f.newMessagesCount), 1)) : z("", !0),
       f.isOpen ? (b(), m("img", {
         key: 1,
         class: "sc-closed-icon",
         src: f.icons.close.img,
         alt: f.icons.close.name
-      }, null, 8, t2)) : (b(), m("img", {
+      }, null, 8, F2)) : (b(), m("img", {
         key: 2,
         class: "sc-open-icon",
         src: f.icons.open.img,
         alt: f.icons.open.name
-      }, null, 8, F2))
+      }, null, 8, n2))
     ], 6)) : z("", !0),
     L(a, {
       "message-list": f.messageList,
@@ -6508,12 +6528,12 @@ function n2(D, u, f, e, F, t) {
     }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "message-margin", "accepted-file-types", "show-minimize-button", "onClose", "onMinimize"])
   ]);
 }
-const a2 = /* @__PURE__ */ M(f2, [["render", n2], ["__scopeId", "data-v-a7db8f74"]]);
-var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Lu = "start", Df = "end", d2 = "clippingParents", Zf = "viewport", Wu = "popper", r2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
+const d2 = /* @__PURE__ */ M(e2, [["render", a2], ["__scopeId", "data-v-a7db8f74"]]);
+var eu = "top", su = "bottom", ou = "right", tu = "left", AD = "auto", tD = [eu, su, ou, tu], Lu = "start", Df = "end", r2 = "clippingParents", Zf = "viewport", Wu = "popper", i2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + Lu, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
   return D.concat([u, u + "-" + Lu, u + "-" + Df]);
-}, []), i2 = "beforeRead", o2 = "read", s2 = "afterRead", C2 = "beforeMain", c2 = "main", E2 = "afterMain", l2 = "beforeWrite", B2 = "write", b2 = "afterWrite", UD = [i2, o2, s2, C2, c2, E2, l2, B2, b2];
+}, []), s2 = "beforeRead", o2 = "read", C2 = "afterRead", c2 = "beforeMain", E2 = "main", l2 = "afterMain", B2 = "beforeWrite", b2 = "write", p2 = "afterWrite", UD = [s2, o2, C2, c2, E2, l2, B2, b2, p2];
 function pu(D) {
   return D ? (D.nodeName || "").toLowerCase() : null;
 }
@@ -6540,7 +6560,7 @@ function Qf(D) {
   var u = cu(D).ShadowRoot;
   return D instanceof u || D instanceof ShadowRoot;
 }
-function p2(D) {
+function g2(D) {
   var u = D.state;
   Object.keys(u.elements).forEach(function(f) {
     var e = u.styles[f] || {}, F = u.attributes[f] || {}, t = u.elements[f];
@@ -6550,7 +6570,7 @@ function p2(D) {
     }));
   });
 }
-function g2(D) {
+function m2(D) {
   var u = D.state, f = {
     popper: {
       position: u.options.strategy,
@@ -6565,8 +6585,8 @@ function g2(D) {
   };
   return Object.assign(u.elements.popper.style, f.popper), u.styles = f, u.elements.arrow && Object.assign(u.elements.arrow.style, f.arrow), function() {
     Object.keys(u.elements).forEach(function(e) {
-      var F = u.elements[e], t = u.attributes[e] || {}, a = Object.keys(u.styles.hasOwnProperty(e) ? u.styles[e] : f[e]), n = a.reduce(function(r, s) {
-        return r[s] = "", r;
+      var F = u.elements[e], t = u.attributes[e] || {}, a = Object.keys(u.styles.hasOwnProperty(e) ? u.styles[e] : f[e]), n = a.reduce(function(r, o) {
+        return r[o] = "", r;
       }, {});
       !Fu(F) || !pu(F) || (Object.assign(F.style, n), Object.keys(t).forEach(function(r) {
         F.removeAttribute(r);
@@ -6574,12 +6594,12 @@ function g2(D) {
     });
   };
 }
-const m2 = {
+const h2 = {
   name: "applyStyles",
   enabled: !0,
   phase: "write",
-  fn: p2,
-  effect: g2,
+  fn: g2,
+  effect: m2,
   requires: ["computeStyles"]
 };
 function ru(D) {
@@ -6624,7 +6644,7 @@ function Jf(D, u) {
 function Cu(D) {
   return cu(D).getComputedStyle(D);
 }
-function h2(D) {
+function _2(D) {
   return ["table", "td", "th"].indexOf(pu(D)) >= 0;
 }
 function Au(D) {
@@ -6649,7 +6669,7 @@ function gf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
-function _2(D) {
+function v2(D) {
   var u = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1, f = navigator.userAgent.indexOf("Trident") !== -1;
   if (f && Fu(D)) {
     var e = Cu(D);
@@ -6665,9 +6685,9 @@ function _2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = gf(D); f && h2(f) && Cu(f).position === "static"; )
+  for (var u = cu(D), f = gf(D); f && _2(f) && Cu(f).position === "static"; )
     f = gf(f);
-  return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || _2(D) || u;
+  return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || v2(D) || u;
 }
 function ef(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
@@ -6692,19 +6712,19 @@ function f1(D, u) {
     return f[e] = D, f;
   }, {});
 }
-var v2 = function(u, f) {
+var A2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
   })) : u, D1(typeof u != "number" ? u : f1(u, tD));
 };
-function A2(D) {
-  var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, a = f.modifiersData.popperOffsets, n = ru(f.placement), r = ef(n), s = [tu, su].indexOf(n) >= 0, d = s ? "height" : "width";
+function y2(D) {
+  var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, a = f.modifiersData.popperOffsets, n = ru(f.placement), r = ef(n), o = [tu, ou].indexOf(n) >= 0, d = o ? "height" : "width";
   if (!(!t || !a)) {
-    var c = v2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, y = f.rects.reference[d] + f.rects.reference[r] - a[r] - f.rects.popper[d], _ = a[r] - f.rects.reference[r], w = FD(t), v = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, A = y / 2 - _ / 2, g = c[B], h = v - o[d] - c[E], S = v / 2 - o[d] / 2 + A, T = mD(g, S, h), $ = r;
+    var c = A2(F.padding, f), s = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? su : ou, y = f.rects.reference[d] + f.rects.reference[r] - a[r] - f.rects.popper[d], _ = a[r] - f.rects.reference[r], w = FD(t), v = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, A = y / 2 - _ / 2, g = c[B], h = v - s[d] - c[E], S = v / 2 - s[d] / 2 + A, T = mD(g, S, h), $ = r;
     f.modifiersData[e] = (u = {}, u[$] = T, u.centerOffset = T - S, u);
   }
 }
-function y2(D) {
+function w2(D) {
   var u = D.state, f = D.options, e = f.element, F = e === void 0 ? "[data-popper-arrow]" : e;
   if (F != null && !(typeof F == "string" && (F = u.elements.popper.querySelector(F), !F))) {
     if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Jf(u.elements.popper, F)) {
@@ -6714,22 +6734,22 @@ function y2(D) {
     u.elements.arrow = F;
   }
 }
-const w2 = {
+const k2 = {
   name: "arrow",
   enabled: !0,
   phase: "main",
-  fn: A2,
-  effect: y2,
+  fn: y2,
+  effect: w2,
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]
 };
-var k2 = {
+var x2 = {
   top: "auto",
   right: "auto",
   bottom: "auto",
   left: "auto"
 };
-function x2(D) {
+function S2(D) {
   var u = D.x, f = D.y, e = window, F = e.devicePixelRatio || 1;
   return {
     x: lD(lD(u * F) / F) || 0,
@@ -6737,26 +6757,26 @@ function x2(D) {
   };
 }
 function mf(D) {
-  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, a = D.position, n = D.gpuAcceleration, r = D.adaptive, s = D.roundOffsets, d = s === !0 ? x2(t) : typeof s == "function" ? s(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, y = t.hasOwnProperty("x"), _ = t.hasOwnProperty("y"), w = tu, v = eu, A = window;
+  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, a = D.position, n = D.gpuAcceleration, r = D.adaptive, o = D.roundOffsets, d = o === !0 ? S2(t) : typeof o == "function" ? o(t) : t, c = d.x, s = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, y = t.hasOwnProperty("x"), _ = t.hasOwnProperty("y"), w = tu, v = eu, A = window;
   if (r) {
     var g = FD(f), h = "clientHeight", S = "clientWidth";
-    g === cu(f) && (g = Au(f), Cu(g).position !== "static" && (h = "scrollHeight", S = "scrollWidth")), g = g, F === eu && (v = ou, E -= g[h] - e.height, E *= n ? 1 : -1), F === tu && (w = su, o -= g[S] - e.width, o *= n ? 1 : -1);
+    g === cu(f) && (g = Au(f), Cu(g).position !== "static" && (h = "scrollHeight", S = "scrollWidth")), g = g, F === eu && (v = su, E -= g[h] - e.height, E *= n ? 1 : -1), F === tu && (w = ou, s -= g[S] - e.width, s *= n ? 1 : -1);
   }
   var T = Object.assign({
     position: a
-  }, r && k2);
+  }, r && x2);
   if (n) {
     var $;
-    return Object.assign({}, T, ($ = {}, $[v] = _ ? "0" : "", $[w] = y ? "0" : "", $.transform = (A.devicePixelRatio || 1) < 2 ? "translate(" + o + "px, " + E + "px)" : "translate3d(" + o + "px, " + E + "px, 0)", $));
+    return Object.assign({}, T, ($ = {}, $[v] = _ ? "0" : "", $[w] = y ? "0" : "", $.transform = (A.devicePixelRatio || 1) < 2 ? "translate(" + s + "px, " + E + "px)" : "translate3d(" + s + "px, " + E + "px, 0)", $));
   }
-  return Object.assign({}, T, (u = {}, u[v] = _ ? E + "px" : "", u[w] = y ? o + "px" : "", u.transform = "", u));
+  return Object.assign({}, T, (u = {}, u[v] = _ ? E + "px" : "", u[w] = y ? s + "px" : "", u.transform = "", u));
 }
-function S2(D) {
+function T2(D) {
   var u = D.state, f = D.options, e = f.gpuAcceleration, F = e === void 0 ? !0 : e, t = f.adaptive, a = t === void 0 ? !0 : t, n = f.roundOffsets, r = n === void 0 ? !0 : n;
   if (process.env.NODE_ENV !== "production") {
-    var s = Cu(u.elements.popper).transitionProperty || "";
+    var o = Cu(u.elements.popper).transitionProperty || "";
     a && ["transform", "top", "right", "bottom", "left"].some(function(c) {
-      return s.indexOf(c) >= 0;
+      return o.indexOf(c) >= 0;
     }) && console.warn(["Popper: Detected CSS transitions on at least one of the following", 'CSS properties: "transform", "top", "right", "bottom", "left".', `
 
 `, 'Disable the "computeStyles" modifier\'s `adaptive` option to allow', "for smooth transitions, or remove these properties from the CSS", "transition declaration on the popper element if only transitioning", "opacity or background-color for example.", `
@@ -6783,36 +6803,36 @@ function S2(D) {
     "data-popper-placement": u.placement
   });
 }
-const T2 = {
+const $2 = {
   name: "computeStyles",
   enabled: !0,
   phase: "beforeWrite",
-  fn: S2,
+  fn: T2,
   data: {}
 };
 var BD = {
   passive: !0
 };
-function $2(D) {
-  var u = D.state, f = D.instance, e = D.options, F = e.scroll, t = F === void 0 ? !0 : F, a = e.resize, n = a === void 0 ? !0 : a, r = cu(u.elements.popper), s = [].concat(u.scrollParents.reference, u.scrollParents.popper);
-  return t && s.forEach(function(d) {
+function O2(D) {
+  var u = D.state, f = D.instance, e = D.options, F = e.scroll, t = F === void 0 ? !0 : F, a = e.resize, n = a === void 0 ? !0 : a, r = cu(u.elements.popper), o = [].concat(u.scrollParents.reference, u.scrollParents.popper);
+  return t && o.forEach(function(d) {
     d.addEventListener("scroll", f.update, BD);
   }), n && r.addEventListener("resize", f.update, BD), function() {
-    t && s.forEach(function(d) {
+    t && o.forEach(function(d) {
       d.removeEventListener("scroll", f.update, BD);
     }), n && r.removeEventListener("resize", f.update, BD);
   };
 }
-const O2 = {
+const j2 = {
   name: "eventListeners",
   enabled: !0,
   phase: "write",
   fn: function() {
   },
-  effect: $2,
+  effect: O2,
   data: {}
 };
-var j2 = {
+var P2 = {
   left: "right",
   right: "left",
   bottom: "top",
@@ -6820,16 +6840,16 @@ var j2 = {
 };
 function hD(D) {
   return D.replace(/left|right|bottom|top/g, function(u) {
-    return j2[u];
+    return P2[u];
   });
 }
-var P2 = {
+var I2 = {
   start: "end",
   end: "start"
 };
 function hf(D) {
   return D.replace(/start|end/g, function(u) {
-    return P2[u];
+    return I2[u];
   });
 }
 function tf(D) {
@@ -6842,7 +6862,7 @@ function tf(D) {
 function Ff(D) {
   return Ru(Au(D)).left + tf(D).scrollLeft;
 }
-function I2(D) {
+function z2(D) {
   var u = cu(D), f = Au(D), e = u.visualViewport, F = f.clientWidth, t = f.clientHeight, a = 0, n = 0;
   return e && (F = e.width, t = e.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (a = e.offsetLeft, n = e.offsetTop)), {
     width: F,
@@ -6851,7 +6871,7 @@ function I2(D) {
     y: n
   };
 }
-function z2(D) {
+function N2(D) {
   var u, f = Au(D), e = tf(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), a = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), n = -e.scrollLeft + Ff(D), r = -e.scrollTop;
   return Cu(F || f).direction === "rtl" && (n += vu(f.clientWidth, F ? F.clientWidth : 0) - t), {
     width: t,
@@ -6884,23 +6904,23 @@ function VD(D) {
     bottom: D.y + D.height
   });
 }
-function N2(D) {
+function q2(D) {
   var u = Ru(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
 function _f(D, u) {
-  return u === Zf ? VD(I2(D)) : Fu(u) ? N2(u) : VD(z2(Au(D)));
+  return u === Zf ? VD(z2(D)) : Fu(u) ? q2(u) : VD(N2(Au(D)));
 }
-function q2(D) {
+function L2(D) {
   var u = Yu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
   return Zu(e) ? u.filter(function(F) {
     return Zu(F) && Jf(F, e) && pu(F) !== "body";
   }) : [];
 }
-function L2(D, u, f) {
-  var e = u === "clippingParents" ? q2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], a = F.reduce(function(n, r) {
-    var s = _f(D, r);
-    return n.top = vu(s.top, n.top), n.right = Qu(s.right, n.right), n.bottom = Qu(s.bottom, n.bottom), n.left = vu(s.left, n.left), n;
+function R2(D, u, f) {
+  var e = u === "clippingParents" ? L2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], a = F.reduce(function(n, r) {
+    var o = _f(D, r);
+    return n.top = vu(o.top, n.top), n.right = Qu(o.right, n.right), n.bottom = Qu(o.bottom, n.bottom), n.left = vu(o.left, n.left), n;
   }, _f(D, t));
   return a.width = a.right - a.left, a.height = a.bottom - a.top, a.x = a.left, a.y = a.top, a;
 }
@@ -6916,13 +6936,13 @@ function t1(D) {
         y: u.y - f.height
       };
       break;
-    case ou:
+    case su:
       r = {
         x: a,
         y: u.y + u.height
       };
       break;
-    case su:
+    case ou:
       r = {
         x: u.x + u.width,
         y: n
@@ -6940,15 +6960,15 @@ function t1(D) {
         y: u.y
       };
   }
-  var s = F ? ef(F) : null;
-  if (s != null) {
-    var d = s === "y" ? "height" : "width";
+  var o = F ? ef(F) : null;
+  if (o != null) {
+    var d = o === "y" ? "height" : "width";
     switch (t) {
       case Lu:
-        r[s] = r[s] - (u[d] / 2 - f[d] / 2);
+        r[o] = r[o] - (u[d] / 2 - f[d] / 2);
         break;
       case Df:
-        r[s] = r[s] + (u[d] / 2 - f[d] / 2);
+        r[o] = r[o] + (u[d] / 2 - f[d] / 2);
         break;
     }
   }
@@ -6956,7 +6976,7 @@ function t1(D) {
 }
 function uD(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, a = t === void 0 ? d2 : t, n = f.rootBoundary, r = n === void 0 ? Zf : n, s = f.elementContext, d = s === void 0 ? Wu : s, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, y = D1(typeof E != "number" ? E : f1(E, tD)), _ = d === Wu ? r2 : Wu, w = D.elements.reference, v = D.rects.popper, A = D.elements[o ? _ : d], g = L2(Zu(A) ? A : A.contextElement || Au(D.elements.popper), a, r), h = Ru(w), S = t1({
+  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, a = t === void 0 ? r2 : t, n = f.rootBoundary, r = n === void 0 ? Zf : n, o = f.elementContext, d = o === void 0 ? Wu : o, c = f.altBoundary, s = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, y = D1(typeof E != "number" ? E : f1(E, tD)), _ = d === Wu ? i2 : Wu, w = D.elements.reference, v = D.rects.popper, A = D.elements[s ? _ : d], g = R2(Zu(A) ? A : A.contextElement || Au(D.elements.popper), a, r), h = Ru(w), S = t1({
     reference: h,
     element: v,
     strategy: "absolute",
@@ -6970,21 +6990,21 @@ function uD(D, u) {
   if (d === Wu && N) {
     var U = N[F];
     Object.keys(H).forEach(function(uu) {
-      var G = [su, ou].indexOf(uu) >= 0 ? 1 : -1, nu = [eu, ou].indexOf(uu) >= 0 ? "y" : "x";
+      var G = [ou, su].indexOf(uu) >= 0 ? 1 : -1, nu = [eu, su].indexOf(uu) >= 0 ? "y" : "x";
       H[uu] += U[nu] * G;
     });
   }
   return H;
 }
-function R2(D, u) {
+function M2(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, a = f.padding, n = f.flipVariations, r = f.allowedAutoPlacements, s = r === void 0 ? yD : r, d = Ju(e), c = d ? n ? pf : pf.filter(function(E) {
+  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, a = f.padding, n = f.flipVariations, r = f.allowedAutoPlacements, o = r === void 0 ? yD : r, d = Ju(e), c = d ? n ? pf : pf.filter(function(E) {
     return Ju(E) === d;
-  }) : tD, o = c.filter(function(E) {
-    return s.indexOf(E) >= 0;
+  }) : tD, s = c.filter(function(E) {
+    return o.indexOf(E) >= 0;
   });
-  o.length === 0 && (o = c, process.env.NODE_ENV !== "production" && console.error(["Popper: The `allowedAutoPlacements` option did not allow any", "placements. Ensure the `placement` option matches the variation", "of the allowed placements.", 'For example, "auto" cannot be used to allow "bottom-start".', 'Use "auto-start" instead.'].join(" ")));
-  var B = o.reduce(function(E, y) {
+  s.length === 0 && (s = c, process.env.NODE_ENV !== "production" && console.error(["Popper: The `allowedAutoPlacements` option did not allow any", "placements. Ensure the `placement` option matches the variation", "of the allowed placements.", 'For example, "auto" cannot be used to allow "bottom-start".', 'Use "auto-start" instead.'].join(" ")));
+  var B = s.reduce(function(E, y) {
     return E[y] = uD(D, {
       placement: y,
       boundary: F,
@@ -6996,32 +7016,32 @@ function R2(D, u) {
     return B[E] - B[y];
   });
 }
-function M2(D) {
+function H2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
   return [hf(D), u, hf(u)];
 }
-function H2(D) {
+function U2(D) {
   var u = D.state, f = D.options, e = D.name;
   if (!u.modifiersData[e]._skip) {
-    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !0 : a, r = f.fallbackPlacements, s = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, y = f.allowedAutoPlacements, _ = u.options.placement, w = ru(_), v = w === _, A = r || (v || !E ? [hD(_)] : M2(_)), g = [_].concat(A).reduce(function(K, l) {
-      return K.concat(ru(l) === AD ? R2(u, {
+    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !0 : a, r = f.fallbackPlacements, o = f.padding, d = f.boundary, c = f.rootBoundary, s = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, y = f.allowedAutoPlacements, _ = u.options.placement, w = ru(_), v = w === _, A = r || (v || !E ? [hD(_)] : H2(_)), g = [_].concat(A).reduce(function(K, l) {
+      return K.concat(ru(l) === AD ? M2(u, {
         placement: l,
         boundary: d,
         rootBoundary: c,
-        padding: s,
+        padding: o,
         flipVariations: E,
         allowedAutoPlacements: y
       }) : l);
     }, []), h = u.rects.reference, S = u.rects.popper, T = /* @__PURE__ */ new Map(), $ = !0, H = g[0], N = 0; N < g.length; N++) {
-      var U = g[N], uu = ru(U), G = Ju(U) === Lu, nu = [eu, ou].indexOf(uu) >= 0, gu = nu ? "width" : "height", Eu = uD(u, {
+      var U = g[N], uu = ru(U), G = Ju(U) === Lu, nu = [eu, su].indexOf(uu) >= 0, gu = nu ? "width" : "height", Eu = uD(u, {
         placement: U,
         boundary: d,
         rootBoundary: c,
-        altBoundary: o,
-        padding: s
-      }), au = nu ? G ? su : tu : G ? ou : eu;
+        altBoundary: s,
+        padding: o
+      }), au = nu ? G ? ou : tu : G ? su : eu;
       h[gu] > S[gu] && (au = hD(au));
       var yu = hD(au), W = [];
       if (t && W.push(Eu[uu] <= 0), n && W.push(Eu[au] <= 0, Eu[yu] <= 0), W.every(function(K) {
@@ -7034,15 +7054,15 @@ function H2(D) {
     }
     if ($)
       for (var X = E ? 3 : 1, Q = function(l) {
-        var Ou = g.find(function(Mu) {
+        var $u = g.find(function(Mu) {
           var mu = T.get(Mu);
           if (mu)
             return mu.slice(0, l).every(function(Hu) {
               return Hu;
             });
         });
-        if (Ou)
-          return H = Ou, "break";
+        if ($u)
+          return H = $u, "break";
       }, lu = X; lu > 0; lu--) {
         var Bu = Q(lu);
         if (Bu === "break") break;
@@ -7050,11 +7070,11 @@ function H2(D) {
     u.placement !== H && (u.modifiersData[e]._skip = !0, u.placement = H, u.reset = !0);
   }
 }
-const U2 = {
+const V2 = {
   name: "flip",
   enabled: !0,
   phase: "main",
-  fn: H2,
+  fn: U2,
   requiresIfExists: ["offset"],
   data: {
     _skip: !1
@@ -7072,19 +7092,19 @@ function vf(D, u, f) {
   };
 }
 function Af(D) {
-  return [eu, su, ou, tu].some(function(u) {
+  return [eu, ou, su, tu].some(function(u) {
     return D[u] >= 0;
   });
 }
-function V2(D) {
+function W2(D) {
   var u = D.state, f = D.name, e = u.rects.reference, F = u.rects.popper, t = u.modifiersData.preventOverflow, a = uD(u, {
     elementContext: "reference"
   }), n = uD(u, {
     altBoundary: !0
-  }), r = vf(a, e), s = vf(n, F, t), d = Af(r), c = Af(s);
+  }), r = vf(a, e), o = vf(n, F, t), d = Af(r), c = Af(o);
   u.modifiersData[f] = {
     referenceClippingOffsets: r,
-    popperEscapeOffsets: s,
+    popperEscapeOffsets: o,
     isReferenceHidden: d,
     hasPopperEscaped: c
   }, u.attributes.popper = Object.assign({}, u.attributes.popper, {
@@ -7092,18 +7112,18 @@ function V2(D) {
     "data-popper-escaped": c
   });
 }
-const W2 = {
+const G2 = {
   name: "hide",
   enabled: !0,
   phase: "main",
   requiresIfExists: ["preventOverflow"],
-  fn: V2
+  fn: W2
 };
-function G2(D, u, f) {
+function Y2(D, u, f) {
   var e = ru(D), F = [tu, eu].indexOf(e) >= 0 ? -1 : 1, t = typeof f == "function" ? f(Object.assign({}, u, {
     placement: D
   })) : f, a = t[0], n = t[1];
-  return a = a || 0, n = (n || 0) * F, [tu, su].indexOf(e) >= 0 ? {
+  return a = a || 0, n = (n || 0) * F, [tu, ou].indexOf(e) >= 0 ? {
     x: n,
     y: a
   } : {
@@ -7111,20 +7131,20 @@ function G2(D, u, f) {
     y: n
   };
 }
-function Y2(D) {
+function X2(D) {
   var u = D.state, f = D.options, e = D.name, F = f.offset, t = F === void 0 ? [0, 0] : F, a = yD.reduce(function(d, c) {
-    return d[c] = G2(c, u.rects, t), d;
-  }, {}), n = a[u.placement], r = n.x, s = n.y;
-  u.modifiersData.popperOffsets != null && (u.modifiersData.popperOffsets.x += r, u.modifiersData.popperOffsets.y += s), u.modifiersData[e] = a;
+    return d[c] = Y2(c, u.rects, t), d;
+  }, {}), n = a[u.placement], r = n.x, o = n.y;
+  u.modifiersData.popperOffsets != null && (u.modifiersData.popperOffsets.x += r, u.modifiersData.popperOffsets.y += o), u.modifiersData[e] = a;
 }
-const X2 = {
+const K2 = {
   name: "offset",
   enabled: !0,
   phase: "main",
   requires: ["popperOffsets"],
-  fn: Y2
+  fn: X2
 };
-function K2(D) {
+function Z2(D) {
   var u = D.state, f = D.name;
   u.modifiersData[f] = t1({
     reference: u.rects.reference,
@@ -7133,23 +7153,23 @@ function K2(D) {
     placement: u.placement
   });
 }
-const Z2 = {
+const Q2 = {
   name: "popperOffsets",
   enabled: !0,
   phase: "read",
-  fn: K2,
+  fn: Z2,
   data: {}
 };
-function Q2(D) {
+function J2(D) {
   return D === "x" ? "y" : "x";
 }
-function J2(D) {
-  var u = D.state, f = D.options, e = D.name, F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !1 : a, r = f.boundary, s = f.rootBoundary, d = f.altBoundary, c = f.padding, o = f.tether, B = o === void 0 ? !0 : o, E = f.tetherOffset, y = E === void 0 ? 0 : E, _ = uD(u, {
+function u8(D) {
+  var u = D.state, f = D.options, e = D.name, F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !1 : a, r = f.boundary, o = f.rootBoundary, d = f.altBoundary, c = f.padding, s = f.tether, B = s === void 0 ? !0 : s, E = f.tetherOffset, y = E === void 0 ? 0 : E, _ = uD(u, {
     boundary: r,
-    rootBoundary: s,
+    rootBoundary: o,
     padding: c,
     altBoundary: d
-  }), w = ru(u.placement), v = Ju(u.placement), A = !v, g = ef(w), h = Q2(g), S = u.modifiersData.popperOffsets, T = u.rects.reference, $ = u.rects.popper, H = typeof y == "function" ? y(Object.assign({}, u.rects, {
+  }), w = ru(u.placement), v = Ju(u.placement), A = !v, g = ef(w), h = J2(g), S = u.modifiersData.popperOffsets, T = u.rects.reference, $ = u.rects.popper, H = typeof y == "function" ? y(Object.assign({}, u.rects, {
     placement: u.placement
   })) : y, N = {
     x: 0,
@@ -7157,39 +7177,39 @@ function J2(D) {
   };
   if (S) {
     if (t || n) {
-      var U = g === "y" ? eu : tu, uu = g === "y" ? ou : su, G = g === "y" ? "height" : "width", nu = S[g], gu = S[g] + _[U], Eu = S[g] - _[uu], au = B ? -$[G] / 2 : 0, yu = v === Lu ? T[G] : $[G], W = v === Lu ? -$[G] : -T[G], X = u.elements.arrow, Q = B && X ? ff(X) : {
+      var U = g === "y" ? eu : tu, uu = g === "y" ? su : ou, G = g === "y" ? "height" : "width", nu = S[g], gu = S[g] + _[U], Eu = S[g] - _[uu], au = B ? -$[G] / 2 : 0, yu = v === Lu ? T[G] : $[G], W = v === Lu ? -$[G] : -T[G], X = u.elements.arrow, Q = B && X ? ff(X) : {
         width: 0,
         height: 0
-      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : u1(), Bu = lu[U], K = lu[uu], l = mD(0, T[G], Q[G]), Ou = A ? T[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = A ? -T[G] / 2 + au + l + K + H : W + l + K + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? g === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][g] : 0, dD = S[g] + Ou - aD - Hu, rD = S[g] + Mu - aD;
+      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : u1(), Bu = lu[U], K = lu[uu], l = mD(0, T[G], Q[G]), $u = A ? T[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = A ? -T[G] / 2 + au + l + K + H : W + l + K + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? g === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][g] : 0, dD = S[g] + $u - aD - Hu, rD = S[g] + Mu - aD;
       if (t) {
         var iD = mD(B ? Qu(gu, dD) : gu, nu, B ? vu(Eu, rD) : Eu);
         S[g] = iD, N[g] = iD - nu;
       }
       if (n) {
-        var SD = g === "x" ? eu : tu, TD = g === "x" ? ou : su, ju = S[h], oD = ju + _[SD], sD = ju - _[TD], CD = mD(B ? Qu(oD, dD) : oD, ju, B ? vu(sD, rD) : sD);
-        S[h] = CD, N[h] = CD - ju;
+        var SD = g === "x" ? eu : tu, TD = g === "x" ? su : ou, Ou = S[h], sD = Ou + _[SD], oD = Ou - _[TD], CD = mD(B ? Qu(sD, dD) : sD, Ou, B ? vu(oD, rD) : oD);
+        S[h] = CD, N[h] = CD - Ou;
       }
     }
     u.modifiersData[e] = N;
   }
 }
-const u8 = {
+const D8 = {
   name: "preventOverflow",
   enabled: !0,
   phase: "main",
-  fn: J2,
+  fn: u8,
   requiresIfExists: ["offset"]
 };
-function D8(D) {
+function f8(D) {
   return {
     scrollLeft: D.scrollLeft,
     scrollTop: D.scrollTop
   };
 }
-function f8(D) {
-  return D === cu(D) || !Fu(D) ? tf(D) : D8(D);
+function e8(D) {
+  return D === cu(D) || !Fu(D) ? tf(D) : f8(D);
 }
-function e8(D, u, f) {
+function t8(D, u, f) {
   f === void 0 && (f = !1);
   var e = Au(u), F = Ru(D), t = Fu(u), a = {
     scrollLeft: 0,
@@ -7199,14 +7219,14 @@ function e8(D, u, f) {
     y: 0
   };
   return (t || !t && !f) && ((pu(u) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
-  nf(e)) && (a = f8(u)), Fu(u) ? (n = Ru(u), n.x += u.clientLeft, n.y += u.clientTop) : e && (n.x = Ff(e))), {
+  nf(e)) && (a = e8(u)), Fu(u) ? (n = Ru(u), n.x += u.clientLeft, n.y += u.clientTop) : e && (n.x = Ff(e))), {
     x: F.left + a.scrollLeft - n.x,
     y: F.top + a.scrollTop - n.y,
     width: F.width,
     height: F.height
   };
 }
-function t8(D) {
+function F8(D) {
   var u = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Set(), e = [];
   D.forEach(function(t) {
     u.set(t.name, t);
@@ -7225,15 +7245,15 @@ function t8(D) {
     f.has(t.name) || F(t);
   }), e;
 }
-function F8(D) {
-  var u = t8(D);
+function n8(D) {
+  var u = F8(D);
   return UD.reduce(function(f, e) {
     return f.concat(u.filter(function(F) {
       return F.phase === e;
     }));
   }, []);
 }
-function n8(D) {
+function a8(D) {
   var u;
   return function() {
     return u || (u = new Promise(function(f) {
@@ -7250,8 +7270,8 @@ function hu(D) {
     return F.replace(/%s/, t);
   }, D);
 }
-var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', a8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', d8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
-function r8(D) {
+var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', d8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', r8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
+function i8(D) {
   D.forEach(function(u) {
     Object.keys(u).forEach(function(f) {
       switch (f) {
@@ -7279,19 +7299,19 @@ function r8(D) {
         case "data":
           break;
         default:
-          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + d8.map(function(e) {
+          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + r8.map(function(e) {
             return '"' + e + '"';
           }).join(", ") + '; but "' + f + '" was provided.');
       }
       u.requires && u.requires.forEach(function(e) {
         D.find(function(F) {
           return F.name === e;
-        }) == null && console.error(hu(a8, String(u.name), e, e));
+        }) == null && console.error(hu(d8, String(u.name), e, e));
       });
     });
   });
 }
-function i8(D, u) {
+function s8(D, u) {
   var f = /* @__PURE__ */ new Set();
   return D.filter(function(e) {
     var F = u(e);
@@ -7311,7 +7331,7 @@ function o8(D) {
     return u[f];
   });
 }
-var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", s8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
+var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", C8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
@@ -7323,11 +7343,11 @@ function kf() {
     return !(e && typeof e.getBoundingClientRect == "function");
   });
 }
-function C8(D) {
+function c8(D) {
   D === void 0 && (D = {});
   var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
-  return function(n, r, s) {
-    s === void 0 && (s = t);
+  return function(n, r, o) {
+    o === void 0 && (o = t);
     var d = {
       placement: "bottom",
       orderedModifiers: [],
@@ -7339,22 +7359,22 @@ function C8(D) {
       },
       attributes: {},
       styles: {}
-    }, c = [], o = !1, B = {
+    }, c = [], s = !1, B = {
       state: d,
       setOptions: function(w) {
         y(), d.options = Object.assign({}, t, d.options, w), d.scrollParents = {
           reference: Zu(n) ? Yu(n) : n.contextElement ? Yu(n.contextElement) : [],
           popper: Yu(r)
         };
-        var v = F8(o8([].concat(e, d.options.modifiers)));
+        var v = n8(o8([].concat(e, d.options.modifiers)));
         if (d.orderedModifiers = v.filter(function(N) {
           return N.enabled;
         }), process.env.NODE_ENV !== "production") {
-          var A = i8([].concat(v, d.options.modifiers), function(N) {
+          var A = s8([].concat(v, d.options.modifiers), function(N) {
             var U = N.name;
             return U;
           });
-          if (r8(A), ru(d.options.placement) === AD) {
+          if (i8(A), ru(d.options.placement) === AD) {
             var g = d.orderedModifiers.find(function(N) {
               var U = N.name;
               return U === "flip";
@@ -7374,21 +7394,21 @@ function C8(D) {
       // For high frequency updates (e.g. `resize` and `scroll` events), always
       // prefer the async Popper#update method
       forceUpdate: function() {
-        if (!o) {
+        if (!s) {
           var w = d.elements, v = w.reference, A = w.popper;
           if (!kf(v, A)) {
             process.env.NODE_ENV !== "production" && console.error(yf);
             return;
           }
           d.rects = {
-            reference: e8(v, FD(A), d.options.strategy === "fixed"),
+            reference: t8(v, FD(A), d.options.strategy === "fixed"),
             popper: ff(A)
           }, d.reset = !1, d.placement = d.options.placement, d.orderedModifiers.forEach(function(U) {
             return d.modifiersData[U.name] = Object.assign({}, U.data);
           });
           for (var g = 0, h = 0; h < d.orderedModifiers.length; h++) {
             if (process.env.NODE_ENV !== "production" && (g += 1, g > 100)) {
-              console.error(s8);
+              console.error(C8);
               break;
             }
             if (d.reset === !0) {
@@ -7407,19 +7427,19 @@ function C8(D) {
       },
       // Async and optimistically optimized update – it will not be executed if
       // not necessary (debounced to run at most once-per-tick)
-      update: n8(function() {
+      update: a8(function() {
         return new Promise(function(_) {
           B.forceUpdate(), _(d);
         });
       }),
       destroy: function() {
-        y(), o = !0;
+        y(), s = !0;
       }
     };
     if (!kf(n, r))
       return process.env.NODE_ENV !== "production" && console.error(yf), B;
-    B.setOptions(s).then(function(_) {
-      !o && s.onFirstUpdate && s.onFirstUpdate(_);
+    B.setOptions(o).then(function(_) {
+      !s && o.onFirstUpdate && o.onFirstUpdate(_);
     });
     function E() {
       d.orderedModifiers.forEach(function(_) {
@@ -7444,10 +7464,10 @@ function C8(D) {
     return B;
   };
 }
-var c8 = [O2, Z2, T2, m2, X2, U2, u8, w2, W2], E8 = /* @__PURE__ */ C8({
-  defaultModifiers: c8
+var E8 = [j2, Q2, $2, h2, K2, V2, D8, k2, G2], l8 = /* @__PURE__ */ c8({
+  defaultModifiers: E8
 });
-function l8() {
+function B8() {
   var D = window.navigator.userAgent, u = D.indexOf("MSIE ");
   if (u > 0)
     return parseInt(D.substring(u + 5, D.indexOf(".", u)), 10);
@@ -7461,7 +7481,7 @@ function l8() {
 }
 let _D;
 function WD() {
-  WD.init || (WD.init = !0, _D = l8() !== -1);
+  WD.init || (WD.init = !0, _D = B8() !== -1);
 }
 var kD = {
   name: "ResizeObserver",
@@ -7510,15 +7530,15 @@ var kD = {
     }
   }
 };
-const B8 = /* @__PURE__ */ $1("data-v-b329ee4c");
+const b8 = /* @__PURE__ */ $1("data-v-b329ee4c");
 x1("data-v-b329ee4c");
-const b8 = {
+const p8 = {
   class: "resize-observer",
   tabindex: "-1"
 };
 S1();
-const p8 = /* @__PURE__ */ B8((D, u, f, e, F, t) => (b(), V("div", b8)));
-kD.render = p8;
+const g8 = /* @__PURE__ */ b8((D, u, f, e, F, t) => (b(), V("div", p8)));
+kD.render = g8;
 kD.__scopeId = "data-v-b329ee4c";
 kD.__file = "src/components/ResizeObserver.vue";
 function Xu(D) {
@@ -7532,8 +7552,8 @@ function Xu(D) {
 function xf(D, u, f, e, F, t, a) {
   try {
     var n = D[t](a), r = n.value;
-  } catch (s) {
-    f(s);
+  } catch (o) {
+    f(o);
     return;
   }
   n.done ? u(r) : Promise.resolve(r).then(e, F);
@@ -7553,7 +7573,7 @@ function xu(D) {
     });
   };
 }
-function g8(D, u, f) {
+function m8(D, u, f) {
   return u in D ? Object.defineProperty(D, u, {
     value: f,
     enumerable: !0,
@@ -7575,7 +7595,7 @@ function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
     u % 2 ? Sf(Object(f), !0).forEach(function(e) {
-      g8(D, e, f[e]);
+      m8(D, e, f[e]);
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
@@ -7583,12 +7603,12 @@ function iu(D) {
   return D;
 }
 function F1(D) {
-  return m8(D) || h8(D) || n1(D) || _8();
-}
-function m8(D) {
-  if (Array.isArray(D)) return GD(D);
+  return h8(D) || _8(D) || n1(D) || v8();
 }
 function h8(D) {
+  if (Array.isArray(D)) return GD(D);
+}
+function _8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
 function n1(D, u) {
@@ -7604,7 +7624,7 @@ function GD(D, u) {
   for (var f = 0, e = new Array(u); f < u; f++) e[f] = D[f];
   return e;
 }
-function _8() {
+function v8() {
   throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
@@ -7733,7 +7753,7 @@ function q(D, u) {
   while (f);
   return e;
 }
-function v8(D) {
+function A8(D) {
   var u = [D], f = Tu.themes[D] || {};
   do
     f.$extend && !f.$resetCss ? (u.push(f.$extend), f = Tu.themes[f.$extend] || {}) : f = null;
@@ -7746,12 +7766,12 @@ var vD = !1;
 if (typeof window < "u") {
   vD = !1;
   try {
-    var A8 = Object.defineProperty({}, "passive", {
+    var y8 = Object.defineProperty({}, "passive", {
       get: function() {
         vD = !0;
       }
     });
-    window.addEventListener("test", null, A8);
+    window.addEventListener("test", null, y8);
   } catch {
   }
 }
@@ -7777,11 +7797,11 @@ var Tf = {
   click: "click",
   touch: "touchend"
 };
-function y8(D, u) {
+function w8(D, u) {
   var f = D.indexOf(u);
   f !== -1 && D.splice(f, 1);
 }
-var Iu = [], Pu = null, XD = function() {
+var Pu = [], ju = null, XD = function() {
 };
 typeof window < "u" && (XD = window.Element);
 var r1 = function() {
@@ -8077,15 +8097,15 @@ var r1 = function() {
       },
       $_scheduleShow: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), Pu && this.instantMove && Pu.instantMove) {
-          Pu.$_applyHide(!0), this.$_applyShow(!0);
+        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), ju && this.instantMove && ju.instantMove) {
+          ju.$_applyHide(!0), this.$_applyShow(!0);
           return;
         }
         u ? this.$_applyShow() : this.$_scheduleTimer = setTimeout(this.$_applyShow.bind(this), this.$_computeDelay("show"));
       },
       $_scheduleHide: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && (Pu = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
+        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && (ju = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
       },
       $_computeDelay: function(u) {
         var f = this.delay;
@@ -8095,7 +8115,7 @@ var r1 = function() {
         var u = arguments, f = this;
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
-          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = E8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
+          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = l8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
         })();
       },
       $_applyShowEffect: function() {
@@ -8108,9 +8128,9 @@ var r1 = function() {
             });
             var f = u.showGroup;
             if (f)
-              for (var e, F = 0; F < Iu.length; F++)
-                e = Iu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Iu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield Of(), u.classes.showFrom = !1, u.classes.showTo = !0;
+              for (var e, F = 0; F < Pu.length; F++)
+                e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield Of(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -8119,7 +8139,7 @@ var r1 = function() {
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
           if (clearTimeout(f.$_scheduleTimer), !!f.isShown) {
-            f.skipTransition = e, y8(Iu, f), Pu === f && (Pu = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
+            f.skipTransition = e, w8(Pu, f), ju === f && (ju = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
               "aria-describedby": void 0,
               "data-popper-shown": void 0
             }), clearTimeout(f.$_disposeTimer);
@@ -8140,10 +8160,10 @@ var r1 = function() {
         u.appendChild(this.$_popperNode);
       },
       $_addEventListeners: function() {
-        var u = this, f = function(a, n, r, s, d) {
+        var u = this, f = function(a, n, r, o, d) {
           var c = r;
-          s != null && (c = typeof s == "function" ? s(c) : s), c.forEach(function(o) {
-            var B = n[o];
+          o != null && (c = typeof o == "function" ? o(c) : o), c.forEach(function(s) {
+            var B = n[s];
             B && (u.$_events.push({
               targetNodes: a,
               eventType: B,
@@ -8219,23 +8239,23 @@ var r1 = function() {
     }
   };
 };
-typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", k8, vD ? {
+typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", x8, vD ? {
   passive: !0,
   capture: !0
-} : !0) : window.addEventListener("click", w8, !0));
-function w8(D) {
+} : !0) : window.addEventListener("click", k8, !0));
+function k8(D) {
   i1(D);
 }
-function k8(D) {
+function x8(D) {
   i1(D, !0);
 }
 function i1(D) {
   for (var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1, f = function(t) {
-    var a = Iu[t], n = a.popperNode(), r = n.contains(D.target);
+    var a = Pu[t], n = a.popperNode(), r = n.contains(D.target);
     requestAnimationFrame(function() {
       (D.closeAllPopover || D.closePopover && r || a.autoHide && !r) && a.$_handleGlobalClose(D, u);
     });
-  }, e = 0; e < Iu.length; e++)
+  }, e = 0; e < Pu.length; e++)
     f(e);
 }
 function Of() {
@@ -8243,10 +8263,10 @@ function Of() {
     return requestAnimationFrame(D);
   });
 }
-var o1 = {
+var s1 = {
   computed: {
     themeClass: function() {
-      return v8(this.theme);
+      return A8(this.theme);
     }
   }
 }, xD = {
@@ -8254,7 +8274,7 @@ var o1 = {
   components: {
     ResizeObserver: kD
   },
-  mixins: [o1],
+  mixins: [s1],
   props: {
     popperId: String,
     theme: String,
@@ -8266,15 +8286,15 @@ var o1 = {
     classes: Object
   },
   emits: ["hide", "resize"]
-}, x8 = {
-  class: "v-popper__wrapper"
 }, S8 = {
+  class: "v-popper__wrapper"
+}, T8 = {
   ref: "inner",
   class: "v-popper__inner"
-}, T8 = {
+}, $8 = {
   ref: "arrow",
   class: "v-popper__arrow-container"
-}, $8 = /* @__PURE__ */ L(
+}, O8 = /* @__PURE__ */ L(
   "div",
   {
     class: "v-popper__arrow"
@@ -8283,7 +8303,7 @@ var o1 = {
   -1
   /* HOISTED */
 );
-function O8(D, u, f, e, F, t) {
+function j8(D, u, f, e, F, t) {
   var a = O("ResizeObserver");
   return b(), V(
     "div",
@@ -8305,9 +8325,9 @@ function O8(D, u, f, e, F, t) {
         return f.autoHide && D.$emit("hide");
       }, ["esc"]))
     },
-    [L("div", x8, [L(
+    [L("div", S8, [L(
       "div",
-      S8,
+      T8,
       [f.mounted ? (b(), V(
         qu,
         {
@@ -8326,8 +8346,8 @@ function O8(D, u, f, e, F, t) {
       /* NEED_PATCH */
     ), L(
       "div",
-      T8,
-      [$8],
+      $8,
+      [O8],
       512
       /* NEED_PATCH */
     )])],
@@ -8335,9 +8355,9 @@ function O8(D, u, f, e, F, t) {
     ["id", "aria-hidden", "tabindex"]
   );
 }
-xD.render = O8;
+xD.render = j8;
 xD.__file = "src/components/PopperContent.vue";
-var s1 = {
+var o1 = {
   methods: {
     show: function() {
       var u;
@@ -8362,7 +8382,7 @@ var s1 = {
     Popper: r1(),
     PopperContent: xD
   },
-  mixins: [s1, o1],
+  mixins: [o1, s1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8383,7 +8403,7 @@ var s1 = {
     }
   }
 };
-function j8(D, u, f, e, F, t) {
+function P8(D, u, f, e, F, t) {
   var a = O("PopperContent"), n = O("Popper");
   return b(), V(
     n,
@@ -8404,7 +8424,7 @@ function j8(D, u, f, e, F, t) {
     }),
     {
       default: x(function(r) {
-        var s = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, y = r.handleResize, _ = r.onResize, w = r.classes;
+        var o = r.popperId, d = r.isShown, c = r.shouldMountContent, s = r.skipTransition, B = r.autoHide, E = r.hide, y = r.handleResize, _ = r.onResize, w = r.classes;
         return [L(
           "div",
           {
@@ -8417,11 +8437,11 @@ function j8(D, u, f, e, F, t) {
             a,
             {
               ref: "popperContent",
-              "popper-id": s,
+              "popper-id": o,
               theme: t.finalTheme,
               shown: d,
               mounted: c,
-              "skip-transition": o,
+              "skip-transition": s,
               "auto-hide": B,
               "handle-resize": y,
               classes: w,
@@ -8451,7 +8471,7 @@ function j8(D, u, f, e, F, t) {
     ["theme", "target-nodes", "reference-node", "popper-node", "arrow-node"]
   );
 }
-nD.render = j8;
+nD.render = P8;
 nD.__file = "src/components/PopperWrapper.vue";
 var KD = iu(iu({}, nD), {}, {
   name: "VDropdown",
@@ -8474,7 +8494,7 @@ var af = {
     Popper: r1(),
     PopperContent: xD
   },
-  mixins: [s1],
+  mixins: [o1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8553,7 +8573,7 @@ var af = {
     }
   }
 };
-function P8(D, u, f, e, F, t) {
+function I8(D, u, f, e, F, t) {
   var a = O("PopperContent"), n = O("Popper");
   return b(), V(
     n,
@@ -8572,7 +8592,7 @@ function P8(D, u, f, e, F, t) {
     }),
     {
       default: x(function(r) {
-        var s = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, y = r.handleResize, _ = r.onResize, w = r.classes;
+        var o = r.popperId, d = r.isShown, c = r.shouldMountContent, s = r.skipTransition, B = r.autoHide, E = r.hide, y = r.handleResize, _ = r.onResize, w = r.classes;
         return [L(
           a,
           {
@@ -8580,11 +8600,11 @@ function P8(D, u, f, e, F, t) {
             class: {
               "v-popper--tooltip-loading": t.loading
             },
-            "popper-id": s,
+            "popper-id": o,
             theme: f.theme,
             shown: d,
             mounted: c,
-            "skip-transition": o,
+            "skip-transition": s,
             "auto-hide": B,
             "handle-resize": y,
             classes: w,
@@ -8627,10 +8647,10 @@ function P8(D, u, f, e, F, t) {
     ["theme", "popper-node", "arrow-node", "onApplyShow", "onApplyHide"]
   );
 }
-af.render = P8;
+af.render = I8;
 af.__file = "src/components/TooltipDirective.vue";
 var C1 = "v-popper--has-tooltip";
-function I8(D, u) {
+function z8(D, u) {
   var f = D.placement;
   if (!f && u) {
     var e = YD(yD), F;
@@ -8653,13 +8673,13 @@ function c1(D, u, f) {
     content: u
   } : u && F === "object" ? e = u : e = {
     content: !1
-  }, e.placement = I8(e, f), e.targetNodes = function() {
+  }, e.placement = z8(e, f), e.targetNodes = function() {
     return [D];
   }, e.referenceNode = function() {
     return D;
   }, e;
 }
-function z8(D, u, f) {
+function N8(D, u, f) {
   var e = c1(D, u, f), F = D.$_popper = j1({
     name: "VTooltipDirective",
     data: function() {
@@ -8684,10 +8704,10 @@ function jf(D, u) {
     E1(D);
   else {
     var t;
-    D.$_popper ? (t = D.$_popper, t.options = F) : t = z8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
+    D.$_popper ? (t = D.$_popper, t.options = F) : t = N8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
   }
 }
-var N8 = {
+var q8 = {
   beforeMount: jf,
   updated: jf,
   beforeUnmount: function(u) {
@@ -8725,7 +8745,7 @@ function p1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
-var q8 = {
+var L8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
     u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
@@ -8740,15 +8760,15 @@ var q8 = {
 };
 function JD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  JD.installed || (JD.installed = !0, a1(Tu, u), D.directive("tooltip", N8), D.directive("close-popper", q8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
+  JD.installed || (JD.installed = !0, a1(Tu, u), D.directive("tooltip", q8), D.directive("close-popper", L8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
 }
-var L8 = {
+var R8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
   install: JD,
   options: Tu
 }, pD = { exports: {} }, zf;
-function R8() {
+function M8() {
   if (zf) return pD.exports;
   zf = 1;
   function D() {
@@ -8784,23 +8804,23 @@ function R8() {
   }, pD.exports = D, pD.exports.TinyEmitter = D, pD.exports;
 }
 var MD, Nf;
-function M8() {
+function H8() {
   if (Nf) return MD;
   Nf = 1;
-  var D = R8();
+  var D = M8();
   return MD = new D(), MD;
 }
-var H8 = M8();
-const gD = /* @__PURE__ */ uf(H8), U8 = {
+var U8 = H8();
+const gD = /* @__PURE__ */ uf(U8), V8 = {
   $on: (...D) => gD.on(...D),
   $once: (...D) => gD.once(...D),
   $off: (...D) => gD.off(...D),
   $emit: (...D) => gD.emit(...D)
-}, V8 = "BeautifulChat", G8 = {
+}, W8 = "BeautifulChat", Y8 = {
   install(D, u = {}) {
-    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = U8, this.componentName = u.componentName || V8, D.component(this.componentName, a2), D.use(L8));
+    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = V8, this.componentName = u.componentName || W8, D.component(this.componentName, d2), D.use(R8));
   }
 };
 export {
-  G8 as default
+  Y8 as default
 };

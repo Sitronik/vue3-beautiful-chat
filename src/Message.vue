@@ -57,7 +57,7 @@
       </EmojiMessage>
       <FileMessage
         v-else-if="message.type === 'file'"
-        :message="message.data"
+        :message="message"
         :message-colors="messageColors"
       >
         <template #default="scopedProps">
